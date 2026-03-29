@@ -37,12 +37,13 @@ source: 自建
 | v1.2 | 2026-03-29 | 移除 OTP 功能；修 label double-count |
 | v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() 每月清除 |
 | v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移（搜尋加 -in:inbox）|
+| v1.5 | 2026-03-30 | label 名稱加引號，修 `-` 被 Gmail 當成排除符號的 bug |
 
-## 完整程式碼 v1.4
+## 完整程式碼 v1.5
 
 ```javascript
 // ========================================
-// Gmail 自動分類 v1.4
+// Gmail 自動分類 v1.5
 // ========================================
 
 var BOT_TOKEN = "8752210165:AAFCAAlE91A3mRCNDHlK0jj5BWrwfpdGk00";
@@ -175,9 +176,10 @@ function processEmails() {
   });
 
   // 掃描已歸檔（非 inbox）但超過 deleteAfterDays 的舊信 → 移至垃圾筒
+  // label 名稱加引號，避免 - 被 Gmail 當成排除符號
   DELETE_RULES.forEach(function(item) {
     var oldThreads = GmailApp.search(
-      "label:" + item.label + " older_than:" + item.days + "d -in:inbox -in:trash",
+      "label:\"" + item.label + "\" older_than:" + item.days + "d -in:inbox -in:trash",
       0, 200
     );
     oldThreads.forEach(function(thread) {
