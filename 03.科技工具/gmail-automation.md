@@ -36,12 +36,13 @@ source: 自建
 | v1.1 | 2026-03-27 | 修 Telegram 推送格式 |
 | v1.2 | 2026-03-29 | 移除 OTP 功能；修 label double-count |
 | v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() 每月清除 |
+| v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移（搜尋加 -in:inbox）|
 
-## 完整程式碼 v1.3
+## 完整程式碼 v1.4
 
 ```javascript
 // ========================================
-// Gmail 自動分類 v1.3
+// Gmail 自動分類 v1.4
 // ========================================
 
 var BOT_TOKEN = "8752210165:AAFCAAlE91A3mRCNDHlK0jj5BWrwfpdGk00";
@@ -156,13 +157,6 @@ function processEmails() {
         isRead = true;
       }
 
-      // 超過 deleteAfterDays → 移至垃圾筒（優先於歸檔）
-      if (rule.deleteAfterDays !== undefined && ageDays >= rule.deleteAfterDays) {
-        thread.moveToTrash();
-        trashedCount++;
-        break;
-      }
-
       var shouldArchive = false;
       if (rule.archiveUnreadDays === 0) {
         shouldArchive = true;
@@ -180,10 +174,10 @@ function processEmails() {
     }
   });
 
-  // 掃描已歸檔但超過 deleteAfterDays 的舊信
+  // 掃描已歸檔（非 inbox）但超過 deleteAfterDays 的舊信 → 移至垃圾筒
   DELETE_RULES.forEach(function(item) {
     var oldThreads = GmailApp.search(
-      "label:" + item.label + " older_than:" + item.days + "d -in:trash",
+      "label:" + item.label + " older_than:" + item.days + "d -in:inbox -in:trash",
       0, 200
     );
     oldThreads.forEach(function(thread) {
