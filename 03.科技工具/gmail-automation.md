@@ -8,14 +8,16 @@ source: 自建
 
 ## 摘要
 
-> Google Apps Script 自動分類 Gmail，依規則貼標籤 + 歸檔，每天早上 8 點 / 晚上 8 點執行，結果推送 Telegram。
+> Google Apps Script 自動分類 Gmail，依規則貼標籤 + 歸檔，每天早上 8 點 / 晚上 8 點執行，結果推送 Telegram。每月 1 日清除垃圾筒。
 
 ## 設定
 
 | 項目 | 值 |
 |------|-----|
 | 觸發時間 | 每日 08:00 / 20:00 |
-| 掃描範圍 | in:inbox newer_than:7d（最多 200 則）|
+| 掃描範圍 | in:inbox newer_than:30d（最多 200 則）|
+| 舊信清理 | 購物-外送 / 電子報-學習 超過 14 天 → 移至垃圾筒 |
+| 垃圾筒清理 | 每月 1 日 03:00 永久刪除 30 天以上郵件 |
 | Telegram Bot | BOT_TOKEN / CHAT_ID 填在 script 頂部 |
 
 ## 部署步驟
@@ -23,7 +25,7 @@ source: 自建
 1. 前往 [script.google.com](https://script.google.com)
 2. 進入專案 → 全選刪除 → 貼上下方程式碼
 3. 存檔
-4. 執行 `setupTriggers()` → 授權
+4. 執行 `setupTriggers()` → 授權（會要求 Gmail 權限）
 5. 執行 `processEmails()` 測試
 
 ## 版本記錄
@@ -32,13 +34,14 @@ source: 自建
 |------|------|------|
 | v1.0 | 2026-03-27 | 初版：規則分類 + OTP 推送 |
 | v1.1 | 2026-03-27 | 修 Telegram 推送格式 |
-| v1.2 | 2026-03-29 | 移除 OTP 功能；修 label double-count（貼標前先檢查是否已有）|
+| v1.2 | 2026-03-29 | 移除 OTP 功能；修 label double-count |
+| v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() 每月清除 |
 
-## 完整程式碼 v1.2
+## 完整程式碼 v1.3
 
 ```javascript
 // ========================================
-// Gmail 自動分類 v1.2
+// Gmail 自動分類 v1.3
 // ========================================
 
 var BOT_TOKEN = "8752210165:AAFCAAlE91A3mRCNDHlK0jj5BWrwfpdGk00";
@@ -82,7 +85,8 @@ var RULES = [
               "atmos", "星巴克", "starbucks", "樂天kobo", "kobo"],
     subjects: ["訂單確認", "出貨通知", "配送", "order confirmation", "shipped", "已出貨"],
     archiveReadDays: 1,
-    archiveUnreadDays: 7
+    archiveUnreadDays: 7,
+    deleteAfterDays: 14   // 超過 14 天移至垃圾筒
   },
   {
     label: "科技-訂閱",
@@ -96,7 +100,8 @@ var RULES = [
     senders: ["it邦幫忙", "ithome", "商業周刊", "coursera", "udemy", "畫張圖", "嘛賺金", "accupass"],
     subjects: ["每日摘要", "電子報", "newsletter", "daily digest", "週報"],
     archiveReadDays: 1,
-    archiveUnreadDays: 3
+    archiveUnreadDays: 3,
+    deleteAfterDays: 14   // 超過 14 天移至垃圾筒
   },
   {
     label: "待刪除",
@@ -109,12 +114,20 @@ var RULES = [
   }
 ];
 
+// 超過 deleteAfterDays 的 label 舊信（已歸檔）→ 移至垃圾筒
+var DELETE_RULES = [
+  { label: "購物-外送",  days: 14 },
+  { label: "電子報-學習", days: 14 }
+];
+
 function processEmails() {
   var labels = ensureLabels();
   var now = new Date();
-  var threads = GmailApp.search("in:inbox newer_than:7d", 0, 200);
+  // 掃描範圍拉到 30 天，才能抓到超過 14 天待刪的舊信
+  var threads = GmailApp.search("in:inbox newer_than:30d", 0, 200);
   var labelCount = {};
   var archivedCount = 0;
+  var trashedCount = 0;
 
   threads.forEach(function(thread) {
     var firstMsg = thread.getMessages()[0];
@@ -127,8 +140,8 @@ function processEmails() {
       var rule = RULES[i];
       if (!matchesRule(from, subject, rule)) continue;
 
+      // 只有尚未貼過這個 label 才計入統計（避免早晚 double count）
       if (labels[rule.label]) {
-        // 只有尚未貼過這個 label 才計入統計（避免早晚 double count）
         var alreadyLabeled = thread.getLabels().some(function(l) {
           return l.getName() === rule.label;
         });
@@ -141,6 +154,13 @@ function processEmails() {
       if (rule.markRead) {
         thread.markRead();
         isRead = true;
+      }
+
+      // 超過 deleteAfterDays → 移至垃圾筒（優先於歸檔）
+      if (rule.deleteAfterDays !== undefined && ageDays >= rule.deleteAfterDays) {
+        thread.moveToTrash();
+        trashedCount++;
+        break;
       }
 
       var shouldArchive = false;
@@ -160,6 +180,18 @@ function processEmails() {
     }
   });
 
+  // 掃描已歸檔但超過 deleteAfterDays 的舊信
+  DELETE_RULES.forEach(function(item) {
+    var oldThreads = GmailApp.search(
+      "label:" + item.label + " older_than:" + item.days + "d -in:trash",
+      0, 200
+    );
+    oldThreads.forEach(function(thread) {
+      thread.moveToTrash();
+      trashedCount++;
+    });
+  });
+
   var hour = now.getHours();
   var timeLabel = hour < 12 ? "早上" : "晚上";
   var labelLines = Object.keys(labelCount).map(function(k) {
@@ -168,7 +200,8 @@ function processEmails() {
 
   var msg = "Gmail 整理完成（" + timeLabel + "）\n\n"
           + "掃描：" + threads.length + " 則對話\n"
-          + "歸檔：" + archivedCount + " 則\n";
+          + "歸檔：" + archivedCount + " 則\n"
+          + "移至垃圾筒：" + trashedCount + " 則\n";
 
   if (labelLines.length > 0) {
     msg += "標籤分類：\n" + labelLines.join("\n");
@@ -177,7 +210,33 @@ function processEmails() {
   }
 
   sendTelegram(msg);
-  Logger.log("processEmails 完成，處理 " + threads.length + " 則對話，歸檔 " + archivedCount + " 則");
+  Logger.log("processEmails 完成，歸檔 " + archivedCount + "，垃圾筒 " + trashedCount);
+}
+
+// 每月 1 日：永久清除垃圾筒 30 天以上的郵件
+function emptyTrash() {
+  var token = ScriptApp.getOAuthToken();
+  var threads = GmailApp.search("in:trash older_than:30d", 0, 500);
+  var count = threads.length;
+
+  threads.forEach(function(thread) {
+    try {
+      UrlFetchApp.fetch(
+        "https://gmail.googleapis.com/gmail/v1/users/me/threads/" + thread.getId(),
+        {
+          method: "delete",
+          headers: { "Authorization": "Bearer " + token },
+          muteHttpExceptions: true
+        }
+      );
+    } catch(e) {
+      Logger.log("永久刪除失敗: " + thread.getId() + " - " + e);
+    }
+  });
+
+  var msg = "垃圾筒清理完成（每月）\n永久刪除：" + count + " 則對話";
+  sendTelegram(msg);
+  Logger.log(msg);
 }
 
 function matchesRule(from, subject, rule) {
@@ -219,6 +278,9 @@ function setupTriggers() {
   ScriptApp.newTrigger("processEmails")
     .timeBased().atHour(20).nearMinute(0).everyDays(1).create();
 
-  Logger.log("Triggers setup complete: processEmails(8am/8pm)");
+  ScriptApp.newTrigger("emptyTrash")
+    .timeBased().onMonthDay(1).atHour(3).create();
+
+  Logger.log("Triggers: processEmails(8am/8pm) + emptyTrash(每月1日3am)");
 }
 ```
