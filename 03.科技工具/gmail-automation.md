@@ -38,6 +38,7 @@ source: 自建
 | v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() 每月清除 |
 | v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移（搜尋加 -in:inbox）|
 | v1.5 | 2026-03-30 | label 名稱加引號，修 `-` 被 Gmail 當成排除符號的 bug |
+| v1.6 | 2026-03-31 | BOT_TOKEN / CHAT_ID 改用 PropertiesService，不再明碼寫死 |
 
 ## 完整程式碼 v1.5
 
@@ -46,8 +47,8 @@ source: 自建
 // Gmail 自動分類 v1.5
 // ========================================
 
-var BOT_TOKEN = "8752210165:AAFCAAlE91A3mRCNDHlK0jj5BWrwfpdGk00";
-var CHAT_ID   = "8256467512";
+var BOT_TOKEN = PropertiesService.getScriptProperties().getProperty("BOT_TOKEN");
+var CHAT_ID   = PropertiesService.getScriptProperties().getProperty("CHAT_ID");
 
 var RULES = [
   {
