@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install notion-client python-frontmatter
+        run: pip install requests python-frontmatter
 
       - name: Sync changed MD files to Notion
         run: python scripts/sync_to_notion.py

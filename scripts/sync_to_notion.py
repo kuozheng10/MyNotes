@@ -1,49 +1,66 @@
 #!/usr/bin/env python3
 """
-Sync changed Markdown files in MyNotes repo to Notion database.
-Triggered by GitHub Actions on push to main.
+Sync Markdown files in MyNotes repo to Notion database.
+Uses requests directly to avoid notion-client version issues.
 """
 
 import os
 import subprocess
+import json
+import requests
 import frontmatter
 from pathlib import Path
-from notion_client import Client
 
 NOTION_TOKEN = os.environ["NOTION_TOKEN"]
 DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
 
-notion = Client(auth=NOTION_TOKEN)
+HEADERS = {
+    "Authorization": f"Bearer {NOTION_TOKEN}",
+    "Notion-Version": "2022-06-28",
+    "Content-Type": "application/json",
+}
 
 
-def get_changed_md_files():
-    """Get list of MD files to sync.
-    On workflow_dispatch (SYNC_ALL=true), returns all MD files.
-    On push, returns only files changed in last commit.
-    """
+def notion_get(path):
+    r = requests.get(f"https://api.notion.com/v1{path}", headers=HEADERS)
+    r.raise_for_status()
+    return r.json()
+
+
+def notion_post(path, data):
+    r = requests.post(f"https://api.notion.com/v1{path}", headers=HEADERS, json=data)
+    r.raise_for_status()
+    return r.json()
+
+
+def notion_patch(path, data):
+    r = requests.patch(f"https://api.notion.com/v1{path}", headers=HEADERS, json=data)
+    r.raise_for_status()
+    return r.json()
+
+
+def notion_delete(path):
+    r = requests.delete(f"https://api.notion.com/v1{path}", headers=HEADERS)
+    return r.json()
+
+
+def get_md_files():
     if os.environ.get("SYNC_ALL") == "true":
-        files = [str(p) for p in Path(".").rglob("*.md")
-                 if p.name != "README.md"]
-        return files
-
+        return [str(p) for p in Path(".").rglob("*.md") if p.name != "README.md"]
     result = subprocess.run(
         ["git", "diff", "--name-only", "--diff-filter=AM", "HEAD~1", "HEAD"],
         capture_output=True, text=True
     )
-    files = [f for f in result.stdout.strip().split("\n")
-             if f.endswith(".md") and f != "README.md" and f]
-    return files
+    return [f for f in result.stdout.strip().split("\n")
+            if f.endswith(".md") and f != "README.md" and f]
 
 
 def md_to_blocks(text):
-    """Convert markdown text to Notion block objects (basic)."""
     blocks = []
     lines = text.split("\n")
     i = 0
     while i < len(lines):
         line = lines[i]
-
-        # Code block
         if line.startswith("```"):
             code_lines = []
             i += 1
@@ -51,143 +68,90 @@ def md_to_blocks(text):
                 code_lines.append(lines[i])
                 i += 1
             blocks.append({
-                "object": "block",
-                "type": "code",
-                "code": {
-                    "rich_text": [{"type": "text", "text": {"content": "\n".join(code_lines)}}],
-                    "language": "plain text"
-                }
+                "object": "block", "type": "code",
+                "code": {"rich_text": [{"type": "text", "text": {"content": "\n".join(code_lines)[:2000]}}], "language": "plain text"}
             })
-
-        # Heading 2
         elif line.startswith("## "):
-            blocks.append({
-                "object": "block",
-                "type": "heading_2",
-                "heading_2": {
-                    "rich_text": [{"type": "text", "text": {"content": line[3:]}}]
-                }
-            })
-
-        # Heading 3
+            blocks.append({"object": "block", "type": "heading_2",
+                           "heading_2": {"rich_text": [{"type": "text", "text": {"content": line[3:200]}}]}})
         elif line.startswith("### "):
-            blocks.append({
-                "object": "block",
-                "type": "heading_3",
-                "heading_3": {
-                    "rich_text": [{"type": "text", "text": {"content": line[4:]}}]
-                }
-            })
-
-        # Bullet point
+            blocks.append({"object": "block", "type": "heading_3",
+                           "heading_3": {"rich_text": [{"type": "text", "text": {"content": line[4:200]}}]}})
         elif line.startswith("- ") or line.startswith("• "):
-            blocks.append({
-                "object": "block",
-                "type": "bulleted_list_item",
-                "bulleted_list_item": {
-                    "rich_text": [{"type": "text", "text": {"content": line[2:]}}]
-                }
-            })
-
-        # Divider
+            blocks.append({"object": "block", "type": "bulleted_list_item",
+                           "bulleted_list_item": {"rich_text": [{"type": "text", "text": {"content": line[2:2000]}}]}})
         elif line.strip() in ("---", "***", "___"):
             blocks.append({"object": "block", "type": "divider", "divider": {}})
-
-        # Non-empty paragraph
         elif line.strip():
-            blocks.append({
-                "object": "block",
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [{"type": "text", "text": {"content": line}}]
-                }
-            })
-
+            blocks.append({"object": "block", "type": "paragraph",
+                           "paragraph": {"rich_text": [{"type": "text", "text": {"content": line[:2000]}}]}})
         i += 1
-
-    return blocks
+    return blocks[:100]
 
 
 def find_existing_page(title):
-    """Search for an existing Notion page with this title."""
-    response = notion.databases.query(
-        database_id=DATABASE_ID,
-        filter={"property": "Name", "title": {"equals": title}}
-    )
-    results = response.get("results", [])
+    data = notion_post(f"/databases/{DATABASE_ID}/query", {
+        "filter": {"property": "Name", "title": {"equals": title}}
+    })
+    results = data.get("results", [])
     return results[0]["id"] if results else None
 
 
 def sync_file(filepath):
-    """Sync one MD file to Notion."""
     post = frontmatter.load(filepath)
-    title = post.get("title") or Path(filepath).stem
+    title = str(post.get("title") or Path(filepath).stem)[:255]
     content = post.content
     tags = post.get("tags", [])
-    source = post.get("source", "")
+    source = str(post.get("source", ""))
     date = str(post.get("date", ""))
+    category = str(post.get("category", ""))
 
-    # Build properties
     properties = {
-        "Name": {"title": [{"text": {"content": title[:2000]}}]},
+        "Name": {"title": [{"text": {"content": title}}]},
+        "Tags": {"multi_select": [{"name": str(t)[:100]} for t in (tags or [])[:10]]},
+        "Date": {"rich_text": [{"text": {"content": date[:100]}}]},
+        "Category": {"rich_text": [{"text": {"content": category[:100]}}]},
     }
-    if tags:
-        properties["Tags"] = {
-            "multi_select": [{"name": str(t)[:100]} for t in tags[:10]]
-        }
-    if date:
-        properties["Date"] = {"rich_text": [{"text": {"content": date}}]}
-    if source:
-        properties["Source"] = {"url": source} if source.startswith("http") else \
-                               {"rich_text": [{"text": {"content": source}}]}
+    if source.startswith("http"):
+        properties["Source"] = {"url": source[:2000]}
+    else:
+        properties["Source"] = {"url": None}
 
-    # Convert content to blocks (Notion limit: 100 blocks per request)
-    blocks = md_to_blocks(content)[:100]
-
+    blocks = md_to_blocks(content)
     existing_id = find_existing_page(title)
 
     if existing_id:
-        # Update properties
-        notion.pages.update(page_id=existing_id, properties=properties)
-        # Clear old content and rewrite
-        old_blocks = notion.blocks.children.list(block_id=existing_id).get("results", [])
-        for block in old_blocks:
-            try:
-                notion.blocks.delete(block_id=block["id"])
-            except Exception:
-                pass
+        notion_patch(f"/pages/{existing_id}", {"properties": properties})
+        old_blocks = notion_get(f"/blocks/{existing_id}/children").get("results", [])
+        for b in old_blocks:
+            notion_delete(f"/blocks/{b['id']}")
         if blocks:
-            notion.blocks.children.append(block_id=existing_id, children=blocks)
+            notion_post(f"/blocks/{existing_id}/children", {"children": blocks})
         print(f"  Updated: {title}")
     else:
-        # Create new page
-        page = notion.pages.create(
-            parent={"database_id": DATABASE_ID},
-            properties=properties,
-            children=blocks
-        )
+        notion_post("/pages", {
+            "parent": {"database_id": DATABASE_ID},
+            "properties": properties,
+            "children": blocks
+        })
         print(f"  Created: {title}")
-
-    return True
 
 
 def main():
-    changed_files = get_changed_md_files()
-    if not changed_files:
-        print("No changed MD files found.")
+    files = get_md_files()
+    if not files:
+        print("No MD files to sync.")
         return
-
-    print(f"Syncing {len(changed_files)} file(s) to Notion...")
-    for filepath in changed_files:
-        path = Path(filepath)
-        if not path.exists():
-            print(f"  Skipped (deleted): {filepath}")
+    print(f"Syncing {len(files)} file(s) to Notion...")
+    for f in files:
+        p = Path(f)
+        if not p.exists():
+            print(f"  Skipped (deleted): {f}")
             continue
         try:
-            sync_file(path)
+            sync_file(p)
         except Exception as e:
-            print(f"  Error syncing {filepath}: {e}")
-
+            print(f"  Error syncing {f}: {e}")
     print("Done.")
 
 
