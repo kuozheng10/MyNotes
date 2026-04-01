@@ -113,6 +113,25 @@ def md_to_blocks(text):
     return blocks[:100]
 
 
+def pick_emoji(title, tags=None):
+    t = (title + " " + " ".join(tags or [])).lower()
+    if any(k in t for k in ["voice", "asr", "whisper", "speech"]): return "🎙️"
+    if any(k in t for k in ["wallet", "trip", "japan", "旅", "travel"]): return "✈️"
+    if any(k in t for k in ["gmail", "email", "mail"]): return "📧"
+    if "pdf" in t: return "📄"
+    if "codex" in t: return "🔧"
+    if any(k in t for k in ["memory", "記憶", "openmemory"]): return "🧠"
+    if any(k in t for k in ["schedule", "排程", "automation", "自動", "loop"]): return "⚙️"
+    if any(k in t for k in ["boris", "技巧", "tips"]): return "💡"
+    if any(k in t for k in ["agent", "workflow", "協作", "coworker"]): return "🤝"
+    if any(k in t for k in ["coding", "code", "開發", "spec", "tdd"]): return "💻"
+    if any(k in t for k in ["ai", "claude", "gpt", "gemini", "llm"]): return "🤖"
+    if "notion" in t: return "📋"
+    if any(k in t for k in ["github", "git"]): return "🐙"
+    if any(k in t for k in ["video", "youtube", "影片"]): return "🎬"
+    return "📝"
+
+
 def find_existing_page(title):
     data = notion_post(f"/databases/{DATABASE_ID}/query", {
         "filter": {"property": "Name", "title": {"equals": title}}
@@ -142,23 +161,26 @@ def sync_file(filepath):
         properties["Source"] = {"url": None}
 
     blocks = md_to_blocks(content)
+    emoji = pick_emoji(title, tags)
+    icon = {"type": "emoji", "emoji": emoji}
     existing_id = find_existing_page(title)
 
     if existing_id:
-        notion_patch(f"/pages/{existing_id}", {"properties": properties})
+        notion_patch(f"/pages/{existing_id}", {"properties": properties, "icon": icon})
         old_blocks = notion_get(f"/blocks/{existing_id}/children").get("results", [])
         for b in old_blocks:
             notion_delete(f"/blocks/{b['id']}")
         if blocks:
             notion_post(f"/blocks/{existing_id}/children", {"children": blocks})
-        print(f"  Updated: {title}")
+        print(f"  Updated: {emoji} {title}")
     else:
         notion_post("/pages", {
             "parent": {"database_id": DATABASE_ID},
             "properties": properties,
+            "icon": icon,
             "children": blocks
         })
-        print(f"  Created: {title}")
+        print(f"  Created: {emoji} {title}")
 
 
 def main():
