@@ -55,6 +55,30 @@ def get_md_files():
             if f.endswith(".md") and f != "README.md" and f]
 
 
+def parse_inline(text):
+    """Convert markdown inline formatting to Notion rich_text array."""
+    import re
+    parts = []
+    pattern = re.compile(r'\*\*(.+?)\*\*|\*(.+?)\*|`(.+?)`')
+    last = 0
+    for m in pattern.finditer(text):
+        if m.start() > last:
+            parts.append({"type": "text", "text": {"content": text[last:m.start()]}})
+        if m.group(1):  # bold
+            parts.append({"type": "text", "text": {"content": m.group(1)},
+                          "annotations": {"bold": True}})
+        elif m.group(2):  # italic
+            parts.append({"type": "text", "text": {"content": m.group(2)},
+                          "annotations": {"italic": True}})
+        elif m.group(3):  # inline code
+            parts.append({"type": "text", "text": {"content": m.group(3)},
+                          "annotations": {"code": True}})
+        last = m.end()
+    if last < len(text):
+        parts.append({"type": "text", "text": {"content": text[last:]}})
+    return parts or [{"type": "text", "text": {"content": text}}]
+
+
 def md_to_blocks(text):
     blocks = []
     lines = text.split("\n")
@@ -73,18 +97,18 @@ def md_to_blocks(text):
             })
         elif line.startswith("## "):
             blocks.append({"object": "block", "type": "heading_2",
-                           "heading_2": {"rich_text": [{"type": "text", "text": {"content": line[3:200]}}]}})
+                           "heading_2": {"rich_text": parse_inline(line[3:200])}})
         elif line.startswith("### "):
             blocks.append({"object": "block", "type": "heading_3",
-                           "heading_3": {"rich_text": [{"type": "text", "text": {"content": line[4:200]}}]}})
+                           "heading_3": {"rich_text": parse_inline(line[4:200])}})
         elif line.startswith("- ") or line.startswith("• "):
             blocks.append({"object": "block", "type": "bulleted_list_item",
-                           "bulleted_list_item": {"rich_text": [{"type": "text", "text": {"content": line[2:2000]}}]}})
+                           "bulleted_list_item": {"rich_text": parse_inline(line[2:2000])}})
         elif line.strip() in ("---", "***", "___"):
             blocks.append({"object": "block", "type": "divider", "divider": {}})
         elif line.strip():
             blocks.append({"object": "block", "type": "paragraph",
-                           "paragraph": {"rich_text": [{"type": "text", "text": {"content": line[:2000]}}]}})
+                           "paragraph": {"rich_text": parse_inline(line[:2000])}})
         i += 1
     return blocks[:100]
 
