@@ -6,6 +6,7 @@ on:
     paths:
       - '**/*.md'
       - '!README.md'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -27,3 +28,4 @@ jobs:
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          SYNC_ALL: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}

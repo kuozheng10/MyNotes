@@ -17,7 +17,15 @@ notion = Client(auth=NOTION_TOKEN)
 
 
 def get_changed_md_files():
-    """Get list of added/modified MD files in the last commit."""
+    """Get list of MD files to sync.
+    On workflow_dispatch (SYNC_ALL=true), returns all MD files.
+    On push, returns only files changed in last commit.
+    """
+    if os.environ.get("SYNC_ALL") == "true":
+        files = [str(p) for p in Path(".").rglob("*.md")
+                 if p.name != "README.md"]
+        return files
+
     result = subprocess.run(
         ["git", "diff", "--name-only", "--diff-filter=AM", "HEAD~1", "HEAD"],
         capture_output=True, text=True
