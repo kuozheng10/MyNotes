@@ -24,6 +24,13 @@ source: https://github.com/openai/codex-plugin-cc
 ```bash
 /plugin marketplace add openai/codex-plugin-cc
 /plugin install codex@openai-codex
+/reload-plugins
+/codex:setup
+```
+
+全域安裝 Codex CLI：
+```bash
+npm install -g @openai/codex
 ```
 
 ## 需求
