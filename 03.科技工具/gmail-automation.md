@@ -39,12 +39,13 @@ source: 自建
 | v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移（搜尋加 -in:inbox）|
 | v1.5 | 2026-03-30 | label 名稱加引號，修 `-` 被 Gmail 當成排除符號的 bug |
 | v1.6 | 2026-03-31 | BOT_TOKEN / CHAT_ID 改用 PropertiesService，不再明碼寫死 |
+| v1.7 | 2026-04-03 | 信用卡消費通知關鍵字補強；登入通知關鍵字補強；新增 trashOldNotifications()（15天~1年前通知信週日清除）；setupTriggers 加每週日 2am 觸發 |
 
-## 完整程式碼 v1.5
+## 完整程式碼 v1.7
 
 ```javascript
 // ========================================
-// Gmail 自動分類 v1.5
+// Gmail 自動分類 v1.7
 // ========================================
 
 var BOT_TOKEN = PropertiesService.getScriptProperties().getProperty("BOT_TOKEN");
@@ -56,7 +57,10 @@ var RULES = [
     senders: ["hsbc", "中國信託", "ctbcbank", "國泰世華", "cathaybk", "台新銀行", "taishinbank",
               "玉山銀行", "esunbank", "渣打銀行", "standardchartered", "line bank", "linebank",
               "將來銀行", "nextbank", "台北富邦", "fubon", "american express", "amex", "bitopro"],
-    subjects: ["帳單", "對帳單", "繳費通知", "信用卡", "扣款", "statement", "payment due"],
+    subjects: ["帳單", "對帳單", "繳費通知", "信用卡", "扣款", "statement", "payment due",
+               "消費通知", "消費提醒", "刷卡通知", "刷卡提醒", "刷卡成功", "消費明細",
+               "交易通知", "transaction alert", "spending alert", "purchase alert",
+               "消費紀錄", "帳務通知", "帳戶異動", "帳戶通知"],
     archiveReadDays: 3,
     archiveUnreadDays: null
   },
@@ -89,7 +93,7 @@ var RULES = [
     subjects: ["訂單確認", "出貨通知", "配送", "order confirmation", "shipped", "已出貨"],
     archiveReadDays: 1,
     archiveUnreadDays: 7,
-    deleteAfterDays: 14   // 超過 14 天移至垃圾筒
+    deleteAfterDays: 14
   },
   {
     label: "科技-訂閱",
@@ -104,13 +108,16 @@ var RULES = [
     subjects: ["每日摘要", "電子報", "newsletter", "daily digest", "週報"],
     archiveReadDays: 1,
     archiveUnreadDays: 3,
-    deleteAfterDays: 14   // 超過 14 天移至垃圾筒
+    deleteAfterDays: 14
   },
   {
     label: "待刪除",
     senders: [],
     subjects: ["已登入", "登入通知", "sign-in alert", "login alert", "security alert",
-               "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign"],
+               "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign",
+               "網路銀行登入", "網銀登入", "您的帳戶已登入", "帳號登入提醒",
+               "您已成功登入", "裝置驗證", "裝置登入", "新登入", "登入成功通知",
+               "您的帳號已於", "account login", "account sign-in", "logged in to"],
     archiveReadDays: 0,
     archiveUnreadDays: 0,
     markRead: true
@@ -123,10 +130,19 @@ var DELETE_RULES = [
   { label: "電子報-學習", days: 14 }
 ];
 
+// 定期大掃除：15天前～1年前的通知類郵件 → 直接丟垃圾桶
+var TRASH_QUERIES = [
+  'subject:("消費通知" OR "刷卡通知" OR "消費提醒" OR "刷卡成功" OR "交易通知" OR "transaction alert" OR "spending alert")',
+  'subject:("登入通知" OR "登入提醒" OR "網銀登入" OR "網路銀行登入" OR "sign-in alert" OR "login alert" OR "account login")',
+  'subject:("優惠活動" OR "限時特賣" OR "會員專屬" OR "折扣碼" OR "promo code" OR "special offer")',
+];
+
+// ========================================
+// 主程式：分類 + 歸檔（每天 8am / 8pm）
+// ========================================
 function processEmails() {
   var labels = ensureLabels();
   var now = new Date();
-  // 掃描範圍拉到 30 天，才能抓到超過 14 天待刪的舊信
   var threads = GmailApp.search("in:inbox newer_than:30d", 0, 200);
   var labelCount = {};
   var archivedCount = 0;
@@ -143,7 +159,6 @@ function processEmails() {
       var rule = RULES[i];
       if (!matchesRule(from, subject, rule)) continue;
 
-      // 只有尚未貼過這個 label 才計入統計（避免早晚 double count）
       if (labels[rule.label]) {
         var alreadyLabeled = thread.getLabels().some(function(l) {
           return l.getName() === rule.label;
@@ -176,8 +191,7 @@ function processEmails() {
     }
   });
 
-  // 掃描已歸檔（非 inbox）但超過 deleteAfterDays 的舊信 → 移至垃圾筒
-  // label 名稱加引號，避免 - 被 Gmail 當成排除符號
+  // 已歸檔超過 deleteAfterDays 的舊信 → 移至垃圾筒
   DELETE_RULES.forEach(function(item) {
     var oldThreads = GmailApp.search(
       "label:\"" + item.label + "\" older_than:" + item.days + "d -in:inbox -in:trash",
@@ -210,7 +224,29 @@ function processEmails() {
   Logger.log("processEmails 完成，歸檔 " + archivedCount + "，垃圾筒 " + trashedCount);
 }
 
+// ========================================
+// 定期大掃除：15天前 ～ 1年前通知信 → 垃圾桶（每週日 2am）
+// ========================================
+function trashOldNotifications() {
+  var trashedTotal = 0;
+
+  TRASH_QUERIES.forEach(function(baseQuery) {
+    var query = baseQuery + " older_than:15d newer_than:365d -in:trash";
+    var threads = GmailApp.search(query, 0, 200);
+    threads.forEach(function(t) { t.moveToTrash(); });
+    trashedTotal += threads.length;
+  });
+
+  var msg = "定期清理完成\n\n"
+          + "清理範圍：15天前～1年前通知信\n"
+          + "移入垃圾桶：" + trashedTotal + " 則對話";
+  sendTelegram(msg);
+  Logger.log("trashOldNotifications 完成，共移除 " + trashedTotal + " 則");
+}
+
+// ========================================
 // 每月 1 日：永久清除垃圾筒 30 天以上的郵件
+// ========================================
 function emptyTrash() {
   var token = ScriptApp.getOAuthToken();
   var threads = GmailApp.search("in:trash older_than:30d", 0, 500);
@@ -236,6 +272,9 @@ function emptyTrash() {
   Logger.log(msg);
 }
 
+// ========================================
+// 工具函數
+// ========================================
 function matchesRule(from, subject, rule) {
   var senderHit  = rule.senders.some(function(s)  { return from.indexOf(s.toLowerCase()) !== -1; });
   var subjectHit = rule.subjects.some(function(s) { return subject.indexOf(s.toLowerCase()) !== -1; });
@@ -264,20 +303,31 @@ function sendTelegram(text) {
   }
 }
 
+// ========================================
+// 設定觸發器（只需跑一次）
+// ========================================
 function setupTriggers() {
   ScriptApp.getProjectTriggers().forEach(function(t) {
     ScriptApp.deleteTrigger(t);
   });
 
+  // 每天 8am
   ScriptApp.newTrigger("processEmails")
     .timeBased().atHour(8).nearMinute(0).everyDays(1).create();
 
+  // 每天 8pm
   ScriptApp.newTrigger("processEmails")
     .timeBased().atHour(20).nearMinute(0).everyDays(1).create();
 
+  // 每週日凌晨 2am：清 15天~1年前通知信
+  ScriptApp.newTrigger("trashOldNotifications")
+    .timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(2).create();
+
+  // 每月 1 日凌晨 3am：永久清垃圾筒
   ScriptApp.newTrigger("emptyTrash")
     .timeBased().onMonthDay(1).atHour(3).create();
 
-  Logger.log("Triggers: processEmails(8am/8pm) + emptyTrash(每月1日3am)");
+  Logger.log("Triggers: processEmails(8am/8pm) + trashOldNotifications(每週日2am) + emptyTrash(每月1日3am)");
 }
+
 ```
