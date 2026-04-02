@@ -40,8 +40,9 @@ source: 自建
 | v1.5 | 2026-03-30 | label 名稱加引號，修 `-` 被 Gmail 當成排除符號的 bug |
 | v1.6 | 2026-03-31 | BOT_TOKEN / CHAT_ID 改用 PropertiesService，不再明碼寫死 |
 | v1.7 | 2026-04-03 | 信用卡消費通知關鍵字補強；登入通知關鍵字補強；新增 trashOldNotifications()（15天~1年前通知信週日清除）；setupTriggers 加每週日 2am 觸發 |
+| v1.8 | 2026-04-03 | 待刪除規則改為 trashImmediately，直接丟垃圾桶，不再貼 label |
 
-## 完整程式碼 v1.7
+## 完整程式碼 v1.8
 
 ```javascript
 // ========================================
@@ -111,16 +112,14 @@ var RULES = [
     deleteAfterDays: 14
   },
   {
-    label: "待刪除",
+    label: null,   // 不貼 label，直接丟垃圾桶
     senders: [],
     subjects: ["已登入", "登入通知", "sign-in alert", "login alert", "security alert",
                "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign",
                "網路銀行登入", "網銀登入", "您的帳戶已登入", "帳號登入提醒",
                "您已成功登入", "裝置驗證", "裝置登入", "新登入", "登入成功通知",
                "您的帳號已於", "account login", "account sign-in", "logged in to"],
-    archiveReadDays: 0,
-    archiveUnreadDays: 0,
-    markRead: true
+    trashImmediately: true
   }
 ];
 
@@ -159,7 +158,14 @@ function processEmails() {
       var rule = RULES[i];
       if (!matchesRule(from, subject, rule)) continue;
 
-      if (labels[rule.label]) {
+      // 直接丟垃圾桶（不貼 label）
+      if (rule.trashImmediately) {
+        thread.moveToTrash();
+        trashedCount++;
+        break;
+      }
+
+      if (rule.label && labels[rule.label]) {
         var alreadyLabeled = thread.getLabels().some(function(l) {
           return l.getName() === rule.label;
         });
@@ -284,6 +290,7 @@ function matchesRule(from, subject, rule) {
 function ensureLabels() {
   var map = {};
   RULES.forEach(function(rule) {
+    if (!rule.label) return;
     var lbl = GmailApp.getUserLabelByName(rule.label);
     if (!lbl) lbl = GmailApp.createLabel(rule.label);
     map[rule.label] = lbl;
