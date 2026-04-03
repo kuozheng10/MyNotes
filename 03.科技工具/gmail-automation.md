@@ -55,8 +55,9 @@ source: 自建
 | v1.8 | 2026-04-03 | 待刪除規則改為 trashImmediately，直接丟垃圾桶，不再貼 label |
 | v1.9 | 2026-04-03 | 丟垃圾桶前先移除所有 label（removeLabelsAndTrash helper） |
 | v2.0 | 2026-04-03 | 全面重寫：5 label 精簡設計、重要文件優先保護、cleanupInbox 大掃除、migrateLabels 遷移、未讀有寬限天數 |
+| v2.1 | 2026-04-03 | 修 thread.isStarred() 不存在錯誤，改用 isThreadStarred() 檢查 messages |
 
-## 完整程式碼 v2.0
+## 完整程式碼 v2.1
 
 ```javascript
 // ========================================
@@ -161,7 +162,7 @@ function processEmails() {
   var stats   = { labeled: 0, archived: 0, trashed: 0 };
 
   threads.forEach(function(thread) {
-    if (thread.isStarred()) return; // ⭐ 有星號：永遠不動
+    if (isThreadStarred(thread)) return; // ⭐ 有星號：永遠不動
 
     var firstMsg = thread.getMessages()[0];
     var from     = firstMsg.getFrom().toLowerCase();
@@ -222,7 +223,7 @@ function cleanupInbox() {
   var stats   = { skipped: 0, archived: 0, trashed: 0 };
 
   threads.forEach(function(thread) {
-    if (thread.isStarred()) { stats.skipped++; return; }
+    if (isThreadStarred(thread)) { stats.skipped++; return; }
 
     var firstMsg = thread.getMessages()[0];
     var from     = firstMsg.getFrom().toLowerCase();
@@ -342,6 +343,10 @@ function emptyTrash() {
 // ════════════════════════════════════════════════════════════════
 // 工具函數
 // ════════════════════════════════════════════════════════════════
+
+function isThreadStarred(thread) {
+  return thread.getMessages().some(function(m) { return m.isStarred(); });
+}
 
 function isImportant(subject) {
   return IMPORTANT_SUBJECTS.some(function(kw) {
