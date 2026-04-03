@@ -1,14 +1,15 @@
 ---
 title: "Gmail Automation - Google Apps Script"
 tags: [gmail, apps-script, automation, telegram]
-date: 2026-03-29
+date: 2026-04-03
 category: 03.科技工具
 source: 自建
 ---
 
 ## 摘要
 
-> Google Apps Script 自動分類 Gmail，依規則貼標籤 + 歸檔，每天早上 8 點 / 晚上 8 點執行，結果推送 Telegram。每月 1 日清除垃圾筒。
+> Google Apps Script 自動分類 Gmail。5 個 label、4 支函數，每天早晚自動跑。
+> 規格書：[gmail-automation-spec.md](gmail-automation-spec.md)
 
 ## 設定
 
@@ -16,17 +17,28 @@ source: 自建
 |------|-----|
 | 觸發時間 | 每日 08:00 / 20:00 |
 | 掃描範圍 | in:inbox newer_than:30d（最多 200 則）|
-| 舊信清理 | 購物-外送 / 電子報-學習 超過 14 天 → 移至垃圾筒 |
-| 垃圾筒清理 | 每月 1 日 03:00 永久刪除 30 天以上郵件 |
-| Telegram Bot | BOT_TOKEN / CHAT_ID 填在 script 頂部 |
+| 週清理 | 每週日 2am → 通知/促銷 15天~1年前 → trash |
+| 月清理 | 每月 1 日 3am → 垃圾桶永久刪除 30 天以上 |
+| Telegram Bot | BOT_TOKEN / CHAT_ID 存在 PropertiesService |
 
-## 部署步驟
+## Labels（5 個）
+
+| Label | 用途 | 處理 |
+|-------|------|------|
+| 重要文件 | 帳單/收據/確認書/保單/股息 | archive，永不 trash |
+| 銀行金融 | 銀行/信用卡通知 | 已讀 7 天→archive |
+| 購物旅遊 | 購物/旅遊通知 | 已讀 7 天→archive |
+| 電子報 | newsletter/週報 | 已讀 3 天→trash |
+| （無） | 登入/促銷/科技通知 | 快速 trash |
+
+## 部署步驟（第一次）
 
 1. 前往 [script.google.com](https://script.google.com)
-2. 進入專案 → 全選刪除 → 貼上下方程式碼
-3. 存檔
-4. 執行 `setupTriggers()` → 授權（會要求 Gmail 權限）
-5. 執行 `processEmails()` 測試
+2. 貼上完整程式碼
+3. 執行 `setupTriggers()` → 授權
+4. 執行 `migrateLabels()` → 舊 label 遷移
+5. 執行 `cleanupInbox()` → 一次性大掃除
+6. 完成，之後 processEmails() 每天自動跑
 
 ## 版本記錄
 
@@ -35,862 +47,346 @@ source: 自建
 | v1.0 | 2026-03-27 | 初版：規則分類 + OTP 推送 |
 | v1.1 | 2026-03-27 | 修 Telegram 推送格式 |
 | v1.2 | 2026-03-29 | 移除 OTP 功能；修 label double-count |
-| v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() 每月清除 |
-| v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移（搜尋加 -in:inbox）|
+| v1.3 | 2026-03-30 | 購物-外送/電子報-學習 超過 14 天移至垃圾筒；新增 emptyTrash() |
+| v1.4 | 2026-03-30 | inbox 不移垃圾筒；只有已歸檔的舊信才移 |
 | v1.5 | 2026-03-30 | label 名稱加引號，修 `-` 被 Gmail 當成排除符號的 bug |
-| v1.6 | 2026-03-31 | BOT_TOKEN / CHAT_ID 改用 PropertiesService，不再明碼寫死 |
-| v1.7 | 2026-04-03 | 信用卡消費通知關鍵字補強；登入通知關鍵字補強；新增 trashOldNotifications()（15天~1年前通知信週日清除）；setupTriggers 加每週日 2am 觸發 |
+| v1.6 | 2026-03-31 | BOT_TOKEN / CHAT_ID 改用 PropertiesService |
+| v1.7 | 2026-04-03 | 信用卡消費通知關鍵字補強；登入通知關鍵字補強；新增 trashOldNotifications() |
 | v1.8 | 2026-04-03 | 待刪除規則改為 trashImmediately，直接丟垃圾桶，不再貼 label |
 | v1.9 | 2026-04-03 | 丟垃圾桶前先移除所有 label（removeLabelsAndTrash helper） |
+| v2.0 | 2026-04-03 | 全面重寫：5 label 精簡設計、重要文件優先保護、cleanupInbox 大掃除、migrateLabels 遷移、未讀有寬限天數 |
 
-## 完整程式碼 v1.9
+## 完整程式碼 v2.0
 
 ```javascript
 // ========================================
-// Gmail 自動分類 v1.7
+// Gmail Automation v2.0
+// 規格書：~/Documents/GitHub/MyNotes/03.科技工具/gmail-automation-spec.md
+// 版本記錄：~/Documents/GitHub/MyNotes/03.科技工具/gmail-automation.md
+// 更新日期：2026-04-03
 // ========================================
 
 var BOT_TOKEN = PropertiesService.getScriptProperties().getProperty("BOT_TOKEN");
 var CHAT_ID   = PropertiesService.getScriptProperties().getProperty("CHAT_ID");
 
+// ── Label 定義（5 個）──────────────────────────────────────────
+var LABEL_IMPORTANT  = "重要文件";   // 帳單/收據/確認書，永不 trash
+var LABEL_BANKING    = "銀行金融";   // 銀行/信用卡通知
+var LABEL_SHOPPING   = "購物旅遊";   // 購物/旅遊通知
+var LABEL_NEWSLETTER = "電子報";     // 電子報/學習
+
+// ── 重要文件關鍵字（主旨符合 → 優先保護，永不 trash）──────────
+var IMPORTANT_SUBJECTS = [
+  "帳單", "對帳單", "發票", "收據", "確認書", "確認單", "繳費確認",
+  "訂單確認", "交易確認", "付款確認", "匯款", "出金", "入金",
+  "配息", "股息", "理賠", "保費", "保單",
+  "booking confirmation", "order confirmation", "payment confirmation",
+  "invoice", "receipt", "statement", "itinerary", "e-ticket"
+];
+
+// ── 分類規則 ────────────────────────────────────────────────────
+// 欄位說明：
+//   label            → 要貼的 label（null = 不貼）
+//   senders[]        → sender 包含其中任一
+//   subjects[]       → 主旨包含其中任一
+//   archiveReadDays  → 已讀 N 天後 archive
+//   archiveUnreadDays→ 未讀 N 天後 archive
+//   trashReadDays    → 已讀 N 天後 trash（與 archive 互斥）
+//   trashUnreadDays  → 未讀 N 天後 trash
 var RULES = [
   {
-    label: "銀行-信用卡",
-    senders: ["hsbc", "中國信託", "ctbcbank", "國泰世華", "cathaybk", "台新銀行", "taishinbank",
-              "玉山銀行", "esunbank", "渣打銀行", "standardchartered", "line bank", "linebank",
-              "將來銀行", "nextbank", "台北富邦", "fubon", "american express", "amex", "bitopro"],
-    subjects: ["帳單", "對帳單", "繳費通知", "信用卡", "扣款", "statement", "payment due",
-               "消費通知", "消費提醒", "刷卡通知", "刷卡提醒", "刷卡成功", "消費明細",
-               "交易通知", "transaction alert", "spending alert", "purchase alert",
-               "消費紀錄", "帳務通知", "帳戶異動", "帳戶通知"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "投資-證券",
-    senders: ["富邦證券", "firstrade", "安聯投信", "野村", "財報狗", "強基金"],
-    subjects: ["交易確認", "對帳", "配息", "淨值", "買進", "賣出"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "保險",
-    senders: ["三商美邦", "富邦產險", "凱基人壽", "國泰人壽"],
-    subjects: ["保費", "保單", "理賠", "繳費通知", "續保"],
+    // 銀行/信用卡「通知」（帳單已被 IMPORTANT_SUBJECTS 先攔）
+    label: LABEL_BANKING,
+    senders: ["hsbc", "ctbcbank", "cathaybk", "taishinbank", "esunbank",
+              "standardchartered", "linebank", "nextbank", "fubon", "amex", "bitopro"],
+    subjects: ["消費通知", "刷卡通知", "刷卡成功", "消費提醒", "帳戶通知",
+               "帳戶異動", "transaction alert", "spending alert", "purchase alert"],
     archiveReadDays: 7,
-    archiveUnreadDays: null
+    archiveUnreadDays: 14
   },
   {
-    label: "旅遊-訂房",
-    senders: ["skyscanner", "agoda", "trip.com", "intercontinental", "cathay pacific",
-              "じゃらん", "長榮航空", "eztravel", "i prefer", "small luxury hotels"],
-    subjects: ["訂房確認", "booking confirmation", "航班確認", "itinerary", "check-in"],
-    archiveReadDays: 1,
-    archiveUnreadDays: null
+    // 購物/外送通知
+    label: LABEL_SHOPPING,
+    senders: ["uber eats", "ubereats", "rakuten", "coupang", "costco", "蝦皮",
+              "shopback", "atmos", "星巴克", "starbucks", "樂天kobo", "kobo"],
+    subjects: ["出貨通知", "配送通知", "shipped", "已出貨", "到貨通知"],
+    archiveReadDays: 7,
+    archiveUnreadDays: 14
   },
   {
-    label: "購物-外送",
-    senders: ["uber eats", "ubereats", "rakuten", "coupang", "costco", "蝦皮", "shopback",
-              "atmos", "星巴克", "starbucks", "樂天kobo", "kobo"],
-    subjects: ["訂單確認", "出貨通知", "配送", "order confirmation", "shipped", "已出貨"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 7,
-    deleteAfterDays: 14
+    // 電子報/學習
+    label: LABEL_NEWSLETTER,
+    senders: ["it邦幫忙", "ithome", "商業周刊", "coursera", "udemy", "畫張圖", "accupass"],
+    subjects: ["電子報", "newsletter", "每日摘要", "daily digest", "週報"],
+    trashReadDays: 3,
+    trashUnreadDays: 7
   },
   {
-    label: "科技-訂閱",
-    senders: ["google", "github", "ollama", "anthropic", "claude", "asus"],
-    subjects: ["subscription", "invoice", "payment receipt", "訂閱", "發票", "receipt"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "電子報-學習",
-    senders: ["it邦幫忙", "ithome", "商業周刊", "coursera", "udemy", "畫張圖", "嘛賺金", "accupass"],
-    subjects: ["每日摘要", "電子報", "newsletter", "daily digest", "週報"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 3,
-    deleteAfterDays: 14
-  },
-  {
-    label: null,   // 不貼 label，直接丟垃圾桶
+    // 登入通知 → 快速清
+    label: null,
     senders: [],
     subjects: ["已登入", "登入通知", "sign-in alert", "login alert", "security alert",
-               "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign",
-               "網路銀行登入", "網銀登入", "您的帳戶已登入", "帳號登入提醒",
-               "您已成功登入", "裝置驗證", "裝置登入", "新登入", "登入成功通知",
-               "您的帳號已於", "account login", "account sign-in", "logged in to"],
-    trashImmediately: true
+               "new sign-in", "新裝置登入", "登入提醒", "網路銀行登入", "網銀登入",
+               "帳號登入", "裝置驗證", "account login", "account sign-in", "logged in to"],
+    trashReadDays: 1,
+    trashUnreadDays: 3
+  },
+  {
+    // 促銷/廣告
+    label: null,
+    senders: [],
+    subjects: ["優惠活動", "限時特賣", "會員專屬", "獨家優惠", "折扣碼",
+               "promo", "special offer", "limited time", "sale", "discount"],
+    trashReadDays: 3,
+    trashUnreadDays: 7
+  },
+  {
+    // GitHub/Vercel 等科技通知
+    label: null,
+    senders: ["github", "vercel", "noreply@github", "notifications@github"],
+    subjects: ["pushed to", "workflow run", "deployed", "build failed", "build passed",
+               "pull request", "merged", "opened an issue", "mentioned you", "review requested"],
+    trashReadDays: 1,
+    trashUnreadDays: 3
   }
 ];
 
-// 超過 deleteAfterDays 的 label 舊信（已歸檔）→ 移至垃圾筒
-var DELETE_RULES = [
-  { label: "購物-外送",  days: 14 },
-  { label: "電子報-學習", days: 14 }
-];
-
-// 定期大掃除：15天前～1年前的通知類郵件 → 直接丟垃圾桶
-var TRASH_QUERIES = [
-  'subject:("消費通知" OR "刷卡通知" OR "消費提醒" OR "刷卡成功" OR "交易通知" OR "transaction alert" OR "spending alert")',
-  'subject:("登入通知" OR "登入提醒" OR "網銀登入" OR "網路銀行登入" OR "sign-in alert" OR "login alert" OR "account login")',
-  'subject:("優惠活動" OR "限時特賣" OR "會員專屬" OR "折扣碼" OR "promo code" OR "special offer")',
-];
-
-// ========================================
-// 主程式：分類 + 歸檔（每天 8am / 8pm）
-// ========================================
+// ════════════════════════════════════════════════════════════════
+// ① processEmails — 每天 8am / 8pm
+// ════════════════════════════════════════════════════════════════
 function processEmails() {
-  var labels = ensureLabels();
-  var now = new Date();
+  var labels  = ensureLabels();
+  var now     = new Date();
   var threads = GmailApp.search("in:inbox newer_than:30d", 0, 200);
-  var labelCount = {};
-  var archivedCount = 0;
-  var trashedCount = 0;
+  var stats   = { labeled: 0, archived: 0, trashed: 0 };
 
   threads.forEach(function(thread) {
+    if (thread.isStarred()) return; // ⭐ 有星號：永遠不動
+
     var firstMsg = thread.getMessages()[0];
     var from     = firstMsg.getFrom().toLowerCase();
     var subject  = firstMsg.getSubject().toLowerCase();
     var isRead   = !thread.isUnread();
-    var ageDays  = (now - firstMsg.getDate()) / (1000 * 60 * 60 * 24);
+    var ageDays  = (now - firstMsg.getDate()) / 86400000;
 
+    // Step 1：重要文件？ → label + archive
+    if (isImportant(subject)) {
+      addLabelIfNew(thread, LABEL_IMPORTANT, labels, stats);
+      if ((isRead && ageDays >= 14) || ageDays >= 30) {
+        thread.moveToArchive(); stats.archived++;
+      }
+      return;
+    }
+
+    // Step 2：規則比對
     for (var i = 0; i < RULES.length; i++) {
       var rule = RULES[i];
       if (!matchesRule(from, subject, rule)) continue;
 
-      // 直接丟垃圾桶（不貼 label）
-      if (rule.trashImmediately) {
-        thread.moveToTrash();
-        trashedCount++;
-        break;
-      }
+      if (rule.label) addLabelIfNew(thread, rule.label, labels, stats);
 
-      if (rule.label && labels[rule.label]) {
-        var alreadyLabeled = thread.getLabels().some(function(l) {
-          return l.getName() === rule.label;
-        });
-        if (!alreadyLabeled) {
-          thread.addLabel(labels[rule.label]);
-          labelCount[rule.label] = (labelCount[rule.label] || 0) + 1;
-        }
+      if (rule.trashReadDays !== undefined) {
+        var shouldTrash = (isRead  && ageDays >= rule.trashReadDays) ||
+                          (!isRead && ageDays >= rule.trashUnreadDays);
+        if (shouldTrash) { removeLabelsAndTrash(thread); stats.trashed++; }
+      } else {
+        var shouldArchive = (isRead  && ageDays >= rule.archiveReadDays) ||
+                            (!isRead && ageDays >= rule.archiveUnreadDays);
+        if (shouldArchive) { thread.moveToArchive(); stats.archived++; }
       }
-
-      if (rule.markRead) {
-        thread.markRead();
-        isRead = true;
-      }
-
-      var shouldArchive = false;
-      if (rule.archiveUnreadDays === 0) {
-        shouldArchive = true;
-      } else if (isRead && rule.archiveReadDays !== null && ageDays >= rule.archiveReadDays) {
-        shouldArchive = true;
-      } else if (!isRead && rule.archiveUnreadDays !== null && ageDays >= rule.archiveUnreadDays) {
-        shouldArchive = true;
-      }
-
-      if (shouldArchive) {
-        thread.moveToArchive();
-        archivedCount++;
-      }
-      break;
+      return;
     }
-  });
 
-  // 已歸檔超過 deleteAfterDays 的舊信 → 移至垃圾筒
-  DELETE_RULES.forEach(function(item) {
-    var oldThreads = GmailApp.search(
-      "label:\"" + item.label + "\" older_than:" + item.days + "d -in:inbox -in:trash",
-      0, 200
-    );
-    oldThreads.forEach(function(thread) {
-      thread.moveToTrash();
-      trashedCount++;
-    });
+    // Step 3：兜底 — 無規則，30 天後 archive
+    if (ageDays >= 30) { thread.moveToArchive(); stats.archived++; }
   });
 
   var hour = now.getHours();
-  var timeLabel = hour < 12 ? "早上" : "晚上";
-  var labelLines = Object.keys(labelCount).map(function(k) {
-    return "  • " + k + "：" + labelCount[k] + " 封";
-  });
-
-  var msg = "Gmail 整理完成（" + timeLabel + "）\n\n"
-          + "掃描：" + threads.length + " 則對話\n"
-          + "歸檔：" + archivedCount + " 則\n"
-          + "移至垃圾筒：" + trashedCount + " 則\n";
-
-  if (labelLines.length > 0) {
-    msg += "標籤分類：\n" + labelLines.join("\n");
-  } else {
-    msg += "無新郵件需分類";
-  }
-
+  var msg = "Gmail 整理完成（" + (hour < 12 ? "早上" : "晚上") + "）\n\n"
+          + "掃描：" + threads.length + " 則\n"
+          + "標籤：" + stats.labeled + " 則\n"
+          + "歸檔：" + stats.archived + " 則\n"
+          + "垃圾桶：" + stats.trashed + " 則";
   sendTelegram(msg);
-  Logger.log("processEmails 完成，歸檔 " + archivedCount + "，垃圾筒 " + trashedCount);
+  Logger.log(msg);
 }
 
-// ========================================
-// 定期大掃除：15天前 ～ 1年前通知信 → 垃圾桶（每週日 2am）
-// ========================================
+// ════════════════════════════════════════════════════════════════
+// ② cleanupInbox — 一次性大掃除（手動跑一次）
+//    清理 90天前 ~ 1年內的 inbox
+// ════════════════════════════════════════════════════════════════
+function cleanupInbox() {
+  var labels  = ensureLabels();
+  var now     = new Date();
+  var threads = GmailApp.search("in:inbox older_than:90d newer_than:365d", 0, 500);
+  var stats   = { skipped: 0, archived: 0, trashed: 0 };
+
+  threads.forEach(function(thread) {
+    if (thread.isStarred()) { stats.skipped++; return; }
+
+    var firstMsg = thread.getMessages()[0];
+    var from     = firstMsg.getFrom().toLowerCase();
+    var subject  = firstMsg.getSubject().toLowerCase();
+
+    // 重要文件 → label + archive
+    if (isImportant(subject)) {
+      addLabelIfNew(thread, LABEL_IMPORTANT, labels, stats);
+      thread.moveToArchive(); stats.archived++;
+      return;
+    }
+
+    // 符合 trash 規則 → trash
+    var isTrashable = RULES.some(function(r) {
+      return r.trashReadDays !== undefined && matchesRule(from, subject, r);
+    });
+    if (isTrashable) {
+      removeLabelsAndTrash(thread); stats.trashed++;
+      return;
+    }
+
+    // 其他（含已有 label）→ archive
+    thread.moveToArchive(); stats.archived++;
+  });
+
+  var msg = "Inbox 大掃除完成\n\n"
+          + "掃描：" + threads.length + " 則（90天前~1年內）\n"
+          + "星號跳過：" + stats.skipped + " 則\n"
+          + "歸檔：" + stats.archived + " 則\n"
+          + "垃圾桶：" + stats.trashed + " 則";
+  sendTelegram(msg);
+  Logger.log(msg);
+}
+
+// ════════════════════════════════════════════════════════════════
+// ③ migrateLabels — 舊 label 遷移到新 label（手動跑一次）
+// ════════════════════════════════════════════════════════════════
+function migrateLabels() {
+  var migrationMap = [
+    { from: "銀行-信用卡",  to: LABEL_BANKING },
+    { from: "購物-外送",    to: LABEL_SHOPPING },
+    { from: "旅遊-訂房",    to: LABEL_SHOPPING },
+    { from: "電子報-學習",  to: LABEL_NEWSLETTER },
+    { from: "投資-證券",    to: LABEL_IMPORTANT },
+    { from: "保險",         to: LABEL_IMPORTANT },
+    { from: "科技-訂閱",    to: null },
+    { from: "待刪除",       to: null }
+  ];
+
+  var newLabels = ensureLabels();
+  var totalMoved = 0;
+
+  migrationMap.forEach(function(m) {
+    var oldLabel = GmailApp.getUserLabelByName(m.from);
+    if (!oldLabel) return;
+
+    var threads = GmailApp.search('label:"' + m.from + '"', 0, 500);
+    threads.forEach(function(thread) {
+      thread.removeLabel(oldLabel);
+      if (m.to && newLabels[m.to]) {
+        thread.addLabel(newLabels[m.to]);
+      }
+      totalMoved++;
+    });
+
+    // 刪除舊 label
+    deleteLabel(oldLabel.getId());
+    Logger.log("遷移完成：" + m.from + " → " + (m.to || "（刪除）") + "，" + threads.length + " 則");
+  });
+
+  sendTelegram("標籤遷移完成\n共處理：" + totalMoved + " 則對話");
+  Logger.log("migrateLabels 完成，共 " + totalMoved + " 則");
+}
+
+// ════════════════════════════════════════════════════════════════
+// ④ trashOldNotifications — 每週日 2am
+//    清理 15天前 ~ 1年內的通知/促銷類信件
+// ════════════════════════════════════════════════════════════════
+var TRASH_QUERIES = [
+  'subject:("消費通知" OR "刷卡通知" OR "消費提醒" OR "刷卡成功" OR "transaction alert")',
+  'subject:("登入通知" OR "登入提醒" OR "網銀登入" OR "sign-in alert" OR "login alert")',
+  'subject:("優惠活動" OR "限時特賣" OR "折扣碼" OR "promo code" OR "special offer")'
+];
+
 function trashOldNotifications() {
-  var trashedTotal = 0;
-
-  TRASH_QUERIES.forEach(function(baseQuery) {
-    var query = baseQuery + " older_than:15d newer_than:365d -in:trash";
-    var threads = GmailApp.search(query, 0, 200);
-    threads.forEach(function(t) { t.moveToTrash(); });
-    trashedTotal += threads.length;
+  var total = 0;
+  TRASH_QUERIES.forEach(function(q) {
+    var threads = GmailApp.search(q + " older_than:15d newer_than:365d -in:trash", 0, 200);
+    threads.forEach(function(t) { removeLabelsAndTrash(t); });
+    total += threads.length;
   });
-
-  var msg = "定期清理完成\n\n"
-          + "清理範圍：15天前～1年前通知信\n"
-          + "移入垃圾桶：" + trashedTotal + " 則對話";
-  sendTelegram(msg);
-  Logger.log("trashOldNotifications 完成，共移除 " + trashedTotal + " 則");
+  sendTelegram("定期清理完成\n移入垃圾桶：" + total + " 則（15天~1年前）");
+  Logger.log("trashOldNotifications 完成，共 " + total + " 則");
 }
 
-// ========================================
-// 每月 1 日：永久清除垃圾筒 30 天以上的郵件
-// ========================================
+// ════════════════════════════════════════════════════════════════
+// ⑤ emptyTrash — 每月 1 日 3am（永久刪除）
+// ════════════════════════════════════════════════════════════════
 function emptyTrash() {
-  var token = ScriptApp.getOAuthToken();
+  var token   = ScriptApp.getOAuthToken();
   var threads = GmailApp.search("in:trash older_than:30d", 0, 500);
-  var count = threads.length;
+  var count   = threads.length;
 
   threads.forEach(function(thread) {
     try {
       UrlFetchApp.fetch(
         "https://gmail.googleapis.com/gmail/v1/users/me/threads/" + thread.getId(),
-        {
-          method: "delete",
-          headers: { "Authorization": "Bearer " + token },
-          muteHttpExceptions: true
-        }
+        { method: "delete", headers: { "Authorization": "Bearer " + token }, muteHttpExceptions: true }
       );
-    } catch(e) {
-      Logger.log("永久刪除失敗: " + thread.getId() + " - " + e);
-    }
+    } catch(e) { Logger.log("永久刪除失敗: " + thread.getId() + " - " + e); }
   });
 
-  var msg = "垃圾筒清理完成（每月）\n永久刪除：" + count + " 則對話";
-  sendTelegram(msg);
-  Logger.log(msg);
+  sendTelegram("垃圾桶清理完成（每月）\n永久刪除：" + count + " 則");
+  Logger.log("emptyTrash 完成，刪除 " + count + " 則");
 }
 
-// ========================================
+// ════════════════════════════════════════════════════════════════
 // 工具函數
-// ========================================
+// ════════════════════════════════════════════════════════════════
+
+function isImportant(subject) {
+  return IMPORTANT_SUBJECTS.some(function(kw) {
+    return subject.indexOf(kw.toLowerCase()) !== -1;
+  });
+}
+
 function matchesRule(from, subject, rule) {
-  var senderHit  = rule.senders.some(function(s)  { return from.indexOf(s.toLowerCase()) !== -1; });
+  var senderHit  = rule.senders.some(function(s)  { return from.indexOf(s.toLowerCase())    !== -1; });
   var subjectHit = rule.subjects.some(function(s) { return subject.indexOf(s.toLowerCase()) !== -1; });
   return senderHit || subjectHit;
 }
 
-function ensureLabels() {
-  var map = {};
-  RULES.forEach(function(rule) {
-    if (!rule.label) return;
-    var lbl = GmailApp.getUserLabelByName(rule.label);
-    if (!lbl) lbl = GmailApp.createLabel(rule.label);
-    map[rule.label] = lbl;
-  });
-  return map;
-}
-
-function sendTelegram(text) {
-  try {
-    UrlFetchApp.fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage", {
-      method: "post",
-      contentType: "application/json",
-      payload: JSON.stringify({ chat_id: CHAT_ID, text: text, parse_mode: "Markdown" })
-    });
-  } catch(e) {
-    Logger.log("Telegram 推送失敗: " + e);
+function addLabelIfNew(thread, labelName, labels, stats) {
+  if (!labelName || !labels[labelName]) return;
+  var already = thread.getLabels().some(function(l) { return l.getName() === labelName; });
+  if (!already) {
+    thread.addLabel(labels[labelName]);
+    if (stats) stats.labeled++;
   }
 }
 
-// ========================================
-// 設定觸發器（只需跑一次）
-// ========================================
-function setupTriggers() {
-  ScriptApp.getProjectTriggers().forEach(function(t) {
-    ScriptApp.deleteTrigger(t);
-  });
-
-  // 每天 8am
-  ScriptApp.newTrigger("processEmails")
-    .timeBased().atHour(8).nearMinute(0).everyDays(1).create();
-
-  // 每天 8pm
-  ScriptApp.newTrigger("processEmails")
-    .timeBased().atHour(20).nearMinute(0).everyDays(1).create();
-
-  // 每週日凌晨 2am：清 15天~1年前通知信
-  ScriptApp.newTrigger("trashOldNotifications")
-    .timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(2).create();
-
-  // 每月 1 日凌晨 3am：永久清垃圾筒
-  ScriptApp.newTrigger("emptyTrash")
-    .timeBased().onMonthDay(1).atHour(3).create();
-
-  Logger.log("Triggers: processEmails(8am/8pm) + trashOldNotifications(每週日2am) + emptyTrash(每月1日3am)");
-}
-
-``````javascript
-// ========================================
-// Gmail 自動分類 v1.7
-// ========================================
-
-var BOT_TOKEN = PropertiesService.getScriptProperties().getProperty("BOT_TOKEN");
-var CHAT_ID   = PropertiesService.getScriptProperties().getProperty("CHAT_ID");
-
-var RULES = [
-  {
-    label: "銀行-信用卡",
-    senders: ["hsbc", "中國信託", "ctbcbank", "國泰世華", "cathaybk", "台新銀行", "taishinbank",
-              "玉山銀行", "esunbank", "渣打銀行", "standardchartered", "line bank", "linebank",
-              "將來銀行", "nextbank", "台北富邦", "fubon", "american express", "amex", "bitopro"],
-    subjects: ["帳單", "對帳單", "繳費通知", "信用卡", "扣款", "statement", "payment due",
-               "消費通知", "消費提醒", "刷卡通知", "刷卡提醒", "刷卡成功", "消費明細",
-               "交易通知", "transaction alert", "spending alert", "purchase alert",
-               "消費紀錄", "帳務通知", "帳戶異動", "帳戶通知"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "投資-證券",
-    senders: ["富邦證券", "firstrade", "安聯投信", "野村", "財報狗", "強基金"],
-    subjects: ["交易確認", "對帳", "配息", "淨值", "買進", "賣出"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "保險",
-    senders: ["三商美邦", "富邦產險", "凱基人壽", "國泰人壽"],
-    subjects: ["保費", "保單", "理賠", "繳費通知", "續保"],
-    archiveReadDays: 7,
-    archiveUnreadDays: null
-  },
-  {
-    label: "旅遊-訂房",
-    senders: ["skyscanner", "agoda", "trip.com", "intercontinental", "cathay pacific",
-              "じゃらん", "長榮航空", "eztravel", "i prefer", "small luxury hotels"],
-    subjects: ["訂房確認", "booking confirmation", "航班確認", "itinerary", "check-in"],
-    archiveReadDays: 1,
-    archiveUnreadDays: null
-  },
-  {
-    label: "購物-外送",
-    senders: ["uber eats", "ubereats", "rakuten", "coupang", "costco", "蝦皮", "shopback",
-              "atmos", "星巴克", "starbucks", "樂天kobo", "kobo"],
-    subjects: ["訂單確認", "出貨通知", "配送", "order confirmation", "shipped", "已出貨"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 7,
-    deleteAfterDays: 14
-  },
-  {
-    label: "科技-訂閱",
-    senders: ["google", "github", "ollama", "anthropic", "claude", "asus"],
-    subjects: ["subscription", "invoice", "payment receipt", "訂閱", "發票", "receipt"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "電子報-學習",
-    senders: ["it邦幫忙", "ithome", "商業周刊", "coursera", "udemy", "畫張圖", "嘛賺金", "accupass"],
-    subjects: ["每日摘要", "電子報", "newsletter", "daily digest", "週報"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 3,
-    deleteAfterDays: 14
-  },
-  {
-    label: null,   // 不貼 label，直接丟垃圾桶
-    senders: [],
-    subjects: ["已登入", "登入通知", "sign-in alert", "login alert", "security alert",
-               "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign",
-               "網路銀行登入", "網銀登入", "您的帳戶已登入", "帳號登入提醒",
-               "您已成功登入", "裝置驗證", "裝置登入", "新登入", "登入成功通知",
-               "您的帳號已於", "account login", "account sign-in", "logged in to"],
-    trashImmediately: true
-  }
-];
-
-// 超過 deleteAfterDays 的 label 舊信（已歸檔）→ 移至垃圾筒
-var DELETE_RULES = [
-  { label: "購物-外送",  days: 14 },
-  { label: "電子報-學習", days: 14 }
-];
-
-// 定期大掃除：15天前～1年前的通知類郵件 → 直接丟垃圾桶
-var TRASH_QUERIES = [
-  'subject:("消費通知" OR "刷卡通知" OR "消費提醒" OR "刷卡成功" OR "交易通知" OR "transaction alert" OR "spending alert")',
-  'subject:("登入通知" OR "登入提醒" OR "網銀登入" OR "網路銀行登入" OR "sign-in alert" OR "login alert" OR "account login")',
-  'subject:("優惠活動" OR "限時特賣" OR "會員專屬" OR "折扣碼" OR "promo code" OR "special offer")',
-];
-
-// ========================================
-// 主程式：分類 + 歸檔（每天 8am / 8pm）
-// ========================================
-function processEmails() {
-  var labels = ensureLabels();
-  var now = new Date();
-  var threads = GmailApp.search("in:inbox newer_than:30d", 0, 200);
-  var labelCount = {};
-  var archivedCount = 0;
-  var trashedCount = 0;
-
-  threads.forEach(function(thread) {
-    var firstMsg = thread.getMessages()[0];
-    var from     = firstMsg.getFrom().toLowerCase();
-    var subject  = firstMsg.getSubject().toLowerCase();
-    var isRead   = !thread.isUnread();
-    var ageDays  = (now - firstMsg.getDate()) / (1000 * 60 * 60 * 24);
-
-    for (var i = 0; i < RULES.length; i++) {
-      var rule = RULES[i];
-      if (!matchesRule(from, subject, rule)) continue;
-
-      // 直接丟垃圾桶（不貼 label，移除現有標籤）
-      if (rule.trashImmediately) {
-        removeLabelsAndTrash(thread);
-        trashedCount++;
-        break;
-      }
-
-      if (rule.label && labels[rule.label]) {
-        var alreadyLabeled = thread.getLabels().some(function(l) {
-          return l.getName() === rule.label;
-        });
-        if (!alreadyLabeled) {
-          thread.addLabel(labels[rule.label]);
-          labelCount[rule.label] = (labelCount[rule.label] || 0) + 1;
-        }
-      }
-
-      if (rule.markRead) {
-        thread.markRead();
-        isRead = true;
-      }
-
-      var shouldArchive = false;
-      if (rule.archiveUnreadDays === 0) {
-        shouldArchive = true;
-      } else if (isRead && rule.archiveReadDays !== null && ageDays >= rule.archiveReadDays) {
-        shouldArchive = true;
-      } else if (!isRead && rule.archiveUnreadDays !== null && ageDays >= rule.archiveUnreadDays) {
-        shouldArchive = true;
-      }
-
-      if (shouldArchive) {
-        thread.moveToArchive();
-        archivedCount++;
-      }
-      break;
-    }
-  });
-
-  // 已歸檔超過 deleteAfterDays 的舊信 → 移至垃圾筒
-  DELETE_RULES.forEach(function(item) {
-    var oldThreads = GmailApp.search(
-      "label:\"" + item.label + "\" older_than:" + item.days + "d -in:inbox -in:trash",
-      0, 200
-    );
-    oldThreads.forEach(function(thread) {
-      removeLabelsAndTrash(thread);
-      trashedCount++;
-    });
-  });
-
-  var hour = now.getHours();
-  var timeLabel = hour < 12 ? "早上" : "晚上";
-  var labelLines = Object.keys(labelCount).map(function(k) {
-    return "  • " + k + "：" + labelCount[k] + " 封";
-  });
-
-  var msg = "Gmail 整理完成（" + timeLabel + "）\n\n"
-          + "掃描：" + threads.length + " 則對話\n"
-          + "歸檔：" + archivedCount + " 則\n"
-          + "移至垃圾筒：" + trashedCount + " 則\n";
-
-  if (labelLines.length > 0) {
-    msg += "標籤分類：\n" + labelLines.join("\n");
-  } else {
-    msg += "無新郵件需分類";
-  }
-
-  sendTelegram(msg);
-  Logger.log("processEmails 完成，歸檔 " + archivedCount + "，垃圾筒 " + trashedCount);
-}
-
-// ========================================
-// 定期大掃除：15天前 ～ 1年前通知信 → 垃圾桶（每週日 2am）
-// ========================================
-function trashOldNotifications() {
-  var trashedTotal = 0;
-
-  TRASH_QUERIES.forEach(function(baseQuery) {
-    var query = baseQuery + " older_than:15d newer_than:365d -in:trash";
-    var threads = GmailApp.search(query, 0, 200);
-    threads.forEach(function(t) { removeLabelsAndTrash(t); });
-    trashedTotal += threads.length;
-  });
-
-  var msg = "定期清理完成\n\n"
-          + "清理範圍：15天前～1年前通知信\n"
-          + "移入垃圾桶：" + trashedTotal + " 則對話";
-  sendTelegram(msg);
-  Logger.log("trashOldNotifications 完成，共移除 " + trashedTotal + " 則");
-}
-
-// ========================================
-// 每月 1 日：永久清除垃圾筒 30 天以上的郵件
-// ========================================
-function emptyTrash() {
-  var token = ScriptApp.getOAuthToken();
-  var threads = GmailApp.search("in:trash older_than:30d", 0, 500);
-  var count = threads.length;
-
-  threads.forEach(function(thread) {
-    try {
-      UrlFetchApp.fetch(
-        "https://gmail.googleapis.com/gmail/v1/users/me/threads/" + thread.getId(),
-        {
-          method: "delete",
-          headers: { "Authorization": "Bearer " + token },
-          muteHttpExceptions: true
-        }
-      );
-    } catch(e) {
-      Logger.log("永久刪除失敗: " + thread.getId() + " - " + e);
-    }
-  });
-
-  var msg = "垃圾筒清理完成（每月）\n永久刪除：" + count + " 則對話";
-  sendTelegram(msg);
-  Logger.log(msg);
-}
-
-// ========================================
-// 工具函數
-// ========================================
-// 移除所有標籤再丟垃圾桶
 function removeLabelsAndTrash(thread) {
-  thread.getLabels().forEach(function(lbl) {
-    thread.removeLabel(lbl);
-  });
+  thread.getLabels().forEach(function(lbl) { thread.removeLabel(lbl); });
   thread.moveToTrash();
 }
 
-function matchesRule(from, subject, rule) {
-  var senderHit  = rule.senders.some(function(s)  { return from.indexOf(s.toLowerCase()) !== -1; });
-  var subjectHit = rule.subjects.some(function(s) { return subject.indexOf(s.toLowerCase()) !== -1; });
-  return senderHit || subjectHit;
-}
-
 function ensureLabels() {
   var map = {};
-  RULES.forEach(function(rule) {
-    if (!rule.label) return;
-    var lbl = GmailApp.getUserLabelByName(rule.label);
-    if (!lbl) lbl = GmailApp.createLabel(rule.label);
-    map[rule.label] = lbl;
+  [LABEL_IMPORTANT, LABEL_BANKING, LABEL_SHOPPING, LABEL_NEWSLETTER].forEach(function(name) {
+    var lbl = GmailApp.getUserLabelByName(name);
+    if (!lbl) lbl = GmailApp.createLabel(name);
+    map[name] = lbl;
   });
   return map;
 }
 
-function sendTelegram(text) {
+function deleteLabel(labelId) {
   try {
-    UrlFetchApp.fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage", {
-      method: "post",
-      contentType: "application/json",
-      payload: JSON.stringify({ chat_id: CHAT_ID, text: text, parse_mode: "Markdown" })
-    });
-  } catch(e) {
-    Logger.log("Telegram 推送失敗: " + e);
-  }
-}
-
-// ========================================
-// 設定觸發器（只需跑一次）
-// ========================================
-function setupTriggers() {
-  ScriptApp.getProjectTriggers().forEach(function(t) {
-    ScriptApp.deleteTrigger(t);
-  });
-
-  // 每天 8am
-  ScriptApp.newTrigger("processEmails")
-    .timeBased().atHour(8).nearMinute(0).everyDays(1).create();
-
-  // 每天 8pm
-  ScriptApp.newTrigger("processEmails")
-    .timeBased().atHour(20).nearMinute(0).everyDays(1).create();
-
-  // 每週日凌晨 2am：清 15天~1年前通知信
-  ScriptApp.newTrigger("trashOldNotifications")
-    .timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(2).create();
-
-  // 每月 1 日凌晨 3am：永久清垃圾筒
-  ScriptApp.newTrigger("emptyTrash")
-    .timeBased().onMonthDay(1).atHour(3).create();
-
-  Logger.log("Triggers: processEmails(8am/8pm) + trashOldNotifications(每週日2am) + emptyTrash(每月1日3am)");
-}
-
-```javascript
-// ========================================
-// Gmail 自動分類 v1.7
-// ========================================
-
-var BOT_TOKEN = PropertiesService.getScriptProperties().getProperty("BOT_TOKEN");
-var CHAT_ID   = PropertiesService.getScriptProperties().getProperty("CHAT_ID");
-
-var RULES = [
-  {
-    label: "銀行-信用卡",
-    senders: ["hsbc", "中國信託", "ctbcbank", "國泰世華", "cathaybk", "台新銀行", "taishinbank",
-              "玉山銀行", "esunbank", "渣打銀行", "standardchartered", "line bank", "linebank",
-              "將來銀行", "nextbank", "台北富邦", "fubon", "american express", "amex", "bitopro"],
-    subjects: ["帳單", "對帳單", "繳費通知", "信用卡", "扣款", "statement", "payment due",
-               "消費通知", "消費提醒", "刷卡通知", "刷卡提醒", "刷卡成功", "消費明細",
-               "交易通知", "transaction alert", "spending alert", "purchase alert",
-               "消費紀錄", "帳務通知", "帳戶異動", "帳戶通知"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "投資-證券",
-    senders: ["富邦證券", "firstrade", "安聯投信", "野村", "財報狗", "強基金"],
-    subjects: ["交易確認", "對帳", "配息", "淨值", "買進", "賣出"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "保險",
-    senders: ["三商美邦", "富邦產險", "凱基人壽", "國泰人壽"],
-    subjects: ["保費", "保單", "理賠", "繳費通知", "續保"],
-    archiveReadDays: 7,
-    archiveUnreadDays: null
-  },
-  {
-    label: "旅遊-訂房",
-    senders: ["skyscanner", "agoda", "trip.com", "intercontinental", "cathay pacific",
-              "じゃらん", "長榮航空", "eztravel", "i prefer", "small luxury hotels"],
-    subjects: ["訂房確認", "booking confirmation", "航班確認", "itinerary", "check-in"],
-    archiveReadDays: 1,
-    archiveUnreadDays: null
-  },
-  {
-    label: "購物-外送",
-    senders: ["uber eats", "ubereats", "rakuten", "coupang", "costco", "蝦皮", "shopback",
-              "atmos", "星巴克", "starbucks", "樂天kobo", "kobo"],
-    subjects: ["訂單確認", "出貨通知", "配送", "order confirmation", "shipped", "已出貨"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 7,
-    deleteAfterDays: 14
-  },
-  {
-    label: "科技-訂閱",
-    senders: ["google", "github", "ollama", "anthropic", "claude", "asus"],
-    subjects: ["subscription", "invoice", "payment receipt", "訂閱", "發票", "receipt"],
-    archiveReadDays: 3,
-    archiveUnreadDays: null
-  },
-  {
-    label: "電子報-學習",
-    senders: ["it邦幫忙", "ithome", "商業周刊", "coursera", "udemy", "畫張圖", "嘛賺金", "accupass"],
-    subjects: ["每日摘要", "電子報", "newsletter", "daily digest", "週報"],
-    archiveReadDays: 1,
-    archiveUnreadDays: 3,
-    deleteAfterDays: 14
-  },
-  {
-    label: null,   // 不貼 label，直接丟垃圾桶
-    senders: [],
-    subjects: ["已登入", "登入通知", "sign-in alert", "login alert", "security alert",
-               "new sign-in", "新裝置登入", "登入提醒", "異常登入", "suspicious sign",
-               "網路銀行登入", "網銀登入", "您的帳戶已登入", "帳號登入提醒",
-               "您已成功登入", "裝置驗證", "裝置登入", "新登入", "登入成功通知",
-               "您的帳號已於", "account login", "account sign-in", "logged in to"],
-    trashImmediately: true
-  }
-];
-
-// 超過 deleteAfterDays 的 label 舊信（已歸檔）→ 移至垃圾筒
-var DELETE_RULES = [
-  { label: "購物-外送",  days: 14 },
-  { label: "電子報-學習", days: 14 }
-];
-
-// 定期大掃除：15天前～1年前的通知類郵件 → 直接丟垃圾桶
-var TRASH_QUERIES = [
-  'subject:("消費通知" OR "刷卡通知" OR "消費提醒" OR "刷卡成功" OR "交易通知" OR "transaction alert" OR "spending alert")',
-  'subject:("登入通知" OR "登入提醒" OR "網銀登入" OR "網路銀行登入" OR "sign-in alert" OR "login alert" OR "account login")',
-  'subject:("優惠活動" OR "限時特賣" OR "會員專屬" OR "折扣碼" OR "promo code" OR "special offer")',
-];
-
-// ========================================
-// 主程式：分類 + 歸檔（每天 8am / 8pm）
-// ========================================
-function processEmails() {
-  var labels = ensureLabels();
-  var now = new Date();
-  var threads = GmailApp.search("in:inbox newer_than:30d", 0, 200);
-  var labelCount = {};
-  var archivedCount = 0;
-  var trashedCount = 0;
-
-  threads.forEach(function(thread) {
-    var firstMsg = thread.getMessages()[0];
-    var from     = firstMsg.getFrom().toLowerCase();
-    var subject  = firstMsg.getSubject().toLowerCase();
-    var isRead   = !thread.isUnread();
-    var ageDays  = (now - firstMsg.getDate()) / (1000 * 60 * 60 * 24);
-
-    for (var i = 0; i < RULES.length; i++) {
-      var rule = RULES[i];
-      if (!matchesRule(from, subject, rule)) continue;
-
-      // 直接丟垃圾桶（不貼 label）
-      if (rule.trashImmediately) {
-        thread.moveToTrash();
-        trashedCount++;
-        break;
-      }
-
-      if (rule.label && labels[rule.label]) {
-        var alreadyLabeled = thread.getLabels().some(function(l) {
-          return l.getName() === rule.label;
-        });
-        if (!alreadyLabeled) {
-          thread.addLabel(labels[rule.label]);
-          labelCount[rule.label] = (labelCount[rule.label] || 0) + 1;
-        }
-      }
-
-      if (rule.markRead) {
-        thread.markRead();
-        isRead = true;
-      }
-
-      var shouldArchive = false;
-      if (rule.archiveUnreadDays === 0) {
-        shouldArchive = true;
-      } else if (isRead && rule.archiveReadDays !== null && ageDays >= rule.archiveReadDays) {
-        shouldArchive = true;
-      } else if (!isRead && rule.archiveUnreadDays !== null && ageDays >= rule.archiveUnreadDays) {
-        shouldArchive = true;
-      }
-
-      if (shouldArchive) {
-        thread.moveToArchive();
-        archivedCount++;
-      }
-      break;
-    }
-  });
-
-  // 已歸檔超過 deleteAfterDays 的舊信 → 移至垃圾筒
-  DELETE_RULES.forEach(function(item) {
-    var oldThreads = GmailApp.search(
-      "label:\"" + item.label + "\" older_than:" + item.days + "d -in:inbox -in:trash",
-      0, 200
+    var token = ScriptApp.getOAuthToken();
+    UrlFetchApp.fetch(
+      "https://gmail.googleapis.com/gmail/v1/users/me/labels/" + labelId,
+      { method: "delete", headers: { "Authorization": "Bearer " + token }, muteHttpExceptions: true }
     );
-    oldThreads.forEach(function(thread) {
-      thread.moveToTrash();
-      trashedCount++;
-    });
-  });
-
-  var hour = now.getHours();
-  var timeLabel = hour < 12 ? "早上" : "晚上";
-  var labelLines = Object.keys(labelCount).map(function(k) {
-    return "  • " + k + "：" + labelCount[k] + " 封";
-  });
-
-  var msg = "Gmail 整理完成（" + timeLabel + "）\n\n"
-          + "掃描：" + threads.length + " 則對話\n"
-          + "歸檔：" + archivedCount + " 則\n"
-          + "移至垃圾筒：" + trashedCount + " 則\n";
-
-  if (labelLines.length > 0) {
-    msg += "標籤分類：\n" + labelLines.join("\n");
-  } else {
-    msg += "無新郵件需分類";
-  }
-
-  sendTelegram(msg);
-  Logger.log("processEmails 完成，歸檔 " + archivedCount + "，垃圾筒 " + trashedCount);
-}
-
-// ========================================
-// 定期大掃除：15天前 ～ 1年前通知信 → 垃圾桶（每週日 2am）
-// ========================================
-function trashOldNotifications() {
-  var trashedTotal = 0;
-
-  TRASH_QUERIES.forEach(function(baseQuery) {
-    var query = baseQuery + " older_than:15d newer_than:365d -in:trash";
-    var threads = GmailApp.search(query, 0, 200);
-    threads.forEach(function(t) { t.moveToTrash(); });
-    trashedTotal += threads.length;
-  });
-
-  var msg = "定期清理完成\n\n"
-          + "清理範圍：15天前～1年前通知信\n"
-          + "移入垃圾桶：" + trashedTotal + " 則對話";
-  sendTelegram(msg);
-  Logger.log("trashOldNotifications 完成，共移除 " + trashedTotal + " 則");
-}
-
-// ========================================
-// 每月 1 日：永久清除垃圾筒 30 天以上的郵件
-// ========================================
-function emptyTrash() {
-  var token = ScriptApp.getOAuthToken();
-  var threads = GmailApp.search("in:trash older_than:30d", 0, 500);
-  var count = threads.length;
-
-  threads.forEach(function(thread) {
-    try {
-      UrlFetchApp.fetch(
-        "https://gmail.googleapis.com/gmail/v1/users/me/threads/" + thread.getId(),
-        {
-          method: "delete",
-          headers: { "Authorization": "Bearer " + token },
-          muteHttpExceptions: true
-        }
-      );
-    } catch(e) {
-      Logger.log("永久刪除失敗: " + thread.getId() + " - " + e);
-    }
-  });
-
-  var msg = "垃圾筒清理完成（每月）\n永久刪除：" + count + " 則對話";
-  sendTelegram(msg);
-  Logger.log(msg);
-}
-
-// ========================================
-// 工具函數
-// ========================================
-function matchesRule(from, subject, rule) {
-  var senderHit  = rule.senders.some(function(s)  { return from.indexOf(s.toLowerCase()) !== -1; });
-  var subjectHit = rule.subjects.some(function(s) { return subject.indexOf(s.toLowerCase()) !== -1; });
-  return senderHit || subjectHit;
-}
-
-function ensureLabels() {
-  var map = {};
-  RULES.forEach(function(rule) {
-    if (!rule.label) return;
-    var lbl = GmailApp.getUserLabelByName(rule.label);
-    if (!lbl) lbl = GmailApp.createLabel(rule.label);
-    map[rule.label] = lbl;
-  });
-  return map;
+  } catch(e) { Logger.log("Label 刪除失敗: " + labelId + " - " + e); }
 }
 
 function sendTelegram(text) {
@@ -898,38 +394,27 @@ function sendTelegram(text) {
     UrlFetchApp.fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage", {
       method: "post",
       contentType: "application/json",
-      payload: JSON.stringify({ chat_id: CHAT_ID, text: text, parse_mode: "Markdown" })
+      payload: JSON.stringify({ chat_id: CHAT_ID, text: text })
     });
-  } catch(e) {
-    Logger.log("Telegram 推送失敗: " + e);
-  }
+  } catch(e) { Logger.log("Telegram 推送失敗: " + e); }
 }
 
-// ========================================
-// 設定觸發器（只需跑一次）
-// ========================================
+// ════════════════════════════════════════════════════════════════
+// setupTriggers — 只跑一次
+// ════════════════════════════════════════════════════════════════
 function setupTriggers() {
-  ScriptApp.getProjectTriggers().forEach(function(t) {
-    ScriptApp.deleteTrigger(t);
-  });
+  ScriptApp.getProjectTriggers().forEach(function(t) { ScriptApp.deleteTrigger(t); });
 
-  // 每天 8am
   ScriptApp.newTrigger("processEmails")
     .timeBased().atHour(8).nearMinute(0).everyDays(1).create();
-
-  // 每天 8pm
   ScriptApp.newTrigger("processEmails")
     .timeBased().atHour(20).nearMinute(0).everyDays(1).create();
-
-  // 每週日凌晨 2am：清 15天~1年前通知信
   ScriptApp.newTrigger("trashOldNotifications")
     .timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(2).create();
-
-  // 每月 1 日凌晨 3am：永久清垃圾筒
   ScriptApp.newTrigger("emptyTrash")
     .timeBased().onMonthDay(1).atHour(3).create();
 
-  Logger.log("Triggers: processEmails(8am/8pm) + trashOldNotifications(每週日2am) + emptyTrash(每月1日3am)");
+  Logger.log("Triggers: processEmails(8am/8pm) + trashOldNotifications(週日2am) + emptyTrash(月1日3am)");
 }
 
 ```
