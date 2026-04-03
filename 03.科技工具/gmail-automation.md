@@ -56,8 +56,9 @@ source: 自建
 | v1.9 | 2026-04-03 | 丟垃圾桶前先移除所有 label（removeLabelsAndTrash helper） |
 | v2.0 | 2026-04-03 | 全面重寫：5 label 精簡設計、重要文件優先保護、cleanupInbox 大掃除、migrateLabels 遷移、未讀有寬限天數 |
 | v2.1 | 2026-04-03 | 修 thread.isStarred() 不存在錯誤，改用 isThreadStarred() 檢查 messages |
+| v2.2 | 2026-04-03 | 新增 deleteEmptyLabels()，自動掃描並刪除空標籤 |
 
-## 完整程式碼 v2.1
+## 完整程式碼 v2.2
 
 ```javascript
 // ========================================
@@ -402,6 +403,30 @@ function sendTelegram(text) {
       payload: JSON.stringify({ chat_id: CHAT_ID, text: text })
     });
   } catch(e) { Logger.log("Telegram 推送失敗: " + e); }
+}
+
+// ════════════════════════════════════════════════════════════════
+// deleteEmptyLabels — 刪除所有空 label（手動跑一次）
+// ════════════════════════════════════════════════════════════════
+function deleteEmptyLabels() {
+  var token  = ScriptApp.getOAuthToken();
+  var labels = GmailApp.getUserLabels();
+  var deleted = [];
+
+  labels.forEach(function(label) {
+    // 搜尋此 label 下是否有任何信（含垃圾桶）
+    var threads = GmailApp.search('label:"' + label.getName() + '"', 0, 1);
+    if (threads.length === 0) {
+      deleted.push(label.getName());
+      deleteLabel(label.getId());
+    }
+  });
+
+  var msg = deleted.length > 0
+    ? "空標籤已刪除：\n" + deleted.map(function(n) { return "• " + n; }).join("\n")
+    : "沒有空標籤需要刪除";
+  sendTelegram(msg);
+  Logger.log(msg);
 }
 
 // ════════════════════════════════════════════════════════════════
