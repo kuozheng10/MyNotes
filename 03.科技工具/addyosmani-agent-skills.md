@@ -44,6 +44,25 @@ git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/agent-skil
 
 其餘（browser-testing, CI/CD, deprecation）派哥目前規模用不到。
 
+## 設計亮點（值得學的機制）
+
+### Anti-rationalization table
+每個 skill 都列出 AI 常用的偷懶藉口 + 反駁論點：
+- "I'll add tests later" → 「你不會，而且事後的測試通常測實作而非行為」
+- "This is simple enough to skip the spec" → 「簡單任務不需要長 spec，但仍需要 acceptance criteria」
+這些直接在 prompt 層面堵死借口，不給 agent 繞路空間。
+
+### Agent personas（multi-model review）
+內建三個角色：
+- `code-reviewer`：程式碼品質審查
+- `test-engineer`：測試完整性
+- `security-auditor`：安全漏洞掃描
+
+可以一個 model 寫 code，另一個用 code-reviewer persona 來 review，第三個跑 security audit。
+
+### Verification checklist（DoD 風格）
+每個 skill 結尾要求可驗證的證據（測試結果、build output、截圖），不是空的勾選框，而是要求有實際輸出才算通過。
+
 ## vs gstack
 
 - gstack：/review /ship 輕量快速
