@@ -6,33 +6,33 @@ category: 03.科技工具
 source: Telegram 分享
 ---
 
-## 核心論點
+## 一句話核心
 
-> 現在超級個體的 AI 運作邏輯，放進企業規模就是規劃、管理的挑戰。
+> 超級個體的 AI 運作邏輯放大到企業，就會產生 4 種新職能需求。技術會換代，但概念和職能不變。
 
-## 預測出現的職務
+## 4 個新職務
 
-| 職務 | 負責內容 |
-|------|----------|
-| **Cowork 管理師** | 導入、建制、管理 HR/行政部門的 AI 流程自動化 |
-| **Skills 規劃師** | 跨工程團隊建立通用 skills，讓 AI Agent 工作一致 |
-| **MCP 工程師** | 把產品或系統的 API 逐步 MCP 化，讓內部/外部 LLM 好串接 |
-| **龍蝦（Claude Code）架構師** | 建構內網 multi-agent 架構，協助組織溝通 |
+| 職務 | 核心任務 | 對應工具 |
+|------|----------|----------|
+| **Cowork 管理師** | HR/行政流程自動化導入與管理 | Copilot、Notion AI |
+| **Skills 規劃師** | 跨團隊建立通用 skills，讓 Agent 行為一致 | SKILL.md 標準 |
+| **MCP 工程師** | 把內部系統 API 逐步 MCP 化 | MCP server |
+| **龍蝦架構師** | 建構內網 multi-agent 架構 | Claude Code |
 
 ## 關鍵洞察
 
-- **行政/營運不消失，但大幅縮減**：AI 導入壓縮人力需求
-- **企業需要統整者**：避免各部門 AI 工具各自為政、資訊落差
-- **對新創/中小企業**：這些角色最好由老闆/主管打頭陣
-- **技術會換代**：skills/MCP/龍蝦可能 1 年後被取代，但**概念和職能需求不變**
+1. **統整者比執行者更稀缺**：各部門 AI 各跑各的 → 資訊落差 → 需要有人統整
+2. **新創/中小企業：老闆自己先跑**：等不到內部人才，主管要打頭陣
+3. **行政人力縮減但不消失**：減少不等於消失，轉型為 AI 輔助角色
+4. **工具換代不影響職能**：skills/MCP/龍蝦 1 年後可能被取代，但「讓 AI 可靠工作」這件事永遠需要人管
 
-## 對派哥的意義
+## 派哥現況對應
 
-你現在跑的模式（cc_processor + My Wallet + MyNotes 自動化 + Telegram bot）正是超級個體版本。
-若要規模化：
-- Skills 規劃 → 你已在做（bugfix.md、feature-workflow.md 等）
-- MCP 化 → Notion API、Gmail API 下一步可考慮包成 MCP server
-- 多 Agent 架構 → Gemini + Claude 分工已是雛形
+| 企業職務 | 你現在在做的 | 下一步 |
+|----------|-------------|--------|
+| Skills 規劃師 | bugfix.md、feature-workflow.md | 持續完善 skill 庫 |
+| MCP 工程師 | Notion/Gmail API 串接 | 包成 MCP server |
+| 龍蝦架構師 | Gemini + Claude 分工 | 多 Agent 任務分派 |
 
 ## 相關筆記
 
