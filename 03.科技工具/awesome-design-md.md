@@ -19,6 +19,21 @@ source: Telegram 分享
 2. 複製到你的專案根目錄
 3. 開 Claude Code，說：「參考 DESIGN.md，幫我建立一個登入頁面」
 
+## Top 10 最推薦（附直連）
+
+| # | 品牌 | 風格 | 最適合 | 直連 |
+|---|------|------|--------|------|
+| 1 | Notion | 暖色極簡、襯線標題 | 知識庫、工具 UI | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/notion/DESIGN.md) |
+| 2 | Linear | 超極簡、紫色 accent | 任何工程工具 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/linear.app/DESIGN.md) |
+| 3 | Vercel | 黑白精準、Geist 字型 | 技術產品 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/vercel/DESIGN.md) |
+| 4 | Stripe | 紫色漸層、細體優雅 | 金融相關（cc_processor）| [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/stripe/DESIGN.md) |
+| 5 | Apple | 留白、SF Pro、電影感 | Premium 產品 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/apple/DESIGN.md) |
+| 6 | Raycast | 暗色、漸層 accent | 開發工具 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/raycast/DESIGN.md) |
+| 7 | Supabase | 暗翠綠、程式優先 | Dashboard | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/supabase/DESIGN.md) |
+| 8 | SpaceX | 純黑白、全幅攝影 | 科技感著陸頁 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/spacex/DESIGN.md) |
+| 9 | Framer | 大膽黑藍、動效優先 | 行銷頁 | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/framer/DESIGN.md) |
+| 10 | Claude | 赭色 accent、編輯排版 | AI 工具 UI | [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/brands/claude/DESIGN.md) |
+
 ## 收錄品牌（部分）
 
 | 類別 | 品牌 |
