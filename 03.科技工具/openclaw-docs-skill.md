@@ -58,6 +58,23 @@ cp SKILL.md ~/.claude/skills/openclaw.md
 
 ---
 
+## OpenClaw CLI 快速指令
+
+```bash
+openclaw status                     # 整體狀態
+openclaw gateway status             # Gateway 守護進程
+openclaw doctor                     # 診斷問題
+openclaw channels status --probe    # 頻道健康檢查
+openclaw gateway start/stop/restart
+openclaw gateway --force            # 強制關閉重啟
+openclaw config set <path> <value>  # 設定配置
+openclaw security audit --fix       # 安全自動修復
+openclaw channels add               # 新增頻道
+openclaw models set <model>         # 設定預設模型
+```
+
+---
+
 ## 自動更新架構
 GitHub Actions 每天 04:00 UTC 從上游 openclaw/openclaw 同步最新文件並 auto-commit。
 
