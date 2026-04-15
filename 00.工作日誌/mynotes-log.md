@@ -11,3 +11,4 @@
 | 2026-04-15 | 升格 | mindforge-knowledge-engine.md | AI, 知識管理, 自動化, RAG | goodarticle/MindForge_AI_Knowledge_Engine.md |
 | 2026-04-15 | 升格 | mindforge-knowledge-acquisition-workflow.md | AI, Agent, 架構設計, RAG | goodarticle/MindForge_KAL_Inference_Stack_Architecture_Diagram_Explanation.md |
 | 2026-04-15 | 升格 | hermes-vs-openclaw-comparison.md | AI, Agent, 工具, 架構設計 | goodarticle/2026-04-15_article_20260415_125650.md |
+| 2026-04-15 | 升格 | hermes-vs-openclaw-comparison.md | AI, Agent, 架構設計, 工作流程 | goodarticle/2026-04-15_兩大Agent對比.md |
