@@ -7,3 +7,4 @@
 | 2026-04-15 | 升格 | claude-routines-automation.md | AI, Claude, 自動化, 工作流程 | goodarticle/Claude_Routines_Automations.md |
 | 2026-04-15 | 升格 | hermes-agent-vs-openclaw-comparison.md | AI, Agent, 工具, 自動化 | goodarticle/Hermes_Agent_vs_OpenClaw_Comparison.md |
 | 2026-04-15 | 升格 | leeway-ai-agent-decision-tree.md | AI, Agent, 自動化, 架構設計 | goodarticle/Leeway_YAML_Decision_Tree_for_AI_Agent_Order_repost.md |
+| 2026-04-15 | 升格 | claude-project-management-best-practices.md | Claude Code, 架構設計, 自動化, 工作流程 | goodarticle/Managing_Claude_Projects.md |
