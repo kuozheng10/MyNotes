@@ -16,3 +16,4 @@
 | 2026-04-17 | 升格 | claude-opus-47-usage-tips.md | Claude, Claude Code, 自動化, 工具 | goodarticle/2026-04-17_article_20260417_065507.md |
 | 2026-04-17 | 升格 | ai-product-discovery-power.md | AI, 工作流程, 知識管理, 工具 | goodarticle/2026-04-15_AI時代的產品探索力.md |
 | 2026-04-17 | 升格 | one-person-saas-rebellion.md | 架構設計, 自動化, LLM, 工具 | goodarticle/2026-04-16_一人SaaS的反叛.md |
+| 2026-04-17 | 升格 | self-hosted-scraper-solution.md | 工具, 自動化, Python, 開發工具 | goodarticle/2026-04-15_自建開源爬蟲省錢方案.md |
