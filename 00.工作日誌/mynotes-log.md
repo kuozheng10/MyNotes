@@ -14,3 +14,4 @@
 | 2026-04-15 | 升格 | hermes-vs-openclaw-comparison.md | AI, Agent, 架構設計, 工作流程 | goodarticle/2026-04-15_兩大Agent對比.md |
 | 2026-04-16 | 升格 | efficient-gantt-workflow.md | AI, Agent, 工作流程, 自動化 | goodarticle/2026-04-16_高效甘特圖工作流.md |
 | 2026-04-17 | 升格 | claude-opus-47-usage-tips.md | Claude, Claude Code, 自動化, 工具 | goodarticle/2026-04-17_article_20260417_065507.md |
+| 2026-04-17 | 升格 | ai-product-discovery-power.md | AI, 工作流程, 知識管理, 工具 | goodarticle/2026-04-15_AI時代的產品探索力.md |
