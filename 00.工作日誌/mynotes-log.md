@@ -24,3 +24,4 @@
 | 2026-04-17 | 升格 | opus-4-7-strategy-guide.md | AI, Claude Code, 自動化, 工作流程 | goodarticle/2026-04-17_Opus4.7_攻略.md |
 | 2026-04-17 | 升格 | claude-subagent-context-management.md | AI, Agent, Claude, 架構設計 | goodarticle/2026-04-17_Subagent_上下文清單.md |
 | 2026-04-17 | 升格 | claude-code-subagent-environment.md | Claude Code, Agent, 工作流程, 開發工具 | goodarticle/2026-04-17_Subagent_初始環境.md |
+| 2026-04-17 | 升格 | founders-ai-vault-framework.md | 知識管理, 工作流程, AI, Obsidian | goodarticle/2026-04-17_創業者的_AI_金庫.md |
