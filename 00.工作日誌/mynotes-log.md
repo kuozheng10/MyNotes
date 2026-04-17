@@ -21,3 +21,4 @@
 | 2026-04-17 | 升格 | asgard-ai-skill-contribution.md | AI, Skill, 知識管理, 組織知識工程 | goodarticle/2026-04-16_邀請貢獻_SKILL.md |
 | 2026-04-17 | 升格 | opus-4-7-usage-tips.md | AI, Claude Code, 自動化, 工作流程 | goodarticle/2026-04-17_Opus_4.7_使用技巧.md |
 | 2026-04-17 | 升格 | notebooklm-gemini-system-knowledge.md | AI, 知識管理, 工作流程, Google | goodarticle/2026-04-17_NotebookLM-Gemini文獻探究實作指南.md |
+| 2026-04-17 | 升格 | opus-4-7-strategy-guide.md | AI, Claude Code, 自動化, 工作流程 | goodarticle/2026-04-17_Opus4.7_攻略.md |
