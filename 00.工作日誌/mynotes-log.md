@@ -29,3 +29,4 @@
 | 2026-04-18 | 升格 | public-api-curation-taiwan.md | AI, 工具, 自動化, 財務 | goodarticle/2026-04-18_public-apis精選清單.md |
 | 2026-04-18 | 升格 | staff-engineer-mindset-agent-skills.md | AI, Agent, Skill, 工作流程 | goodarticle/2026-04-18_複製主任工程師思維.md |
 | 2026-04-18 | 升格 | harness-engineering-automation-risks.md | AI, 自動化, 架構設計, 開發工具 | goodarticle/2026-04-17_自動化掩蓋的風險.md |
+| 2026-04-18 | 升格 | ai-coding-qa-myths.md | AI, 自動化, 工作流程, 開發工具 | goodarticle/2026-04-17_AI_開發下的品管迷思.md |
