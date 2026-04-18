@@ -27,3 +27,4 @@
 | 2026-04-17 | 升格 | founders-ai-vault-framework.md | 知識管理, 工作流程, AI, Obsidian | goodarticle/2026-04-17_創業者的_AI_金庫.md |
 | 2026-04-17 | 升格 | opendataloader-pdf-rag-parser.md | AI, RAG, 工具, 安全 | goodarticle/2026-04-17_opendataloader-pdf-RAG解析工具.md |
 | 2026-04-18 | 升格 | public-api-curation-taiwan.md | AI, 工具, 自動化, 財務 | goodarticle/2026-04-18_public-apis精選清單.md |
+| 2026-04-18 | 升格 | staff-engineer-mindset-agent-skills.md | AI, Agent, Skill, 工作流程 | goodarticle/2026-04-18_複製主任工程師思維.md |
