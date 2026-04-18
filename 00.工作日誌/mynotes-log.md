@@ -35,3 +35,4 @@
 | 2026-04-18 | 升格 | multi-agent-system-architecture-optimization.md | AI, Agent, 架構設計, 工作流程 | goodarticle/2026-04-17_為何代理團隊越跑越偏.md |
 | 2026-04-19 | 升格 | claude-code-token-saving-strategies.md | Claude Code, AI, 工具, 自動化 | goodarticle/2026-04-19_Claude_Code_節流策略.md |
 | 2026-04-19 | 升格 | claude-md-on-demand-optimization.md | Claude Code, 工具, 工作流程, 知識管理 | goodarticle/2026-04-19_CLAUDE.md_按需讀取優化.md |
+| 2026-04-19 | 升格 | claude-mem-system.md | AI, Claude Code, 知識管理, 自動化 | goodarticle/2026-04-19_claude-mem_記憶系統.md |
