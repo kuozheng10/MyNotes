@@ -39,3 +39,4 @@
 | 2026-04-19 | 升格 | llm-wiki-v2-memory-mechanism.md | AI, 知識管理, 工作流程, LLM | goodarticle/2026-04-19_Wiki記憶更新機制.md |
 | 2026-04-19 | 升格 | ppt-master-ai-ppt.md | AI, 工具, 自動化, Python | goodarticle/2026-04-18_PPT_Master：開源_AI_PPT.md |
 | 2026-04-19 | 升格 | claude-design-best-practices.md | AI, Claude, 工具, 工作流程 | goodarticle/2026-04-19_Claude設計七招.md |
+| 2026-04-19 | 升格 | ccg-workflow.md | Claude Code, AI, 工作流程, 工具 | goodarticle/2026-04-19_ccg-workflow：多AI協作開發.md |
