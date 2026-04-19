@@ -37,3 +37,4 @@
 | 2026-04-19 | 升格 | claude-md-on-demand-optimization.md | Claude Code, 工具, 工作流程, 知識管理 | goodarticle/2026-04-19_CLAUDE.md_按需讀取優化.md |
 | 2026-04-19 | 升格 | claude-mem-system.md | AI, Claude Code, 知識管理, 自動化 | goodarticle/2026-04-19_claude-mem_記憶系統.md |
 | 2026-04-19 | 升格 | llm-wiki-v2-memory-mechanism.md | AI, 知識管理, 工作流程, LLM | goodarticle/2026-04-19_Wiki記憶更新機制.md |
+| 2026-04-19 | 升格 | ppt-master-ai-ppt.md | AI, 工具, 自動化, Python | goodarticle/2026-04-18_PPT_Master：開源_AI_PPT.md |
