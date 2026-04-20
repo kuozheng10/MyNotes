@@ -40,3 +40,5 @@
 | 2026-04-19 | 升格 | ppt-master-ai-ppt.md | AI, 工具, 自動化, Python | goodarticle/2026-04-18_PPT_Master：開源_AI_PPT.md |
 | 2026-04-19 | 升格 | claude-design-best-practices.md | AI, Claude, 工具, 工作流程 | goodarticle/2026-04-19_Claude設計七招.md |
 | 2026-04-19 | 升格 | ccg-workflow.md | Claude Code, AI, 工作流程, 工具 | goodarticle/2026-04-19_ccg-workflow：多AI協作開發.md |
+| 2026-04-20 | 升格 | obsidian-essential-plugins.md | Obsidian, 知識管理, 工作流程, 工具 | goodarticle/2026-04-19_Obsidian_新手必裝插件.md |
+| 2026-04-20 | 升格 | enterprise-ai-adoption-strategy.md | AI, Agent, 工作流程, 架構設計 | goodarticle/2026-04-20_企業_AI_導入三大關鍵.md |
