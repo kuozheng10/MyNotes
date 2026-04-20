@@ -44,3 +44,4 @@
 | 2026-04-20 | 升格 | enterprise-ai-adoption-strategy.md | AI, Agent, 工作流程, 架構設計 | goodarticle/2026-04-20_企業_AI_導入三大關鍵.md |
 | 2026-04-20 | 升格 | ai-knowledge-base-strategy.md | AI, 知識管理, 自動化, 組織知識工程 | goodarticle/2026-04-20_AI知識庫實戰指南.md |
 | 2026-04-20 | 升格 | ui-ux-design-resources-collection.md | 工具, Claude, AI, 工作流程 | goodarticle/2026-04-20_UIUX設計資源大全.md |
+| 2026-04-20 | 升格 | stop-coding-agentic-era.md | AI, Agent, 工作流程, 架構設計 | goodarticle/2026-04-20_告別寫扣：代理人時代.md |
