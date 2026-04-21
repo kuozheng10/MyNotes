@@ -16,6 +16,16 @@ category: 身份
 | MyNotes | 個人知識庫，Obsidian + GitHub，每小時自動備份 | 整理中 |
 | Gmail Automation | Google Apps Script 自動分類 Gmail | 運作中 |
 
+## 關鍵腳本一句話說明
+
+| 腳本 | 這個腳本做什麼 |
+|------|--------------|
+| sales_report_processor.py | Gmail 收到 Hasna 寄的 SalesOrderReport xlsx → 跑業務業績統計 → 寄報表給雙方 |
+| spa_anku_processor.py | Gmail 收到 Hasna 寄的 SPA安庫 xlsx → 生成機種×安庫×庫存×接單彙總表 → 寄送 |
+| 業務業績統計.py | 讀 SalesOrderReport + 料號產品分類，產出 6 個樞紐分析（照品類/機種/業務分析業績） |
+| reauth_gmail.py | 重新授權 Gmail OAuth token（token 7天過期，需手動跑） |
+| mygmail_automationn.js | 每天 8am/8pm 掃 inbox，依規則貼標籤/歸檔/丟垃圾桶；週日清通知信；月初清垃圾桶 |
+
 ## AI 工具分工
 
 | Agent | 角色 |
