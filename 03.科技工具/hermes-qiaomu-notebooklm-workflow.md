@@ -42,7 +42,11 @@ source: telegram/save-sop
 
 派哥的 save_article.sh → upgrade_to_mynotes.sh → git push 是同樣的三段流程邏輯。差別是 NotebookLM 多了思維導圖視覺化，MyNotes 多了 cross-link 和質疑/對標步驟。
 
-如果要整合：qiaomu 可以作為 save_article.sh 的前置步驟，先把各種格式（PDF、YouTube、網頁）統一轉成 Markdown，再走現有流程存入 MyNotes。
+MyNotes 已可透過 Claude Code 處理 URL（YouTube、網頁、GitHub 等），qiaomu 的差異化價值是：
+1. 付費牆繞過（6 層層聯技術）
+2. 直接輸出進 NotebookLM 生思維導圖
+
+兩套流程用途不重疊，依需求選擇。
 
 ## 連結筆記
 
