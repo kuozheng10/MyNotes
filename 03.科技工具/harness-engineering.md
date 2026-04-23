@@ -54,6 +54,30 @@ Agent
 | Inferential Sensor | （未來）Computer Use 驗證 UI |
 | User Harness 架構 | Gemini + Claude 分工 = 雛形 multi-agent harness |
 
+## 實作案例：C# Multi-Agent Chain（2026-04-24）
+
+一個工程師用 C# + Microsoft Agent Framework 1.0 實作的 agents chain，驗證 Harness 四層公式：
+
+```
+按下 run →
+  Coder agent（寫 code）
+  → Reviewer agent（審 code）
+  → build 成功後 PM agent（對 spec）
+  → Security agent（刻意用不同 LLM 掃漏洞）← AI 審 AI
+  → Deploy agent（推 source control）
+→ 去倒咖啡，回來看 report
+```
+
+**Harness 四層對應**：
+- 執行層：bash/file/MCP，給 LLM「手」
+- 記憶層：rules 文件 auto inject（= Skills）
+- 反饋層：test/lint error 回傳
+- 編排層：拆任務 / 防死循環
+
+**角色轉變**：從「code 審查員」（全程在線）→ orchestrator（按 run 後去倒咖啡）
+
+**關鍵洞見**：差別不是 AI 變聰明，是**流程**終於拆得出去。同樣的 model 換不同 IDE 表現天差地別，差別在那層「外殼（Harness）」。
+
 ## 相關筆記
 
 - [[addyosmani-agent-skills]] — Skills 本身就是 Inferential Guides 的系統化實作
