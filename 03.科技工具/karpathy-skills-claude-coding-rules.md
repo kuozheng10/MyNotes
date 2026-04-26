@@ -1,6 +1,6 @@
 ---
 title: "Karpathy 開發哲學打包成 Claude Skill"
-tags: [claude-code, claude-md, karpathy, coding-rules, ai-coding, skill]
+tags: [claude-code, claude-md, karpathy, coding-rules, ai-coding, skill, codex-cli, copilot]
 date: 2026-04-14
 category: AI工具
 source: https://github.com/forrestchang/andrej-karpathy-skills
@@ -34,6 +34,18 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy
 ```
 
 最高級用法不是全盤接收——抓下來讀一遍，挑出你開發痛點最深的幾條，裁切後化為己用。
+
+## Codex CLI / Copilot CLI 移植版
+
+doggy8088 把同套哲學移植成支援 AGENTS.md 的版本，任何支援 AGENTS.md 的 Coding Agent 都可以用：
+
+```bash
+# Copilot CLI plugin 安裝
+copilot plugin marketplace add doggy8088/andrej-karpathy-skills
+copilot plugin install andrej-karpathy-skills@karpathy-skills
+```
+
+repo：https://github.com/doggy8088/andrej-karpathy-skills
 
 ## 提煉
 
