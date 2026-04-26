@@ -26,6 +26,15 @@ source: https://github.com/forrestchang/andrej-karpathy-skills
 - 禁止自動加功能 → 極簡主義
 - 對話 >10 輪後重讀再編輯 → 外科手術式修改
 
+## 怎麼用
+
+一鍵載入：
+```bash
+curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+```
+
+最高級用法不是全盤接收——抓下來讀一遍，挑出你開發痛點最深的幾條，裁切後化為己用。
+
 ## 提煉
 
 AI coding 的本質管理問題：把 AI 當「需要精確 SOP 的頂級實習生」，而不是「萬能助手」。規則越清楚，實習生越不會亂來。
