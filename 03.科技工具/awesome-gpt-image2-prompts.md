@@ -40,6 +40,16 @@ GitHub: https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts
 
 ---
 
+## Prompt as Code 概念（koc.com.tw 2026-04-28）
+
+koc.com.tw 的介紹文補充了一個重要概念：
+
+- **Prompt as Code**：把 prompt 整理成有變數的結構化模板，可填入不同值批量產圖
+- 使用流程：精選案例找風格 → 完整畫廊找相近 → 套模板填變數
+- 適合接入自動化腳本 / AI agent 批量產圖
+
+---
+
 ## 是否包 skill？
 
 不建議。這是靜態資源庫，直接查 GitHub 或 MyNotes 即可，不需要包成 skill。
