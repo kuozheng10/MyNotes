@@ -102,6 +102,42 @@ Read / Edit / Bash / Grep / Write / Agent / WebFetch / LSP
 
 ---
 
+## Vibe Coder 術語速查（FB 奇異點福爾摩沙）
+
+### Claude Code 相關
+| 術語 | 極簡解釋 |
+|------|---------|
+| Artifact | 成品預覽視窗 |
+| Agent | 會動手的 AI 助手 |
+| MCP | 外部工具轉接頭 |
+| Diff | 修改前後紅綠對照 |
+| Slash Cmds | `/` 快速切換指令 |
+| Context | AI 短期記憶量 |
+| Token | AI 計算與處理單位 |
+
+### Git & GitHub
+| 術語 | 極簡解釋 |
+|------|---------|
+| Repo | 專案資料夾（含紀錄）|
+| Commit | 加上備註的存檔點 |
+| Push | 上傳存檔到雲端 |
+| Pull | 下載雲端更新 |
+| Branch | 平行時空開發線 |
+| Merge | 合併回主線 |
+| Create PR | 發起審核合併請求 |
+| Release | 發布正式版本 |
+| Issue | 回報問題或需求 |
+
+### 通用
+| 術語 | 極簡解釋 |
+|------|---------|
+| CLI / Terminal | 指令輸入視窗（黑底白字）|
+| Bash | 終端機溝通語法 |
+| Preview | 即時畫面預覽 |
+| Collaborator | 專案協作者 |
+
+---
+
 ## 連結筆記
 
 - [[boris-15-claude-code-tips]] — Boris Cherny 的 15 個進階技巧（與本篇互補）
