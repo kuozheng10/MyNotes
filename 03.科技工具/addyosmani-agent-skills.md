@@ -2,7 +2,7 @@
 title: "addyosmani/agent-skills — 系統化開發生命週期 Skill 套件"
 url: "https://github.com/addyosmani/agent-skills"
 tags: [claude-code, skill, workflow, spec-driven, tdd, architecture]
-date: 2026-04-07
+date: 2026-05-09
 category: 03.科技工具
 source: Telegram 派哥分享
 ---
@@ -68,6 +68,13 @@ git clone https://github.com/addyosmani/agent-skills ~/.claude/skills/agent-skil
 - gstack：/review /ship 輕量快速
 - 這套：更嚴格，19 個，有安全強化、效能優化等
 - 兩套可並存，看場合選用
+
+## Claude Code 整合細節（2026-05 補充）
+
+- **`context: fork`**：Skill 在獨立子代理環境執行，不污染主對話 context
+- **漸進式加載**：一開始只載入 skill 簡介，Claude 決定調用才加載完整流程，省 token
+- **意圖自動觸發**：Claude 根據對話意圖（如「寫個 UI」）自動建議相關 skill
+- **多角色並行**：`/ship` 時可同時啟動 reviewer + security auditor 並行跑
 
 ## 相關筆記
 
