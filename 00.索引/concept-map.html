@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>派哥知識庫 — 概念地圖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* === VIEWPORT BASE (MANDATORY) === */
+html, body { height: 100%; overflow-x: hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+.slide {
+  width: 100vw; height: 100vh; height: 100dvh;
+  overflow: hidden; scroll-snap-align: start;
+  display: flex; flex-direction: column; position: relative;
+}
+.slide-content {
+  flex: 1; display: flex; flex-direction: column;
+  justify-content: center; max-height: 100%; overflow: hidden;
+  padding: var(--slide-padding);
+}
+:root {
+  --title-size: clamp(1.5rem, 5vw, 4rem);
+  --h2-size: clamp(1.25rem, 3.5vw, 2.5rem);
+  --h3-size: clamp(1rem, 2.5vw, 1.75rem);
+  --body-size: clamp(0.75rem, 1.5vw, 1.125rem);
+  --small-size: clamp(0.65rem, 1vw, 0.875rem);
+  --slide-padding: clamp(1rem, 4vw, 4rem);
+  --content-gap: clamp(0.5rem, 2vw, 2rem);
+  --element-gap: clamp(0.25rem, 1vw, 1rem);
+}
+@media (max-height: 700px) { :root { --slide-padding: clamp(0.75rem,3vw,2rem); --title-size: clamp(1.25rem,4.5vw,2.5rem); --h2-size: clamp(1rem,3vw,1.75rem); } }
+@media (max-height: 600px) { :root { --slide-padding: clamp(0.5rem,2.5vw,1.5rem); --title-size: clamp(1.1rem,4vw,2rem); --body-size: clamp(0.7rem,1.2vw,0.95rem); } .nav-dots, .keyboard-hint { display: none; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; } html { scroll-behavior: auto; } }
+
+/* === THEME: Terminal Dark === */
+:root {
+  --bg: #0a0e17;
+  --bg2: #0f1624;
+  --surface: #141d2e;
+  --border: #1e2d45;
+  --accent: #00d4ff;
+  --accent2: #7c3aed;
+  --accent3: #10b981;
+  --accent4: #f59e0b;
+  --accent5: #ef4444;
+  --text: #e2e8f0;
+  --text-dim: #64748b;
+  --text-muted: #94a3b8;
+  --font-body: 'Noto Sans TC', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-body); background: var(--bg); color: var(--text); }
+
+/* === BACKGROUND GRID PATTERN === */
+.slide::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* === SLIDE 1: TITLE === */
+#slide-title { background: var(--bg); }
+#slide-title .bg-glow {
+  position: absolute; top: -20%; left: -10%;
+  width: 60%; height: 80%;
+  background: radial-gradient(ellipse, rgba(0,212,255,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+#slide-title .bg-glow2 {
+  position: absolute; bottom: -20%; right: -10%;
+  width: 50%; height: 70%;
+  background: radial-gradient(ellipse, rgba(124,58,237,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.title-tag {
+  font-family: var(--font-mono);
+  font-size: var(--small-size);
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: clamp(0.5rem, 1.5vh, 1.5rem);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.2s;
+}
+.title-main {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.4s;
+}
+.title-main span { color: var(--accent); }
+.title-sub {
+  font-size: var(--h3-size);
+  color: var(--text-muted);
+  font-weight: 300;
+  margin-top: clamp(0.5rem, 1.5vh, 1.5rem);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.6s;
+}
+.title-stats {
+  display: flex; gap: clamp(1rem, 3vw, 3rem);
+  margin-top: clamp(1rem, 3vh, 3rem);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.8s;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--accent);
+}
+.stat-label { font-size: var(--small-size); color: var(--text-dim); margin-top: 0.25rem; }
+.slide-counter {
+  position: absolute; bottom: 2rem; right: 2rem;
+  font-family: var(--font-mono); font-size: var(--small-size);
+  color: var(--text-dim);
+}
+.progress-bar {
+  position: absolute; bottom: 0; left: 0;
+  height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transition: width 0.3s ease;
+}
+
+/* === GROUP SLIDES === */
+.group-slide { background: var(--bg); }
+.group-header {
+  display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 1.5rem);
+  margin-bottom: clamp(0.75rem, 2vh, 2rem);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.1s;
+}
+.group-num {
+  font-family: var(--font-mono);
+  font-size: clamp(0.6rem, 1.2vw, 0.85rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+}
+.group-title {
+  font-size: var(--h2-size);
+  font-weight: 700;
+  color: var(--text);
+}
+.group-sub {
+  font-size: var(--small-size);
+  color: var(--text-muted);
+  margin-left: auto;
+  font-style: italic;
+}
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: clamp(0.4rem, 1vw, 0.75rem);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.3s;
+}
+.note-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: clamp(0.5rem, 1.5vw, 1rem);
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+.note-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.note-name {
+  font-family: var(--font-mono);
+  font-size: clamp(0.65rem, 1vw, 0.8rem);
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+.note-desc {
+  font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Color accents per group */
+.g1 .note-card:hover { border-color: #00d4ff; }
+.g1 .note-name { color: #00d4ff; }
+.g2 .note-card:hover { border-color: #10b981; }
+.g2 .note-name { color: #10b981; }
+.g3 .note-card:hover { border-color: #f59e0b; }
+.g3 .note-name { color: #f59e0b; }
+.g4 .note-card:hover { border-color: #7c3aed; }
+.g4 .note-name { color: #7c3aed; }
+.g5 .note-card:hover { border-color: #ef4444; }
+.g5 .note-name { color: #ef4444; }
+
+/* === SLIDE: CONNECTION MAP === */
+#slide-map { background: var(--bg); }
+.map-title {
+  font-size: var(--h2-size); font-weight: 700;
+  margin-bottom: clamp(0.75rem, 2vh, 1.5rem);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.1s;
+}
+.map-chains {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  opacity: 0; animation: fadeUp 0.5s ease forwards 0.3s;
+}
+.chain {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: clamp(0.5rem, 1.5vw, 1rem);
+}
+.chain-label {
+  font-family: var(--font-mono);
+  font-size: clamp(0.6rem, 0.9vw, 0.75rem);
+  color: var(--accent); letter-spacing: 0.15em;
+  text-transform: uppercase; margin-bottom: 0.5rem;
+}
+.chain-flow {
+  font-size: clamp(0.65rem, 1.1vw, 0.85rem);
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-family: var(--font-mono);
+}
+.chain-flow .arrow { color: var(--accent2); }
+.chain-flow .node { color: var(--text); }
+
+/* === CLOSING SLIDE === */
+#slide-end { background: var(--bg); }
+.end-title {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 900; line-height: 1.1;
+  opacity: 0; animation: fadeUp 0.6s ease forwards 0.2s;
+}
+.end-title span { color: var(--accent); }
+.end-cmds {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
+  margin-top: clamp(1rem, 2.5vh, 2.5rem);
+  opacity: 0; animation: fadeUp 0.6s ease forwards 0.5s;
+}
+.cmd-badge {
+  font-family: var(--font-mono);
+  font-size: var(--small-size);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4em 0.9em;
+  color: var(--accent3);
+}
+
+/* === NAV DOTS === */
+.nav-dots {
+  position: fixed; right: clamp(0.75rem, 2vw, 1.5rem); top: 50%;
+  transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 0.5rem;
+  z-index: 100;
+}
+.dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--border); cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.dot.active { background: var(--accent); transform: scale(1.5); }
+
+/* === KEYBOARD HINT === */
+.keyboard-hint {
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  font-family: var(--font-mono); font-size: var(--small-size);
+  color: var(--text-dim); z-index: 100;
+  opacity: 1; transition: opacity 0.3s;
+}
+.keyboard-hint.hidden { opacity: 0; pointer-events: none; }
+
+/* === ANIMATIONS === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === SLIDE COUNTER === */
+.slide-num {
+  position: absolute; bottom: 1.5rem; right: 1.5rem;
+  font-family: var(--font-mono); font-size: var(--small-size);
+  color: var(--text-dim);
+}
+
+/* === ACCENT STRIPE === */
+.accent-stripe {
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(180deg, var(--accent), var(--accent2), transparent);
+}
+</style>
+</head>
+<body>
+
+<!-- === SLIDE 1: TITLE === -->
+<section class="slide" id="slide-title">
+  <div class="bg-glow"></div>
+  <div class="bg-glow2"></div>
+  <div class="slide-content">
+    <div class="title-tag">派哥 · Knowledge Base · 2026-04-06</div>
+    <h1 class="title-main">知識庫<br><span>概念地圖</span></h1>
+    <p class="title-sub">30 篇筆記 · 6 大主題群 · 概念連結一覽</p>
+    <div class="title-stats">
+      <div class="stat"><div class="stat-num">30</div><div class="stat-label">筆記</div></div>
+      <div class="stat"><div class="stat-num">6</div><div class="stat-label">主題群</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">概念鏈</div></div>
+    </div>
+  </div>
+  <div class="slide-num">01 / 09</div>
+</section>
+
+<!-- === SLIDE 2: GROUP 1 === -->
+<section class="slide group-slide g1" id="slide-g1">
+  <div class="accent-stripe"></div>
+  <div class="slide-content">
+    <div class="group-header">
+      <span class="group-num">GROUP 01</span>
+      <span class="group-title">Claude Code 使用技巧</span>
+      <span class="group-sub">更好、更快、更省錢</span>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card"><div class="note-name">boris-15-claude-code-tips</div><div class="note-desc">15 個高頻技巧：手機寫 code、worktree、hooks</div></div>
+      <div class="note-card"><div class="note-name">claude-code-source-leak-insights</div><div class="note-desc">原始碼洩露 → 95% 是 harness，真正理解架構</div></div>
+      <div class="note-card"><div class="note-name">claude-hidden-combo</div><div class="note-desc">零程式碼自動化：瀏覽器 + 排程 + Memory</div></div>
+      <div class="note-card"><div class="note-name">claude-code-computer-use</div><div class="note-desc">直控 Mac GUI，native app 測試</div></div>
+      <div class="note-card"><div class="note-name">agent-prompt-token-cost</div><div class="note-desc">中文 prompt 省 token 40% 技法</div></div>
+      <div class="note-card"><div class="note-name">openmemory-auto-manager</div><div class="note-desc">Claude / Gemini / Codex 三工具共用記憶庫</div></div>
+    </div>
+  </div>
+  <div class="slide-num">02 / 09</div>
+</section>
+
+<!-- === SLIDE 3: GROUP 2 === -->
+<section class="slide group-slide g2" id="slide-g2">
+  <div class="accent-stripe" style="background: linear-gradient(180deg, #10b981, #059669, transparent);"></div>
+  <div class="slide-content">
+    <div class="group-header">
+      <span class="group-num" style="color:#10b981; border-color:#10b981;">GROUP 02</span>
+      <span class="group-title">開發方法論</span>
+      <span class="group-sub">更有紀律、更少 bug</span>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card"><div class="note-name">ai-coding-shift-left</div><div class="note-desc">壓力左移：spec_as_code → test_as_code → review</div></div>
+      <div class="note-card"><div class="note-name">SDD-vs-SBE</div><div class="note-desc">SBE 講溝通，SDD 講執行；solo dev + AI 用 SDD</div></div>
+      <div class="note-card"><div class="note-name">claude-code-feature-workflow</div><div class="note-desc">Feature 開發 SOP：Brainstorm → Plan → Impl → Review</div></div>
+      <div class="note-card"><div class="note-name">bugfix-8steps-workflow</div><div class="note-desc">Bug Fix 8 步：先有證據再動手</div></div>
+      <div class="note-card"><div class="note-name">exploratory-testing-sbtm</div><div class="note-desc">ET + SBTM：比自動化腳本更快找 bug</div></div>
+      <div class="note-card"><div class="note-name">dual-agent-dev-loop</div><div class="note-desc">雙 AI 迴圈：一個寫、一個測、Notion 協調</div></div>
+    </div>
+  </div>
+  <div class="slide-num">03 / 09</div>
+</section>
+
+<!-- === SLIDE 4: GROUP 3 === -->
+<section class="slide group-slide g3" id="slide-g3">
+  <div class="accent-stripe" style="background: linear-gradient(180deg, #f59e0b, #d97706, transparent);"></div>
+  <div class="slide-content">
+    <div class="group-header">
+      <span class="group-num" style="color:#f59e0b; border-color:#f59e0b;">GROUP 03</span>
+      <span class="group-title">UI / 設計 Skills</span>
+      <span class="group-sub">讓 AI 做的 UI 不要有「AI 味」</span>
+    </div>
+    <div class="notes-grid" style="grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));">
+      <div class="note-card" style="border-color: rgba(245,158,11,0.2);">
+        <div class="note-name">ui-ux-pro-max-skill</div>
+        <div class="note-desc">161 條規則，自動產出設計系統</div>
+      </div>
+      <div class="note-card" style="border-color: rgba(245,158,11,0.2);">
+        <div class="note-name">impeccable-design-skill</div>
+        <div class="note-desc">20 個指令各個擊破 AI 設計味</div>
+      </div>
+      <div class="note-card" style="border-color: rgba(245,158,11,0.2);">
+        <div class="note-name">web-design-guidelines-skill</div>
+        <div class="note-desc">Vercel Labs 官方 WCAG 合規審查</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">04 / 09</div>
+</section>
+
+<!-- === SLIDE 5: GROUP 4 === -->
+<section class="slide group-slide g4" id="slide-g4">
+  <div class="accent-stripe" style="background: linear-gradient(180deg, #7c3aed, #6d28d9, transparent);"></div>
+  <div class="slide-content">
+    <div class="group-header">
+      <span class="group-num" style="color:#7c3aed; border-color:#7c3aed;">GROUP 04</span>
+      <span class="group-title">自建工具 / 專案</span>
+      <span class="group-sub">派哥親自動手建的東西</span>
+    </div>
+    <div class="notes-grid" style="grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));">
+      <div class="note-card" style="border-color: rgba(124,58,237,0.2);">
+        <div class="note-name">my-wallet-trip-setup</div>
+        <div class="note-desc">旅遊記帳 PWA：Next.js + Gemini OCR + Notion</div>
+      </div>
+      <div class="note-card" style="border-color: rgba(124,58,237,0.2);">
+        <div class="note-name">gmail-automation</div>
+        <div class="note-desc">Gmail 自動分類：5 label，每日 2 次</div>
+      </div>
+      <div class="note-card" style="border-color: rgba(124,58,237,0.2);">
+        <div class="note-name">gmail-automation-spec</div>
+        <div class="note-desc">Gmail v2.0 完整規格書</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">05 / 09</div>
+</section>
+
+<!-- === SLIDE 6: GROUP 5 === -->
+<section class="slide group-slide g5" id="slide-g5">
+  <div class="accent-stripe" style="background: linear-gradient(180deg, #ef4444, #dc2626, transparent);"></div>
+  <div class="slide-content">
+    <div class="group-header">
+      <span class="group-num" style="color:#ef4444; border-color:#ef4444;">GROUP 05</span>
+      <span class="group-title">AI 工具 / 開源套件</span>
+      <span class="group-sub">別人建的工具，值得注意</span>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card"><div class="note-name">gstack-claude-skills</div><div class="note-desc">Garry Tan 虛擬工程團隊（62K stars）</div></div>
+      <div class="note-card"><div class="note-name">codex-plugin-cc</div><div class="note-desc">OpenAI Codex 把關 Claude 輸出</div></div>
+      <div class="note-card"><div class="note-name">opendataloader-pdf</div><div class="note-desc">PDF → Markdown，表格準確率 0.93</div></div>
+      <div class="note-card"><div class="note-name">CodexBar</div><div class="note-desc">macOS menu bar AI 用量監控</div></div>
+      <div class="note-card"><div class="note-name">vibevoice-microsoft</div><div class="note-desc">Microsoft 語音 AI，60 分鐘 + 說話人辨識</div></div>
+      <div class="note-card"><div class="note-name">llm-knowledge-base-karpathy</div><div class="note-desc">Karpathy 知識庫 4 層架構</div></div>
+    </div>
+  </div>
+  <div class="slide-num">06 / 09</div>
+</section>
+
+<!-- === SLIDE 7: GROUP 6 === -->
+<section class="slide" id="slide-g6">
+  <div class="accent-stripe" style="background: linear-gradient(180deg, #0ea5e9, #0284c7, transparent);"></div>
+  <div class="slide-content">
+    <div class="group-header" style="opacity:0; animation: fadeUp 0.5s ease forwards 0.1s;">
+      <span class="group-num" style="color:#0ea5e9; border-color:#0ea5e9;">GROUP 06</span>
+      <span class="group-title">點數 / 金融 / 旅遊</span>
+      <span class="group-sub">哩程、信用卡、旅行</span>
+    </div>
+    <div style="opacity:0; animation: fadeUp 0.5s ease forwards 0.3s; background: var(--surface); border: 1px solid rgba(14,165,233,0.2); border-radius: 8px; padding: clamp(0.75rem,2vw,1.5rem); max-width: 500px;">
+      <div class="note-name" style="color:#0ea5e9; font-family: var(--font-mono); font-size: var(--small-size); margin-bottom: 0.5rem;">tripplus-快訊260401-信用卡哩程新聞</div>
+      <div class="note-desc" style="color: var(--text-muted); font-size: var(--body-size);">Amex、X Debit、星宇、阿拉斯加哩程新聞</div>
+    </div>
+  </div>
+  <div class="slide-num">07 / 09</div>
+</section>
+
+<!-- === SLIDE 8: CONCEPT CONNECTIONS === -->
+<section class="slide" id="slide-map">
+  <div class="slide-content">
+    <h2 class="map-title">概念連結圖</h2>
+    <div class="map-chains">
+      <div class="chain">
+        <div class="chain-label">知識庫架構</div>
+        <div class="chain-flow">
+          <span class="node">llm-knowledge-base-karpathy</span><br>
+          <span class="arrow">  ↑ 啟發</span><br>
+          <span class="node">openmemory-auto-manager</span><br>
+          <span class="node">claude-hidden-combo</span>
+        </div>
+      </div>
+      <div class="chain">
+        <div class="chain-label">開發方法論鏈</div>
+        <div class="chain-flow">
+          <span class="node">ai-coding-shift-left</span><br>
+          <span class="arrow">  └── spec → </span><span class="node">SDD-vs-SBE</span><br>
+          <span class="arrow">  └── test → </span><span class="node">bugfix-8steps</span><br>
+          <span class="arrow">         └── </span><span class="node">exploratory-testing</span>
+        </div>
+      </div>
+      <div class="chain">
+        <div class="chain-label">Claude Code 效率鏈</div>
+        <div class="chain-flow">
+          <span class="node">boris-15-tips</span><br>
+          <span class="arrow">  └── hooks → </span><span class="node">feature-workflow</span><br>
+          <span class="arrow">  └── worktree → </span><span class="node">dual-agent-loop</span>
+        </div>
+      </div>
+      <div class="chain">
+        <div class="chain-label">UI 設計鏈</div>
+        <div class="chain-flow">
+          <span class="node">ui-ux-pro-max</span><br>
+          <span class="arrow">  → </span><span class="node">impeccable</span><br>
+          <span class="arrow">  → </span><span class="node">web-design-guidelines</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">08 / 09</div>
+</section>
+
+<!-- === SLIDE 9: CLOSING === -->
+<section class="slide" id="slide-end">
+  <div class="bg-glow" style="top: -10%; right: -10%; left: auto; width: 50%; height: 70%; background: radial-gradient(ellipse, rgba(124,58,237,0.1) 0%, transparent 70%);"></div>
+  <div class="slide-content">
+    <h2 class="end-title">知識庫<br>越用<span>越厚</span></h2>
+    <p style="font-size: var(--body-size); color: var(--text-muted); margin-top: 1rem; opacity:0; animation: fadeUp 0.6s ease forwards 0.4s;">隨時可以叫我：</p>
+    <div class="end-cmds">
+      <span class="cmd-badge">問知識庫：XXX</span>
+      <span class="cmd-badge">存下來</span>
+      <span class="cmd-badge">跑健檢</span>
+      <span class="cmd-badge">跑 SOP</span>
+    </div>
+  </div>
+  <div class="slide-num">09 / 09</div>
+</section>
+
+<!-- === NAV DOTS === -->
+<nav class="nav-dots" id="navDots"></nav>
+<div class="keyboard-hint" id="hint">↑↓ 或 Space / 箭頭鍵換頁</div>
+
+<script>
+// === NAV DOTS ===
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.getElementById('navDots');
+const hint = document.getElementById('hint');
+
+slides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => slides[i].scrollIntoView({ behavior: 'smooth' }));
+  dotsContainer.appendChild(dot);
+});
+
+// === UPDATE ACTIVE DOT on scroll ===
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const idx = Array.from(slides).indexOf(entry.target);
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+      // Hide hint after first scroll
+      if (idx > 0) { hint.classList.add('hidden'); }
+    }
+  });
+}, { threshold: 0.5 });
+
+slides.forEach(s => observer.observe(s));
+
+// === KEYBOARD NAVIGATION ===
+document.addEventListener('keydown', e => {
+  const current = Array.from(slides).findIndex(s => {
+    const rect = s.getBoundingClientRect();
+    return rect.top >= -10 && rect.top < window.innerHeight / 2;
+  });
+  if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    const next = Math.min(current + 1, slides.length - 1);
+    slides[next].scrollIntoView({ behavior: 'smooth' });
+  }
+  if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    const prev = Math.max(current - 1, 0);
+    slides[prev].scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
+</body>
+</html>
