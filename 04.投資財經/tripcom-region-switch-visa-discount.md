@@ -2,7 +2,7 @@
 title: "Trip.com 外站跳區 + Visa 3% 優惠碼：商務艙雙重省錢 SOP"
 tags: [travel, tripcom, 機票, 省錢, visa, SOP, 旅遊技巧]
 date: 2026-05-10
-category: 05.旅遊
+category: 04.投資財經
 source: Telegram 派哥分享
 ---
 
