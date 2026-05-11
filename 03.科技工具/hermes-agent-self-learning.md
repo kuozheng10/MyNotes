@@ -10,7 +10,15 @@ source: https://github.com/NousResearch/hermes-agent
 
 Nous Research 開源的 AI Agent，具備「閉環學習（Closed Learning Loop）」能力。
 成功完成任務後會自動抽取邏輯、寫成 Skill，並持續自我進化。
-支援 14+ 平台（Telegram、Discord、Slack…），可部署多個獨立 Bot（Profile 隔離）。
+支援 17 平台（Telegram、Discord、Slack、WhatsApp、Signal、Google Meet…），可部署多個獨立 Bot（Profile 隔離）。
+
+## v0.13.0 新功能
+
+- Discord 語音 STT/TTS（語音輸入/輸出）
+- Google Meet 整合
+- Chat override 指令：`/think`（深度推理）、`/fast`（快速回覆）
+- iOS 配對碼（手機直接配對）
+- Gateway 擴展至 17 個訊息平台
 
 ---
 
