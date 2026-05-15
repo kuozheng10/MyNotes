@@ -126,3 +126,4 @@ source: Boris Cherny (Anthropic, Claude Code 主導開發) on X
 
 - [[claude-hidden-combo]]
 - [[dual-agent-dev-loop]]
+- [[ai-agent-system-design-over-prompt]] — 戰略層：系統設計先於 prompt，本篇是戰術層，兩者互補不矛盾

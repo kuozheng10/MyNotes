@@ -61,4 +61,4 @@ Amex 轉點夥伴：ANA 是獨家且划算的選擇。
 ## 連結筆記
 
 - [[tripplus-快訊260401-信用卡哩程新聞]] — 信用卡里程最新動態
-- [[project_eva_award_tickets]] — 長榮里程票監控（2027/5 商務艙日本）
+- [[tripplus-ryan-premium-cc-1year-review-amex-csr-citi]] — 美卡里程策略綜合評測

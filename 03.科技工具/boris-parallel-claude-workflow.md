@@ -52,3 +52,4 @@ source: https://howborisusesclaudecode.com
 - [[boris-15-claude-code-tips]] — Boris 的 15 個 Claude Code 技巧
 - [[claude-code-powerup-guide]] — Claude Code 10 大功能
 - [[ai-agent-modular-architecture]] — 模組化 AI 架構
+- [[vibe-coding-records-kim-professor]] — 前提互補：並行工作流預設你已能把流程講清楚；Kim 教授說的是這個前提本身

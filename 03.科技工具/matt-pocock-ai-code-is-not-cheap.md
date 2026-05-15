@@ -121,7 +121,7 @@ Specs to code = divest（從系統設計裡抽走）
 
 ## 連結筆記
 
-- [[grill-me]] — 對應失敗模式一的解法
+- [[grill-me-skill]] — 對應失敗模式一的解法
 - [[ai-coding-qa-myths]] — 相關的 AI 開發誤區
 - [[vibe-coding-architecture-debate]] — vibe coding 的架構爭議
 - [[karpathy-skills-claude-coding-rules]] — Karpathy 的 AI 開發規範

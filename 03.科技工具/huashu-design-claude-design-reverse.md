@@ -49,7 +49,7 @@ My Wallet Trip 的 UI 設計、sales report 的視覺化，可以試試 Huashu D
 
 ## 連結筆記
 
-- [[nuwa-skill]] → 同一個作者 alchaincyf
+- （待補：nuwa-skill by alchaincyf — 同作者，名人思維蒸餾 skill，尚未存入知識庫）
 - [[personal-ai-vault-obsidian-system]]
 - [[claude-code-powerup-guide]]
 - [[impeccable-design-skill]]
