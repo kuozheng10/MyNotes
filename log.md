@@ -8,3 +8,4 @@
 [2026-05-18] INGEST aaron-levie-box-ai-enterprise-workflow | topics: ai-strategy, enterprise-ai, workflow, agent
 [2026-05-18] INGEST codex-agent-os-workflow-jason | topics: codex, agent, workflow, automation, memory
 [2026-05-18] INGEST karpathy-llm-wiki-persistent-knowledge | topics: karpathy, llm, knowledge-base, rag, agent
+[2026-05-18] UPDATE claude-code-six-slash-commands | added: /goal feature (Claude Code + Codex)
