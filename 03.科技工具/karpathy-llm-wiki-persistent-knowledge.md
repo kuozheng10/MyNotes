@@ -121,6 +121,8 @@ SOP
 | Lint | 跑健檢 |
 | log.md | session-YYYY-MM-DD.md |
 
-缺口：MyNotes 目前沒有 `log.md`（追加式時間紀錄）和自動 Lint（掃矛盾）
+缺口：MyNotes 目前沒有 `log.md`（追加式時間紀錄）
+
+已有：自動 Lint（Gemini AI bot 每日健檢，掃矛盾點/缺漏主題/意外連結，TG 回報，230篇）
 
 → 參見 [[llm-wiki-blog-compilation-three-steps]]、[[llm-wiki-v2-memory-mechanism]]、[[vault-for-llm-self-convergence-knowledge]]
