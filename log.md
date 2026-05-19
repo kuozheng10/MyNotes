@@ -17,3 +17,4 @@
 [2026-05-19] INGEST codex-hooks-event-trigger | topics: codex, hooks, event-trigger, automation, agent-control
 [2026-05-19] INGEST api-key-security-env-hook | topics: 安全, API key, .env, hook, claude-code
 [2026-05-19] INGEST claude-codex-ssh-remote-mode | topics: claude-code, codex, ssh, remote, MCP, 帳號邊界
+[2026-05-19] INGEST gemini-35-flash-pro-agentic | topics: gemini, google, LLM, agentic, 低成本, Spark
