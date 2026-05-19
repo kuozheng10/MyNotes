@@ -16,3 +16,4 @@
 [2026-05-19] INGEST microsoft-ai-agents-for-beginners | topics: microsoft, AI agent, RAG, multi-agent, MCP, context-engineering
 [2026-05-19] INGEST codex-hooks-event-trigger | topics: codex, hooks, event-trigger, automation, agent-control
 [2026-05-19] INGEST api-key-security-env-hook | topics: 安全, API key, .env, hook, claude-code
+[2026-05-19] INGEST claude-codex-ssh-remote-mode | topics: claude-code, codex, ssh, remote, MCP, 帳號邊界
