@@ -14,3 +14,4 @@
 [2026-05-19] UPDATE karpathy-skills-claude-coding-rules | added: multica-ai repo, Goal-Driven Execution 範例
 [2026-05-19] INGEST open-slide-codex-presentation | topics: codex, 簡報, gpt-image-2, browser-use, AI工具
 [2026-05-19] INGEST microsoft-ai-agents-for-beginners | topics: microsoft, AI agent, RAG, multi-agent, MCP, context-engineering
+[2026-05-19] INGEST codex-hooks-event-trigger | topics: codex, hooks, event-trigger, automation, agent-control
