@@ -18,3 +18,4 @@
 [2026-05-19] INGEST api-key-security-env-hook | topics: 安全, API key, .env, hook, claude-code
 [2026-05-19] INGEST claude-codex-ssh-remote-mode | topics: claude-code, codex, ssh, remote, MCP, 帳號邊界
 [2026-05-19] INGEST gemini-35-flash-pro-agentic | topics: gemini, google, LLM, agentic, 低成本, Spark
+[2026-05-19] INGEST jal-rtw-award-120k-miles | topics: 里程旅遊, 日航, 環球票, 商務艙, 寰宇一家
