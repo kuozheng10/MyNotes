@@ -8,9 +8,13 @@ source: https://github.com/forrestchang/andrej-karpathy-skills
 
 ## 是什麼
 
-把 Andrej Karpathy 的 AI 開發哲學包成 CLAUDE.md 規則，直接管控 Claude Code 行為。19.5K Stars。
+把 Andrej Karpathy 的 AI 開發哲學包成 CLAUDE.md 規則，直接管控 Claude Code 行為。
 
 解決的痛點：AI 亂改已寫好的 code、需求未問清就腦補、過度工程、不測試只叫你「再試」。
+
+相關 repo：
+- `forrestchang/andrej-karpathy-skills`（19.5K stars）
+- `multica-ai/andrej-karpathy-skills`（136K stars，較新）
 
 ## 4 個核心規則
 
@@ -46,6 +50,19 @@ copilot plugin install andrej-karpathy-skills@karpathy-skills
 ```
 
 repo：https://github.com/doggy8088/andrej-karpathy-skills
+
+## 目標導向執行：給成功標準，不給步驟
+
+不要說「幫我寫一個處理使用者輸入的函式」。
+
+要說：
+
+> 設計 `process_user_input(s: str)`，驗證是否為有效 JSON。
+> 不是 → 回傳含 error 的 dict。
+> 是 → 回傳解析後的 dict。
+> **驗收標準**：通過 `test_valid_json_input` 和 `test_invalid_json_input`。
+
+核心差異：Claude 不只要寫出函式，還要「確保能通過測試」。讓 AI 自己 loop 驗收，大幅減少來回輪次。
 
 ## 提煉
 

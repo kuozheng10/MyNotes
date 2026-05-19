@@ -11,3 +11,4 @@
 [2026-05-18] UPDATE claude-code-six-slash-commands | added: /goal feature (Claude Code + Codex)
 [2026-05-18] INGEST gavin-baker-ai-chip-investment-thesis | topics: 投資分析, AI晶片, 記憶體週期, Trainium, Neocloud, 軌道運算
 [2026-05-19] INGEST claude-code-setup-plugin-official | topics: claude-code, plugin, hooks, skills, mcp, subagents, automation
+[2026-05-19] UPDATE karpathy-skills-claude-coding-rules | added: multica-ai repo, Goal-Driven Execution 範例
