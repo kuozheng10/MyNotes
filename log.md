@@ -20,3 +20,4 @@
 [2026-05-19] INGEST gemini-35-flash-pro-agentic | topics: gemini, google, LLM, agentic, 低成本, Spark
 [2026-05-19] INGEST jal-rtw-award-120k-miles | topics: 里程旅遊, 日航, 環球票, 商務艙, 寰宇一家
 [2026-05-19] INGEST google-gemini-spark-agent-platform | topics: Google, Spark, agent, 自動化, Gmail, Workspace
+[2026-05-20] INGEST cross-model-workflow-three-paths | topics: cross-model, claude-p, A2A, OpenRouter, LiteLLM, Stateless, multi-agent
