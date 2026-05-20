@@ -22,3 +22,4 @@
 [2026-05-19] INGEST google-gemini-spark-agent-platform | topics: Google, Spark, agent, 自動化, Gmail, Workspace
 [2026-05-20] INGEST cross-model-workflow-three-paths | topics: cross-model, claude-p, A2A, OpenRouter, LiteLLM, Stateless, multi-agent
 [2026-05-20] UPDATE gbrain-garry-tan-memory-system | v0.36 新功能：PGLite零設定、43 skills、ZeroEntropy、OpenClaw原生整合、重新評估值得裝
+[2026-05-20] INGEST shannon-ai-security-penetration-tool | topics: 資安, ai-security, penetration-testing, devSecOps, 漏洞驗證
