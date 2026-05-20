@@ -21,3 +21,4 @@
 [2026-05-19] INGEST jal-rtw-award-120k-miles | topics: 里程旅遊, 日航, 環球票, 商務艙, 寰宇一家
 [2026-05-19] INGEST google-gemini-spark-agent-platform | topics: Google, Spark, agent, 自動化, Gmail, Workspace
 [2026-05-20] INGEST cross-model-workflow-three-paths | topics: cross-model, claude-p, A2A, OpenRouter, LiteLLM, Stateless, multi-agent
+[2026-05-20] UPDATE gbrain-garry-tan-memory-system | v0.36 新功能：PGLite零設定、43 skills、ZeroEntropy、OpenClaw原生整合、重新評估值得裝
