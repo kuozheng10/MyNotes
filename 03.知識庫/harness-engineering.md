@@ -82,6 +82,14 @@ Agent
 
 ## OpenAI 視角補充（2026-05）
 
+### OpenAI 官方實驗數據
+- 5 個月、3 位工程師
+- 從空白 Git Repo 開始
+- 幾乎所有程式碼由 Codex Agent 生成（應用邏輯、測試、CI/CD、文件、Observability、內部工具）
+- 最終：超過 100 萬行程式碼
+- 開發速度：約人工的 10 倍
+- **沒有人工手寫程式碼**
+
 ### 核心宣言
 > **Humans steer. Agents execute.**
 > 人類負責掌舵，Agent 負責執行。
