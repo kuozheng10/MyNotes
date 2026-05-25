@@ -78,6 +78,54 @@ Agent
 
 **關鍵洞見**：差別不是 AI 變聰明，是**流程**終於拆得出去。同樣的 model 換不同 IDE 表現天差地別，差別在那層「外殼（Harness）」。
 
+---
+
+## OpenAI 視角補充（2026-05）
+
+### 核心宣言
+> **Humans steer. Agents execute.**
+> 人類負責掌舵，Agent 負責執行。
+
+人的工作不再是逐行寫程式，而是：
+- 設計規則與流程
+- 建立文件、測試、回饋系統
+- 管理 Agent 協作
+
+### 傳統 vs 新工作流程
+
+| 舊 | 新 |
+|----|-----|
+| 人 → Prompt → AI → 回答 | 人 → Harness → 多 Agent → 測試 → 修正 → 驗證 → 部署 |
+
+### 未來工程師兩種分類
+
+**第一種（容易被取代）：**
+- CRUD、重複開發、基礎功能、樣板式 Coding
+
+**第二種（價值暴增）：**
+- 系統架構、Workflow 設計、Agent 協作、AI 治理
+- Feedback Loop、SOP、商業流程理解、知識管理
+
+### 企業競爭力轉移
+
+未來企業競爭力不再只是「有沒有 AI」，而是：
+> **「有沒有 AI 工作系統（Harness）」**
+
+因為：模型越來越便宜，真正困難的是 SOP/流程/文件/規則/Workflow。
+
+### 新興企業角色
+
+- AI Team Lead
+- AI Workflow Architect
+- Agent Manager
+- AI Operations
+
+### 一句話總結
+
+> 「讓 AI 不只是會做事，而是能**穩定、可管理、可擴充**地工作。」
+
+---
+
 ## 相關筆記
 
 - [[addyosmani-agent-skills]] — Skills 本身就是 Inferential Guides 的系統化實作
