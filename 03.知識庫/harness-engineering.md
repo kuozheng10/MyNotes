@@ -134,6 +134,62 @@ Agent
 
 ---
 
+## Sensors 深化：測試管理者視角（2026-05）
+
+> 來源：Thoughtworks Birgitta Boeckeler × Chris Ford 對談，台灣社群整理
+
+### 核心比喻：教小孩騎腳踏車
+
+- **Guides（前饋）**：上車前講十分鐘規則 → 有用但不夠
+- **Sensors（回饋）**：摔了之後膝蓋的痛、旁邊喊「太快了！」→ 真正讓他學會的是這個
+
+只有 Guides（markdown 檔）= 用「碎念」管 AI，AI 一直犯同樣的錯。
+
+### 7 種 Computational Sensors（優先用這些）
+
+| # | Sensor | 說明 |
+|---|--------|------|
+| 1 | **Linter** | 即時語法/風格回饋 |
+| 2 | **靜態分析** | 潛在 bug、安全漏洞 |
+| 3 | **測試覆蓋率** | 哪些路徑沒被測到 |
+| 4 | **Mutation testing** | 測試是否真的有效（改壞 code 測試應該要紅）|
+| 5 | **依賴掃描** | CVE、版本問題 |
+| 6 | **結構測試**（ArchUnit 類）| 架構邊界是否被違反 |
+| 7 | **AI code review** | 語意判斷（Inferential，貴，選擇性用）|
+
+### Sensor 輸出要「為 AI 而優化」
+
+不只告訴 AI「這裡錯了」，還要直接說「該怎麼改」。
+= 正向的 prompt injection，讓 AI 看著 linter 輸出就能自我修正。
+
+### Sensors 放在哪（Shift-Left）
+
+| 位置 | 跑什麼 | 原則 |
+|------|--------|------|
+| commit 前 | linter、快測試 | 便宜、秒級 |
+| pipeline 中 | mutation test、完整 review | 重型、可接受慢 |
+| 持續監控 | dead code、覆蓋率品質、SLO | 長期健康度 |
+
+### 房間裡的大象：功能正確性目前沒有好答案
+
+現狀：AI 寫測試 → 看到綠燈 → 加手動測試
+問題：**對「AI 自己寫的測試」賦予太多信任**
+
+解法方向：往**上游**解，不是往下游補
+→ SBE（Spec by Example）、Approved Fixtures，在需求釐清階段就定義好「正確行為」
+→ AI 時代，測試品質問題反而讓上游需求工程更重要，而不是更不重要
+
+### 角色轉變
+
+```
+舊：審查 AI 寫了什麼
+新：設計讓 AI 自我審查的系統
+```
+
+→ 別再寫第 87 個 markdown 檔了，去裝個 linter、加 mutation test、把 review agent 接 pipeline。
+
+---
+
 ## 相關筆記
 
 - [[addyosmani-agent-skills]] — Skills 本身就是 Inferential Guides 的系統化實作
