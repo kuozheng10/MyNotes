@@ -8,9 +8,10 @@ source: Telegram 分享
 
 ## 三個推薦的設計 Skills
 
-### 1. Frontend Design Skill（Anthropic 官方）
+### 1. Frontend Design Skill（Anthropic 官方，136,000 ⭐）
 - **來源**：https://github.com/anthropics/skills/tree/main/skills/frontend-design
-- **用途**：強迫 Claude 跳出制式 AI 感
+- **痛點**：以前叫 AI 做網頁，每次都長一樣——Inter 字型、同樣卡片佈局
+- **用途**：強迫 Claude 跳出制式 AI 感，設計輸出每次不同
 - **用法**：給風格關鍵字（極簡主義、復古、...）而非直接說「幫我設計 XX 頁面」
 
 ### 2. UI/UX Pro Max（GitHub 7 萬 stars）
@@ -31,6 +32,6 @@ source: Telegram 分享
 
 | Skill | 狀態 |
 |-------|------|
-| frontend-design | ❌ 未裝 |
-| ui-ux-pro-max | ❌ 未裝 |
-| web-design-guidelines | ❌ 未裝 |
+| frontend-design | ✅ 已裝 |
+| ui-ux-pro-max | ✅ 已裝 |
+| web-design-guidelines | ✅ 已裝 |
