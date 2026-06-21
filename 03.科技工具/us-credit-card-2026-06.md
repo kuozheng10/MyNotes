@@ -52,7 +52,35 @@
 
 ---
 
+## Randy 文章版（持續更新，抓取日期 2026-06-22）
+
+> 來源：[TripPlus Blog by Randy](https://blog.tripplus.cc/zh/118331/randy_limited_time_offer_10_us_credit_cards_with_high_opening_bonus)
+> 文章發布：2026-04-18，持續更新
+
+| # | 卡名 | 開卡禮 | 消費門檻 | 年費 |
+|---|------|--------|----------|------|
+| 1 | **Chase Sapphire Reserve Business** | **200,000 UR** | $30k / 6M | $795 |
+| 2 | Chase Sapphire Preferred | 100,000 UR | $5k / 3M | $95 |
+| 3 | Chase Ink Business Cash | 100,000 UR（$1k 現金回饋） | $8k / 4M | 免年費 |
+| 4 | Chase Ink Business Unlimited | 100,000 UR（$1k 現金回饋） | $8k / 4M | 免年費 |
+| 5 | **Amex Business Platinum** | **最高 300,000 MR** | $20k / 3M | $895 |
+| 6 | Amex Platinum | 最高 175,000 MR | $12k / 6M | $895 |
+| 7 | Citi Strata Elite | 75,000 TYP | $6k / 3M | $595 |
+| 8 | Capital One Venture X Business | 150,000 哩 | $30k / 3M | $395 |
+| 9 | Capital One Venture Business | 100,000 哩 | $10k / 3M | $95 |
+| 10 | **Bank of America Atmos Rewards Summit** | **100,000 AS 哩 + 25k 同行者兌換券** | $6k / 3M | $395 |
+
+### 亮點
+
+- **CSR Business 200k UR**：開卡禮史高，但要刷 $30k / 6M，適合有大筆商業支出
+- **Amex Biz Platinum 300k MR**：最高史高，消費門檻 $20k / 3M
+- **Chase Ink Cash/Unlimited 免年費**：$8k / 4M，無年費，UR 點可轉給 CSR/CSP 使用
+- **BoA Atmos Summit**：同行者兌換券每年續卡都有（25k AS 哩值），季度 2 張 Alaska lounge
+
+---
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
+- 文章：[Randy - 10張高額開卡禮信用卡](https://blog.tripplus.cc/zh/118331/randy_limited_time_offer_10_us_credit_cards_with_high_opening_bonus)
 - 相關筆記：[[eva-award-tickets]]
