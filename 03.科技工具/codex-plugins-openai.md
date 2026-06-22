@@ -72,3 +72,31 @@ codex --version
 # 在 repo 目錄下，讓 Codex 自動選插件
 codex "請查看 openai/plugins 並幫我選擇和安裝適合的插件"
 ```
+
+---
+
+## DevSpace MCP — 用 ChatGPT 額度補 Codex
+
+> 來源：社群分享（TG 2026-06-22）
+> GitHub: https://github.com/Waishnav/devspace
+
+**原理**：OpenAI 的 ChatGPT 和 Codex 額度分開計算，DevSpace MCP 讓 ChatGPT 充當 Codex，額度等於翻倍。
+
+```bash
+npm install -g @waishnav/devspace
+# 裝好後透過網路 tunnel 把 MCP server 暴露出去
+```
+
+**建議使用情境：**
+
+| 場景 | 模型 | 用途 |
+|------|------|------|
+| 規劃/分析 | GPT-5.5 Pro / xHigh | 需求拆解、架構設計 |
+| 實作 | 本地 Codex | 寫程式碼（主力） |
+| Code Review | ChatGPT（透過 DevSpace） | 審查其他 coding agent 的輸出 |
+
+**對派哥的應用：**
+- Codex 額度見底時的緊急備援（不用停工）
+- 用 ChatGPT 先做規劃書，再交 Codex 實作（類似 Gemini → Claude 的分工模式）
+
+⚠️ **風險**：這屬於灰色玩法，OpenAI 可能隨時關閉。別依賴它作為主要工作流。
