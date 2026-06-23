@@ -79,8 +79,57 @@
 
 ---
 
+---
+
+## 2026-06-22 更新：CSP 改版 + Hyatt 轉點貶值
+
+> 來源：[TripPlus Blog](https://blog.tripplus.cc/zh/207642/us_credit_card_best_ever_welcome_bonus_recommendation)
+
+### Chase Sapphire Preferred (CSP) 改版
+
+年費維持 **$95**，開卡禮升至史高 **100,000 UR**（消費 $5k / 3M）
+
+新增持卡福利：
+| 新福利 | 說明 |
+|--------|------|
+| $100 酒店退額 | 每持卡年透過 Chase Travel 訂酒店即可獲得，等於抵銷年費 |
+| Global Entry / TSA PreCheck | 每 4 年補助最高 $120 申請費 |
+| Apple TV 免費一年 | 一次性福利（本來有訂閱的人很實用） |
+| 3x 加油 / EV 充電 | 新增類別 |
+| 3x 短租房屋（Airbnb/HomeAway/Vacasa） | 新增類別 |
+
+### ⚠️ Hyatt 轉點比例重大貶值：1:1 → 4:3
+
+| 對象 | 適用時間 |
+|------|--------|
+| 6/15/2026 後新申辦者 | 即時適用 4:3（每 1 UR = 0.75 Hyatt 點） |
+| 6/15/2026 前現有持卡人 | 緩衝至 **10/1/2026**，之前趕快轉完 |
+
+→ 想保留 1:1 轉 Hyatt：必須持有 **Chase Sapphire Reserve (CSR)**
+
+### Chase Ink Business Cash / Unlimited：新限制
+
+- 開卡禮升至史高 **100,000 UR**（消費 $8k / 4M，免年費）
+- **「一生一次」條款**：曾持有過或拿過開卡禮 → 之後不能再拿
+- 推薦禮限制：被推薦人必須是「全新商業信用卡客戶」
+
+### Alaska Airlines Summit：夥伴手續費即將漲價
+
+- 使用 AS 哩程兌換夥伴航空（星宇/日航等）訂位費：$12.5 → **$20**（7/1/2026 起）
+- 持有 Summit 卡者：**完全免除**此訂位費
+- 高額開卡禮預計 1 個月內結束，趕快申辦
+
+### Citi AA Globe：90,000 miles 開卡禮
+
+- 年費 $350，消費 $5k / 4M
+- 每年 4 張 Admirals Club **24 小時使用券**（同天轉機不重複扣）
+- 同行者機票 $99（美國國內線來回）
+
+---
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
 - 文章：[Randy - 10張高額開卡禮信用卡](https://blog.tripplus.cc/zh/118331/randy_limited_time_offer_10_us_credit_cards_with_high_opening_bonus)
+- 文章：[TripPlus 2026-06-22 更新](https://blog.tripplus.cc/zh/207642/us_credit_card_best_ever_welcome_bonus_recommendation)
 - 相關筆記：[[eva-award-tickets]]
