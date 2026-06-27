@@ -85,3 +85,27 @@ source: https://gigaai.studio/learning/claude-code-five-layers.html
 - [[claude-code-powerup-guide]] — 實戰技巧
 - [[claude-subagent-context-management]] — 子代理 context 控管
 - [[claude-code-token-saving-strategies]] — token 節省策略（對應層 2）
+
+---
+
+## 另一個視角：六層執行架構（2026-06 補充）
+
+> 來源：James Code Lab LinkedIn（#jamesCodeLab #ClaudeAI）
+> 更新：2026-06-27
+
+同樣在解釋「Claude Code 為什麼不只是 coding AI」，但用六層切法：
+
+| 層 | 名稱 | 職責 |
+|----|------|------|
+| 1 | **知識層** | 短期/長期/情節/語意記憶；壓縮 context；組織可重用技能 |
+| 2 | **背帶層（Harness）** | 控制中心：解讀意圖 → 計劃 → 選工具 → 觀察結果 → 更新記憶 → 執行政策 |
+| 3 | **執行層** | 派遣工具、跑 MCP server、管理串流、用 cache 加速 |
+| 4 | **多代理層** | 產生專門子代理、委派任務、協調訊息、追蹤進度、隔離工作區 |
+| 5 | **觀察層** | 捕捉事件、log、指標、retry、非同步、排程、狀態變更 |
+| 6 | **輸出層** | 回傳驗證結果、更新狀態、記憶體變更、通知、產出 artifacts |
+
+**核心循環**：感知 → 計劃 → 行動 → 觀察 → 更新 → 重複
+
+**作者觀點**：最關鍵的一層是 Harness Layer（背帶層）——它是整個系統的控制中心，決定 agent 是否可靠。
+
+→ 相關筆記：[[harness-engineering]]、[[claude-code-source-leak-insights]]
