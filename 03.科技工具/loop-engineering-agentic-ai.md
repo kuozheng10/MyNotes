@@ -103,8 +103,68 @@ AI 產出 → 執行 → 自動測試 → 有錯 → 餵回 AI → 再修正 →
 
 ---
 
-## 標籤
-`#AI架構` `#Agent` `#自動化` `#Loop` `#PromptEngineering`
+---
+
+## LangChain 四層 Loop 架構（2026-06 補充）
+
+> 來源：工程師米奇 LinkedIn，轉述 LangChain Blog「The Art of Loop Engineering」
+> 更新日期：2026-06-27
+
+**核心觀點**：Agent 的威力不在模型本身，在於你在模型外面設計了幾層迴圈。
+
+### 四層迴圈
+
+| 層 | 名稱 | 功能 | 代價 |
+|----|------|------|------|
+| 1 | **Agent Loop** | 讓工作被完成（工具呼叫反覆跑到完成）| 基礎成本 |
+| 2 | **Verification Loop** | 確保工作品質（Grader 評分 → 沒過 → 重做）| 延遲 + 成本增加 |
+| 3 | **Event-Driven Loop** | 工作規模化自動化（事件觸發，agent 嵌入系統）| 架構複雜度 |
+| 4 | **Hill Climbing Loop** | 系統自我改進（trace 分析 → 自動修改 prompt/tool）| 工程量高 |
+
+### 各層流程
+
+```
+Loop 1 — Agent Loop
+接收任務 → LLM 思考 → 呼叫工具 → 未完成？→ 繼續 → 完成 → 輸出
+
+Loop 2 — Verification Loop
+Agent 產出 → Grader 評分 → 通過 → 輸出
+                          → 沒過 → feedback 回 agent → 重做
+
+Loop 3 — Event-Driven Loop
+事件觸發（webhook/排程/新文件）→ Agent 自動跑 → 結果寫回系統
+
+Loop 4 — Hill Climbing Loop
+Agent 跑 → 留 trace → 分析 agent 找問題 → 自動改 harness → 下輪更強
+```
+
+### 人類的位置
+
+自動化不等於移除人類，而是把人類放在最有價值的位置：
+- Loop 1 → 敏感操作前確認
+- Loop 2 → 人類可當 Grader
+- Loop 3 → 審批最終產出
+- Loop 4 → harness 改動需人類 review 才部署
+
+### Satya Nadella 的觀點
+
+> 越早建立 learning loop 的公司——讓人類判斷力跟運算資源一起複利成長——會累積出很難被複製的優勢。
+
+大部分人停在 Loop 1~2。真正的複利在 Loop 3~4。
+
+### 對派哥現有系統的對應
+
+| 派哥的系統 | 對應 Loop |
+|-----------|----------|
+| cc_processor 排程每天跑 | Loop 3（Event-Driven） |
+| SQLite vs Notion 驗證 | Loop 2（Verification） |
+| Claude Code 自動修錯 | Loop 1（Agent） |
+| GBrain 記憶 + skill 進化 | Loop 4（Hill Climbing，雛形） |
 
 ---
-*存入日期：2026-06-10 | 更新：2026-06-11（六大元件 + Loop 無法做的事）*
+
+## 標籤
+`#AI架構` `#Agent` `#自動化` `#Loop` `#PromptEngineering` `#LangChain`
+
+---
+*存入日期：2026-06-10 | 更新：2026-06-11（六大元件）| 更新：2026-06-27（LangChain 四層架構）*
