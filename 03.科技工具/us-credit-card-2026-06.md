@@ -195,9 +195,80 @@
 
 ---
 
+---
+
+## 三種版本 Amex 白金卡完整攻略（2026-06-29 更新）
+
+> 來源：[TripPlus Blog - Ocean](https://blog.tripplus.cc/zh/208753/ocean_three_types_amex_platinum_intro)
+> 發布日期：2026-06-09
+
+Amex 在美國發行三款個人白金卡：**香草白金（Vanilla）**、**嘉信 (Charles Schwab) 聯名白金**、**摩根士丹利 (Morgan Stanley) 聯名白金**。
+
+### 三張卡共享的年度退額福利（總價值 ~$2,000 USD）
+
+| 類別 | 詳細 | 年度上限 |
+|------|------|----------|
+| 餐飲退額 | Resy 訂餐網站內餐廳，每季 $100 | $400 |
+| 運動服飾退額 | Lululemon 消費，每季 $75 | $300 |
+| 數位娛樂退額 | YouTube Premium/TV、Disney+、Hulu，每月 $25 | $300 |
+| 航空雜費退額 | 美國籍航空行李托運 + 機上餐飲 | $200 |
+| Uber 服務額度 | Uber Cash（乘車或外送），每月均攤 | $200 |
+| 頂級酒店訂房 | Fine Hotels + Resorts (FHR) / The Hotel Collection (THC) | $600 |
+
+> 關鍵：退額要能自然融入既有消費，不要為了退額而額外花費。
+
+### 各版本獨家優勢比較
+
+**1. 香草白金（一般個人版）**
+- 開卡禮採「最高可達」(As High As) 浮動機制，特定時期可非常優渥
+- 開卡禮數字不固定，申請者最終獲得點數可能因人而異
+- 適合初次踏入 Amex MR 點數系統的新手
+
+**2. 嘉信 (Charles Schwab) 聯名白金**
+- **Invest with Rewards**：1 MR 點 = 1.1 美分，直接轉換現金存入嘉信投資帳戶（點數最佳出口之一）
+- **Schwab Appreciation Bonus**（年度資產獎勵）：
+  - 嘉信資產 $25 萬 USD → 每年 $100 USD 回饋
+  - 嘉信資產 $100 萬 USD → 每年 $200 USD 回饋
+  - 嘉信資產 $1,000 萬 USD → 每年 $1,000 USD 回饋
+- 開卡禮為固定數字（例如 15 萬點），比香草更確定
+- 申請門檻：必須先開設嘉信投資帳戶
+- ⚠️ 已持有其他版本白金卡後，幾乎無法再拿嘉信版本開卡禮
+
+**3. 摩根士丹利 (Morgan Stanley) 聯名白金（三者中最值得長期持有）**
+- **第一張白金等級副卡免年費**（省 $195 USD）→ 家人/伴侶可獨自使用 Centurion Lounge
+- **主卡實質免年費**：開立 MS「Platinum CashPlus」帳戶且資產達門檻 → 每年獲得等同年費的獎勵金
+- 點數轉現金：1 MR 點 = 1 美分（低於嘉信的 1.1 美分）
+- 開卡禮為固定數字（例如 15 萬點）
+- 申請門檻：持有 E-Trade 任何帳戶即可（摩根士丹利收購 E-Trade 後門檻大降）
+
+### 申辦策略重點
+
+**「一生一次」+ 家族限制**
+- Amex Once In A Lifetime：同產品開卡禮只能拿一次
+- 三張白金卡視為「不同產品」，但有家族限制：已持有其中一種，理論上無法再拿另一種開卡禮
+- **第一張選哪種，至關重要**
+
+**2026 年特殊機會視窗**
+- 嘉信版本：已持有其他版本白金卡 → 幾乎無法拿開卡禮
+- **MS 版本**：目前香草白金持卡人申請 MS 白金，已有人成功拿到開卡禮 → 此漏洞未來可能關閉，把握機會
+
+### 如何選擇？
+
+| 情境 | 建議 |
+|------|------|
+| 首次申辦 Amex | 觀察香草白金高峰期，或選 CS/MS 固定開卡禮 |
+| MR 點數用不完 | 嘉信版（1.1美分/點轉投資資金） |
+| 有家人想共享貴賓室 | MS 版（免費白金副卡，省 $195） |
+| 想長期低成本持卡 | MS 版（Platinum CashPlus 帳戶可實質免年費） |
+| 已持有香草白金 | 趕快申請 MS 版（當前機會視窗） |
+| 常旅行兌換商務艙 | 三張都行，轉哩程計畫比轉現金更划算 |
+
+---
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
 - 文章：[Randy - 10張高額開卡禮信用卡](https://blog.tripplus.cc/zh/118331/randy_limited_time_offer_10_us_credit_cards_with_high_opening_bonus)
 - 文章：[TripPlus 2026-06-22 更新](https://blog.tripplus.cc/zh/207642/us_credit_card_best_ever_welcome_bonus_recommendation)
+- 文章：[Ocean - 三種 Amex 白金卡比較](https://blog.tripplus.cc/zh/208753/ocean_three_types_amex_platinum_intro)
 - 相關筆記：[[eva-award-tickets]]
