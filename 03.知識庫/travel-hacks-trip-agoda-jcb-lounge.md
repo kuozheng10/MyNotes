@@ -104,6 +104,28 @@
 
 ---
 
+---
+
+## 派哥的 PP 卡（Priority Pass）— 持有記錄
+
+**派哥有 Priority Pass / LoungeKey 卡**，可在全球機場貴賓室使用。
+
+### 成田機場（NRT）T2 超值餐廳 — LoungeKey 可用
+
+**餐廳**：鐵板燒 道頓堀 栗田（Teppanyaki Dotonbori Kurita）
+- 位置：NRT T2 航廈 2F 美食廣場
+- 卡別：涯豐旅人卡 LoungeKey Pass（派哥確認可用）
+- 套餐最高價值 **3400 円**，三選一：
+  - ✅ 大阪燒 + 章魚燒套餐
+  - ✅ 嫩煎牛排套餐
+  - ✅ 蒜香蕃茄雞肉套餐
+- **技巧**：可以使用多個 QR code 兌換多份餐點
+
+> 下次過成田記得用 PP 卡在 T2 2F 吃鐵板燒，3400 円的牛排套餐最划算。
+
+---
+
 ## 相關筆記
 
 - [[project_eva_award_tickets]] — 長榮里程商務艙兌換計畫
+- [[us-credit-card-2026-06]] — Amex 白金卡（含 PP/LoungeKey 權益）
