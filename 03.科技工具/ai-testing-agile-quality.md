@@ -319,3 +319,4 @@ Boris 與 Niklas 都強調：agent 自己做事、沒人逐步盯著時，「驗
 - [[ai-coding-team-cld]] — WIP 天然煞車消失的 CLD
 - [[ai-dev-problems-amplified-2026-06]] — DORA/Faros 數據：PR review +441%
 - [[scrum-ai-five-fails-2026-06]] — 敏捷三叔公系列：AI 讓 Scrum 五個舊病惡化（症狀篇）
+- [[ai-token-cost-governance-tesla-2026-07]] — Test Impact Analysis補上「省token費」的理由，整包重測vs只測相關部分費用可能差十倍以上

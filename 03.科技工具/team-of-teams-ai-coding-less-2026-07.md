@@ -90,6 +90,7 @@ related: scrum-ai-five-fails-2026-06, ai-middle-management-less-block, ai-testin
 - **[[scrum-ai-five-fails-2026-06]]**：那篇談「各做各的」失效模式時提到跨職能只是形式（症狀），這篇的「跨單位任務部隊」章節給出同一問題的組織設計解方（Feature Team）。
 - **[[ai-testing-agile-quality]]**：這篇的「園丁 = Guides + Sensors」跟該筆記的 Eval Gate / Self-Healing CI 是同一套機制的兩種說法——**護欄與感測器就是驗證機制的組織化**。
 - **[[ai-dev-problems-amplified-2026-06]]**：DORA 數據講的 rework rate、verification overhead，是本篇「意圖沒對齊、一天長出好幾個錯誤方向」的量化版本。
+- **[[ai-token-cost-governance-tesla-2026-07]]**：Tesla 限制員工 AI 花費的案例，給「園丁 = Guides + Sensors」補上成本面的印證——便宜的自動化檢查（Sensors）同時是最省錢的煞車，沒裝煞車的 AI agentic loop 才是真正燒錢的原因。
 
 ---
 
