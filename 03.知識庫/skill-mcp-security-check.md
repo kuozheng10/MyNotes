@@ -73,3 +73,4 @@ ls ~/.claude/agents/ ~/.claude/skills/
 - [[atr-agent-threat-rules-panguard]]
 - [[claude-code-source-leak-insights]]
 - [[agency-agents-applicable-analysis]]
+- [[mcp-server-multitenant-security-5rules]] — 反過來「自己寫MCP server」時的安全檢查（多租戶隔離5條規則），這篇是消費端，那篇是開發端

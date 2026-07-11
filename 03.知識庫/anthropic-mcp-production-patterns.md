@@ -123,5 +123,6 @@ Anthropic data plugin for Cowork：10 個 skill + 8 個 MCP server，接 Snowfla
 
 - [[skill-mcp-security-check]] — MCP 安全掃描 SOP
 - [[claude-notebooklm-mcp-5scenarios]] — 實際用 MCP 串 NotebookLM
+- [[mcp-server-multitenant-security-5rules]] — 補上「多租戶隔離」這個具體的安全細節，如果要建自己的服務給外部Agent用，這篇是必讀清單
 - [[harness-engineering]] — Agent Harness 四層架構
 - [[garry-tan-thin-harness-fat-skills]] — Thin Harness + Fat Skills 哲學
