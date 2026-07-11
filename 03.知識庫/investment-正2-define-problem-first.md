@@ -106,3 +106,4 @@ tags: #投資 #正2 #槓桿ETF #問題框架 #財富階梯
 - [[daren-631-vs-leveraged-etf-concentration-risk]] — 大仁：00631L vs 正二集中度分析
 - [[aliang-three-swords-leveraged-etf-strategy]] — 阿良：三劍合一槓桿策略
 - [[google-sheets-gas-investment-dashboard-正二]] — 正二戰情室
+- [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書自己說不適合長期投資，用耗損公式拆解過去十年報酬的真正來源

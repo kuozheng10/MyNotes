@@ -91,3 +91,4 @@ source: 大仁哥 Facebook 貼文
 
 - [[aliang-three-swords-leveraged-etf-strategy]] — 阿良三刀流，師承大仁，正二長期持有實戰
 - [[howard-marks-long-term-investing-survive-bad-years]] — 長期投資視角，承擔波動換取報酬
+- [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書寫明不適合長期投資，用耗損公式拆解報酬來源
