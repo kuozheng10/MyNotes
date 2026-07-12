@@ -41,6 +41,32 @@
 
 ---
 
+## Amex 開卡禮「家族限制」規則詳解（2026-06 更新）
+
+> 來源：[TripPlus - Randy Wang](https://blog.tripplus.cc/zh/166789/randy_amex_credit_cards_family_signup_bonus_limitation)
+> 發布日期：2026-06-02
+
+延伸上面「Amex 一生一次／家系規則」——目前只有**個人版**卡片受限，**商業版**卡不受影響。核心邏輯：**先辦低年費卡，再辦高年費卡**，順序辦反了會直接失去開卡禮資格。已知的家族限制：
+
+| 卡別 | 想拿開卡禮，就不能「現在持有或曾經持有過」以下卡 |
+|------|------------------------------------------------|
+| **MR 點數系列** | |
+| Amex Green（個人） | Amex Platinum（任何聯名版，含嘉信/摩根士丹利）、Amex Gold |
+| Amex Gold（個人） | Amex Platinum（任何聯名版，含嘉信/摩根士丹利）、Premier Rewards Gold（舊版） |
+| Amex Platinum（個人） | 其他聯名版 Platinum（嘉信版／摩根士丹利版互斥；但持有 Gold 或 Green 不受影響） |
+| **現金回饋系列** | |
+| Amex Blue Cash Everyday | Amex Cash Magnet、任何版本 Blue Cash Preferred（含摩根士丹利聯名版） |
+| Amex Blue Cash Preferred | 其他聯名版 Blue Cash Preferred（含摩根士丹利聯名版） |
+| **航空／酒店聯名系列** | |
+| Amex Marriott Bonvoy Bevy | Marriott Bonvoy Brilliant（個人聯名版） |
+| Amex Delta SkyMiles Blue | Delta Gold／Platinum／Reserve（個人聯名版；商業版不受影響） |
+| Amex Delta SkyMiles Gold | Delta Platinum／Reserve（個人聯名版；商業版不受影響） |
+| Amex Delta SkyMiles Platinum | Delta Reserve（個人聯名版；商業版不受影響） |
+
+**實戰建議**：規劃 Amex 開卡順序時，一律「低年費卡先辦、高年費卡後辦」，例如想收 Green + Gold + Platinum 三張開卡禮，順序必須是 Green → Gold → Platinum，反過來辦就會卡到家族限制拿不到部分開卡禮。
+
+---
+
 ## 點數/哩程轉換提示
 
 | 點數 | 可轉 |
