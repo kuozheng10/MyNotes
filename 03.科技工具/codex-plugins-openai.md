@@ -103,6 +103,28 @@ npm install -g @waishnav/devspace
 
 ---
 
+## Three.js Object Sculptor — 圖片轉3D模型的Codex外掛
+
+> 來源：Facebook「Codex 中文社群」分享，2026-07-12
+> GitHub: https://github.com/vinhhien112/Three.js-Object-Sculptor-Codex-Plugin
+> ⚠️ 非 openai/plugins 官方庫的插件，第三方獨立專案
+
+**做什麼**：附上一張物件照片，這個外掛會分析照片，產生一份「雕塑規格」(材質、光影、關節結構)，再自動寫出一整套**用程式碼構造**的 Three.js 3D 模型(不是輸出模型檔，是輸出可以動畫化的程式碼)，過程分八個階段逐步精修，還有 AI 視覺比對來檢查渲染出來的模型像不像原照片。
+
+**用途**：網頁上的即時互動3D道具、會動的裝飾物、產品展示模型，適合遊戲/網頁3D場景。
+
+**安裝**：`git clone`到本機外掛資料夾，走 `codex plugin add xxx@local` 流程，跟一般Codex plugin一樣（跟上面`openai/plugins`同一套安裝機制）。
+
+### 評估（對派哥的用途）
+
+⏸️ **暫時沒有立即用途**，理由：
+- 派哥目前的專案(my-wallet-trip、insurance-tracker、investment-dashboard、cc_processor)都是資料/CRUD類型的網頁應用，沒有Three.js/3D/遊戲需求
+- 這是解決「遊戲/3D網頁視覺化」這種很specific的問題，跟派哥現在的工作內容對不上
+
+**先記著就好，不用現在包成skill**——這種一次性、有明確觸發情境才用得到的工具，等真的哪天想在某個網站加個好玩的3D小物件時，直接照README步驟裝就是了(不用預先花時間包裝，Ponytail原則：能不寫就不寫)。
+
+---
+
 ## 相關筆記
 
 - [[chatgpt-work-launch-2026-07]] — Codex技術被包進「ChatGPT Work」這個消費級/企業級產品（2026-07推出），跟這篇講的Codex CLI plugin生態是同一個Codex技術的兩種產品形態
