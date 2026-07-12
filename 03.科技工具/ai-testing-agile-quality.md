@@ -378,6 +378,54 @@ Boris 與 Niklas 都強調：agent 自己做事、沒人逐步盯著時，「驗
 
 ---
 
+## 九個實踐該先衝哪裡？三波導入順序（2026-07-12）
+
+> 來源：敏捷三叔公，同系列社群貼文
+
+上面 Cynefin 那篇講的是「不要一次全上、要用探測」，這篇補上更具體的答案：**九個實踐照什麼順序做，才不會第一仗就陣亡**。
+
+排序邏輯只有一條：**改動最小、訊號最快的先做**。用最少投資換到「AI 產出確實有問題、而且我們抓得到」的證據，再拿證據去談需要組織配合的大工程。
+
+### 開始前先盤點三件事
+
+- **CI 現況**：每次 PR 會不會自動跑？沒有 CI 的話，先把 CI 立起來
+- **測試存量**：自動化測試蓋到哪，決定 Test Impact Analysis 什麼時候能上
+- **AI 使用紀錄**：prompt 和產出有沒有留痕跡？通常沒有，這就是要補的洞
+
+### ⚡ 第一波：一到兩週看到訊號
+
+| 實踐 | 為什麼先做 | 工具 | 啟動成本 |
+|------|-----------|------|---------|
+| **AI Code Quality Gate** | CI 通常已有 linter，只是加規則；每次 PR 產生具體數字（擋下幾筆重複碼、幾個過度防禦 try-catch），是說服團隊的彈藥 | ESLint/Ruff 收緊規則、jscpd 抓重複、Semgrep 自訂規則、SonarQube 調門檻 | 1~2 天，熟 CI 的工程師就能做 |
+| **Adversarial Testing** | 開第二個 session 或換模型打自己的 code，找邊界條件；不用改流程，常第一次就抓到 bug，是最好的內部宣傳 | Claude Code 開第二 session 當攻擊方，進階可配 Hypothesis(Python)/fast-check(JS) | 半天~1天，一人一模組就能開始 |
+| **Audit Trail** | 技術門檻幾乎零，但是後面所有實踐的資料地基——沒紀錄，Eval Gate 連 dataset 都湊不出來。金融/醫療等法遵產業應升格第一優先 | PR template 加欄位(AI參與程度/prompt摘要)、commit慣例、session log歸檔 | 1天以內，主要是養成習慣 |
+
+### 🤝 第二波：一到兩個月，需要跨角色配合
+
+| 實踐 | 為什麼放這裡 | 工具 | 啟動成本 |
+|------|-------------|------|---------|
+| **Specification by Example** | 價值最高但卡組織面——要PO/開發/測試坐下來談例子，需要信任和時間；太早推容易被「大家很忙」磨死，等第一波數據證明驗證是瓶頸再談就順了 | Example Mapping 工作坊(白板+便利貼)，落地成規格再選 Cucumber/Reqnroll/Gauge | 每個feature 30~60分鐘對話，真正成本是PO願意到場 |
+| **Test Impact Analysis** | AI讓改動量暴增後，全量跑測試的回饋時間變成新瓶頸，這時才有感；前提是要有一定測試存量 | JVM: Gradle/Maven增量測試外掛；前端: Jest changedSince；細緻可用coverage資料自建mapping | 3~5天，看codebase複雜度 |
+| **Secure-by-Default** | AI產出常帶過時/不安全預設寫法，與其事後掃，不如先鋪好安全鷹架和範本，讓AI一開始就踩在對的地基上 | 內部project template、Dependabot/Renovate、Trivy+Semgrep安全規則進CI | 1~2週建範本，之後持續維護 |
+
+### 🏗 第三波：一季以上，吃前面累積的資料和harness
+
+- **Eval Gate**：需要 dataset，從第一波 Audit Trail 累積的真實案例來——沒有紀錄就是空中樓閣。promptfoo可起步，多數團隊最後自建harness，成本以週計，還要專職維護eval集
+- **Self-Healing CI**：讓agent自動修紅燈很美，但前提是CI訊號要可信——flaky test一堆的團隊先修flaky，不然是讓AI在爛地基上蓋違建，成本以月計
+- **Continuous Verification**：把驗證延伸到production：Pact contract testing、feature flag配canary、OpenTelemetry接監控。這是終局不是起點，成本以季計
+
+### 三波總結
+
+> ⚡ 第一波用幾天成本換「證據」
+> 🤝 第二波拿證據換「組織配合」
+> 🏗 第三波拿資料和harness蓋「大工程」
+>
+> 順序反過來走，大概率死在第一仗。
+
+跟本筆記其他章節呼應：這篇把「阿哲的四個探測」案例背後的邏輯講得更白——為什麼 SBE 排在 Audit Trail 之後（組織信任要先靠數據換）、為什麼 Eval Gate 排在最後（要吃 Audit Trail 的資料）。是同一套 Cynefin probe-sense-respond 思維，換成具體的「先做什麼」清單。
+
+---
+
 ## 相關筆記
 - [[loop-engineering-testing]] — Loop 測試端四元件實作
 - [[loop-engineering-agentic-ai]] — Loop Engineering 基礎概念
