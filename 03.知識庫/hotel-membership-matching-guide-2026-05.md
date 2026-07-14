@@ -100,3 +100,4 @@ Hilton 鑽 → 配 Radisson 白金 → 配 Thon+ → 配 Scandic Lv5 → 直配 
 
 - [[accor-ibis-sapporo-hokkaido-hotel-tips]] — Accor 旗下 ibis 住宿實戰
 - [[travel-credit-card-strategy]] — 信用卡旅遊回饋選擇
+- [[marriott-jal-status-match-2026-07]] — 萬豪 x 日航 2026-07 會籍互換（酒店↔航空跨業互配，FOP 門檻試算）
