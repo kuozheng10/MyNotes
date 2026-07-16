@@ -65,3 +65,15 @@ officecli view SalesOrderReport_260518.xlsx outline
 6 個分頁維度全部精準對上，中文字（客戶名稱、產品規格）、儲存格內的前後空格都原樣保留，沒有亂碼或截斷。
 
 **結論：這次「讀得好」是有數據撐腰的，不是官方自吹了。** 已把 MCP 註冊進 Claude Code（`officecli mcp claude`，寫入 `~/.claude.json` 的 user-scope MCP servers），下個 session 開始 Claude Code 就能直接呼叫 officecli 的工具，不用再手動下 CLI 指令。
+
+---
+
+## ⚠️ 寫入自動化的重要坑：resident 非同步 flush
+
+實際拿 `sales-report-analysis` 專案寫了 `generate_report_pivot_officecli.py`（把卡住的 xlwings 樞紐分析表改用 officecli 產生），踩到一個坑：
+
+**officecli 為了效能，每次 `add`/`set` 等寫入指令不會立刻落地硬碟**，而是留一個背景 resident process，「閒置 2-10 秒後才自動 flush」（官方說法：`OFFICECLI_RESIDENT_FLUSH: each|auto|<seconds>|off`）。
+
+如果腳本邏輯是「跑完一串 officecli 寫入指令 → 馬上用別的程式（例如 Python 讀檔寄信）去讀同一個檔案」，會讀到 flush 前的舊狀態，資料看起來像「漏寫了」，其實只是還沒落地。實測時就中招：6個樞紐分析表加完後馬上寄信，收到的附件只有3個原始資料分頁，樞紐分頁還沒 flush 進硬碟。
+
+**正確做法**：任何非 officecli 的程式要讀取同一個檔案之前，一定要先明確下 `officecli close <file>`（或 `save`）強制同步 flush，不能只憑「指令回傳成功」就假設已經寫進硬碟。
