@@ -38,3 +38,30 @@
 工具本身可信（真開源、真活躍、真的上過HN），但「讀得好不好」這個核心賣點缺乏第三方驗證，屬於「值得先丟進沙盒試跑一次真實檔案」等級，還不到「直接換掉現有流程」的程度。
 
 **下一步**：如果要驗證，建議拿一份 MyClaude 現有的 Excel/Word 檔案本地跑一次 `officecli view` 實測，看解析結果對不對，比空想準。
+
+---
+
+## POC 實測結果（2026-07-16）
+
+用 `sales-report-analysis` 專案的真實檔案 `SalesOrderReport_260518.xlsx` 實測：
+
+```bash
+brew install officecli   # 已經裝過，v1.0.136
+officecli view SalesOrderReport_260518.xlsx text
+officecli view SalesOrderReport_260518.xlsx outline
+```
+
+**驗證方式**：拿 `officecli outline` 的結果跟 `openpyxl.load_workbook().worksheets[i].dimensions` 交叉比對。
+
+| 分頁 | openpyxl 維度 | officecli outline |
+|---|---|---|
+| 業務接單明細 | A1:Q187 | 187 rows × 17 cols ✅ |
+| 產品接單明細 | A1:Q273 | 273 rows × 17 cols ✅ |
+| 業務出貨明細 | A1:U218 | 218 rows × 21 cols ✅ |
+| 產品出貨明細 | A1:U280 | 280 rows × 21 cols ✅ |
+| 業務未出貨明細 | A1:Q76 | 76 rows × 17 cols ✅ |
+| 產品未出貨明細 | A1:Q79 | 79 rows × 17 cols ✅ |
+
+6 個分頁維度全部精準對上，中文字（客戶名稱、產品規格）、儲存格內的前後空格都原樣保留，沒有亂碼或截斷。
+
+**結論：這次「讀得好」是有數據撐腰的，不是官方自吹了。** 已把 MCP 註冊進 Claude Code（`officecli mcp claude`，寫入 `~/.claude.json` 的 user-scope MCP servers），下個 session 開始 Claude Code 就能直接呼叫 officecli 的工具，不用再手動下 CLI 指令。
