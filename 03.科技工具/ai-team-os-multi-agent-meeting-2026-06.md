@@ -93,3 +93,4 @@ AI Agent × 多角色 × 真實搜尋 → 模擬企業會議決策流程
 - 多 Agent 協作架構 → [[loop-engineering-agentic-ai]]（子代理程式：分離創造者與檢查者）
 - 企業 AI 信任問題 → [[enterprise-ai-market-signal-2026-06]]
 - 一人公司 vs 大公司 AI 策略 → [[enterprise-ai-market-signal-2026-06]]
+- Anthropic 官方一人公司 Playbook（四階段 + 護城河在哪）→ [[anthropic-founder-playbook-solo-startup-2026-07]]

@@ -83,3 +83,4 @@ saved: 2026-06-29
 - 企業 AI 基建預設路徑（Block + Coinbase）→ [[enterprise-ai-infra-default-path-2026-06]]
 - FDE × 瓶頸位移 → [[agile-fde-bottleneck-shift-2026-06]]
 - DevOpsDays 2026 年會筆記 → [[devopsdays-taipei-2026-agentic-sdlc-notes]]
+- Anthropic 官方一人公司 Playbook（工具普及後的護城河）→ [[anthropic-founder-playbook-solo-startup-2026-07]]
