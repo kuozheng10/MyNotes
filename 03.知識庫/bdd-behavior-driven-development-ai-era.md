@@ -73,6 +73,47 @@ PM、業務、客服全看得懂，同時可直接作為 AI prompt。
 
 ---
 
+## 補充（2026-07-19）：業界最新做法——AC 從工單附註變成規格文件的一層
+
+> 來源：業界整理文章，講「驗收條件（Acceptance Criteria, AC）」在 AI coding 時代的地位轉變
+
+### 三種失敗模式（為什麼 AC 的地位變了）
+
+1. **意圖漂移（intent drift）**：「加上登入」這種指令嚴重欠缺規格，agent 挑的預設值很少符合團隊實際想要的
+2. **脈絡衰減（context decay）**：程式庫超過 agent 的有效 context window，它會忘記早先決策，默默跟自己矛盾
+3. **產出無法驗證（unverifiable output）**：沒有明確 AC，就沒辦法判斷 agent 的程式碼「對不對」，code review 變無底洞
+
+以前 AC 含糊，開發過程還有很多次人與人對話可以補救；現在 agent 拿到 AC 就開跑，中間沒有「欸這裡怪怪的，我問一下PO」這個環節。**驗證成本沒有消失，只是全部往後堆到 review 那一關。**
+
+### Test Double 的協作流程：Three Amigos 沒有過時
+
+1. 先寫兩份設計文件：一份講意圖（intent），一份講脈絡/限制/範例
+2. 召開 Three Amigos 會議（產品、開發、測試三方）
+3. 以兩份文件為輸入，協作產出 AC
+4. AC 定案後，才讓 AI 開始實作
+
+具體例子：「加上2FA」這個模糊需求，經過15–30分鐘協作討論，逼問成明確答案——哪些使用者需要2FA？（有留電話號碼的）驗證失敗怎麼辦？（導回登入頁並顯示錯誤）沿用哪段既有程式？（密碼重設流程的模式）怎麼知道做完了？（十二條Given/When/Then）
+
+搭配 **Example Mapping**（Matt Wynne提出）：黃卡寫story、藍卡寫規則、綠卡寫範例、**紅卡寫當場沒人能回答的問題**。關鍵洞察：光有範例還不夠，規則也得在場，兩者互相印證才寫得出足夠的驗證。**紅卡沒清完，story就不該交給agent。**
+
+### 規格做法：三個具體工具/語法
+
+| 工具 | 核心做法 |
+|---|---|
+| **AWS Kiro** | 固定三文件結構：requirements.md（需求+AC）、design.md（設計）、tasks.md（任務拆解）。AC 用 **EARS語法**（Easy Approach to Requirements Syntax，源自航太業Rolls-Royce）：`WHEN 使用者連續三次輸入錯誤密碼 THE SYSTEM SHALL 鎖定帳號十五分鐘`，每條都有明確觸發條件+系統反應，歧義空間小 |
+| **GitHub Spec Kit** | 規格變成版本化的Markdown文件，住在repo裡跟程式碼一起演進，每次開發session開始餵給agent當持久脈絡。解決脈絡衰減——資深工程師「本來就知道」的團隊慣例，agent每次都得被明確告知，除非固化進規格。**Spec是耐久資產，prompt是拋棄式的** |
+| **amux 指南** | 一份spec包含Goal/Requirements/Constraints/Acceptance criteria四段。AC範例：`make test`全數通過、對同一事件呼叫兩次資料庫只留一筆、既有測試不能壞。三個特徵：**可機器判定**（沒有模糊空間）、**Constraints明講不准做什麼**（對agent必須白紙黑字，人類常識對agent不是常識）、**review對照AC而非感覺**（"review against acceptance criteria, not vibes"） |
+
+這跟 SBE 的血緣關係很明顯：SBE的範例主要給人建立共識，SDD的AC同時要給機器當停止條件。兩者可疊合——用SBE的協作方式找出key examples，再寫進spec的AC段落。
+
+### 完整性還是人的工作：AI補不了你沒問出來的問題
+
+- **Key examples而非窮舉**：每條規則配代表性範例+會翻車的邊界，不窮舉所有組合（人看不完，agent context也塞不下）
+- **測試設計技法當提問清單**：零/一/多、邊界值、狀態轉換、負向路徑、權限矩陣、並發——拿這些反問每條AC，漏洞自己浮出來
+- **Lisa Crispin團隊的節奏**：會議限時一小時，固定在planning前兩個工作天舉行（紅卡問題才有時間拿回去問清楚），結果退件率下降、cycle time縮短。**AC定案和agent開工之間，要留出清紅卡的緩衝**
+
+---
+
 ## 連結筆記
 
 - [[SDD-vs-SBE]] — 規格驅動 vs 實例化需求的比較
