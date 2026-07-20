@@ -59,4 +59,5 @@ related: scrum-ai-code-review-responsibility-2026-07, team-of-teams-ai-coding-le
 
 - [[scrum-ai-code-review-responsibility-2026-07]] — 同作者「敏捷三叔公」，談 AI coding 時代責任邊界退化的問題，此篇的 In Review 閘門可視為對那個問題的具體解法之一
 - [[team-of-teams-ai-coding-less-2026-07]] — 同作者，談協調落後於產出速度，此篇的看板正是補協調缺口的工具
+- [[pbr-genai-example-driven-refinement-2026-07]] — 同作者系列作，談 agent 動工「前」的需求釐清（PBR階段），跟此篇談 agent 做完事「後」的審查閘門正好是事前/事後兩端互補
 - [[loop-engineering-agentic-ai]] — 派哥自己的 loop/自動化設計原則，跟此篇「事件驅動觸發 agent」呼應
