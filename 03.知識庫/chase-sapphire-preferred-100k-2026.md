@@ -51,7 +51,37 @@ created: 2026-06-18
 - 好友推薦連結（Referral）要確認是否也給 10 萬點
 - Randy 結論：儘管縮水，10 萬點仍是 CSP 史上最高，值得把握
 
+## 入手後必做五件事（2026-07 更新，來源：TripPlus Randy）
+
+> 來源：https://blog.tripplus.cc/zh/159779/randy_newbie_5_things_to_do_after_getting_csp
+
+### (1) 餐飲／加油消費拿 3x 點數
+- 一般餐廳／外帶／外送、加油／電動車充電，都是 **3x UR**
+- 有海外免手續費福利，**海外的餐飲/加油消費也是 3x**（不只美國境內）
+
+### (2) 啟用 DoorDash 優惠
+- 免費拿 DoorDash 訂閱制 **DashPass**（原價 $9.99/月），**期限到 2027年12月底**
+- DashPass 免外送運費，且降低部分指定餐廳/超市訂單的服務費（訂單需 **超過 $12 美金**）
+
+### (3) 善用旅遊保障（三個最常用到的）
+- **租車保險**：用此卡付租車費 → 拿到 **Primary（主要）保險**，出事直接理賠，不會動用到自己平常的車險、不會讓自己車險保費上升
+- **旅遊延遲**：用此卡付運輸費，航空公司等延遲 **超過12小時** 即觸發資格，最高賠 **$500美金**
+- **行李遺失**：用此卡付運輸費，托運行李遺失最高賠 **$3,000美金**
+
+### (4) 用掉 $100 酒店訂購退額
+- 每個 **持卡年（Cardmember Year，非日曆年，從自己申辦日期算）** 可用一次
+- 必須透過 **Chase Ultimate Rewards Portal** 訂房才算數
+- 用滿的話等於直接抵銷掉 CSP $95 年費
+
+### (5) 申請 $120 Global Entry / TSA PreCheck 退額
+- **每4年一次**，最高 $120 美金
+- Global Entry：加速入境美國通關（免排長隊，機器快速過關）
+- TSA PreCheck：加速美國境內機場行李安檢（免脫鞋、免拿電腦/液體出來）
+
+> 這五件事跟上面「2026年6月新增福利」是同一波福利的落地版：DoorDash是本次新增細節，旅遊保險三個具體理賠金額（租車Primary/延遲$500/行李$3,000）也是原本筆記沒有的補充。
+
 ## 延伸閱讀
 - [[us-premium-credit-cards-comparison-2026]]
 - [[us-credit-card-points-transfer-time-airlines]]
 - [[tripplus-ryan-premium-cc-1year-review-amex-csr-citi]]
+- [[us-flexible-points-systems-comparison-2026-07]]
