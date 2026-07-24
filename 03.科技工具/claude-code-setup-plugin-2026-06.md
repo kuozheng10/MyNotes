@@ -41,3 +41,4 @@ Anthropic 官方推出的 Claude Code 外掛，協助個人化設定工作流程
 → [[claude-agent-five-layer-architecture]] — 外部設定五層（CLAUDE.md/Skills/Hooks/子代理/外掛）
 → [[anthropic-skill-three-layers-2026-06]] — Skill 三層架構
 → [[codex-plugins-openai]] — Codex 外掛對比
+→ [[ai-agent-onboarding-hooks-permissions-claudemd-2026-07]] — hooks/permissions/CLAUDE.md 強度分級，跑這個外掛的 hooks 建議時可對照這篇的三層心法一起判斷

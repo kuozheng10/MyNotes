@@ -54,7 +54,7 @@ MCP 作為外部工具的統一介面，可在各層接入：
 |----|---------|
 | CLAUDE.md | 全域 + 專案層都有，完整 |
 | Skills | ~/.claude/skills/ 手動管理，無版本控制 |
-| Hooks | block-secrets.sh 等已有，注意 heredoc injection 風險 |
+| Hooks | 已有 `env-guard.sh`（擋讀取/編輯 .env、.ssh、id_rsa 等敏感路徑）、`safety-check.sh`（Bash 前檢查）等，但目前只擋「讀取/編輯特定路徑」，沒有針對 Write/Bash 內容做 API key 字串掃描（2026-07-24 核對，`block-secrets.sh` 這個檔名已不存在，是舊記憶漂移，見 [[ai-agent-onboarding-hooks-permissions-claudemd-2026-07]]）；heredoc injection 風險仍要注意 |
 | 子代理 | MWT QA test 已用（mwt_qa_ui_test.mjs） |
 | 外掛 | 尚無，autoskills 是可能路徑 |
 
@@ -64,6 +64,7 @@ MCP 作為外部工具的統一介面，可在各層接入：
 
 ## 連結筆記
 
+- [[ai-agent-onboarding-hooks-permissions-claudemd-2026-07]] — 醫師系列文章講的 hooks(⭐⭐⭐)/permissions(⭐⭐)/CLAUDE.md(⭐) 強度分級，跟本篇「Hooks 層」是同一個概念的另一種講法；2026-07-24 核對派哥現有 hooks 實際檔名時發現本篇「block-secrets.sh」已不存在，記憶已漂移
 - [[harness-engineering]] — 四層 Harness 公式（執行/記憶/反饋/編排）
 - [[karpathy-skills-claude-coding-rules]] — Skills 的哲學
 - [[vibe-coding-rce-heredoc-three-rules]] — Hooks 的 RCE 漏洞案例
