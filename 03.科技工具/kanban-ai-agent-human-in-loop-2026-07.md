@@ -2,7 +2,7 @@
 tags: [scrum, agile, ai-coding, kanban, mcp, agent, human-in-the-loop, claude-code]
 source: 敏捷三叔公（2026-07-20）
 date: 2026-07-20
-related: scrum-ai-code-review-responsibility-2026-07, team-of-teams-ai-coding-less-2026-07, loop-engineering-agentic-ai, ai-audit-trail-coding-agents-2026-07
+related: scrum-ai-code-review-responsibility-2026-07, team-of-teams-ai-coding-less-2026-07, loop-engineering-agentic-ai, ai-audit-trail-coding-agents-2026-07, kanban-maturity-model-2026-07
 ---
 
 # 看板的下一步：不只給人看，也給 AI Agent 用
@@ -57,6 +57,7 @@ related: scrum-ai-code-review-responsibility-2026-07, team-of-teams-ai-coding-le
 
 ## 相關筆記
 
+- [[kanban-maturity-model-2026-07]] — 同作者「敏捷三叔公」，談組織該在哪個成熟度導入哪些 Kanban 實務（KMM 七級）；本篇的「看板+MCP+In Review 閘門」是偏 ML2-ML3 的具體技術做法，KMM 那篇是先判斷自己在哪一級的前置診斷
 - [[scrum-ai-code-review-responsibility-2026-07]] — 同作者「敏捷三叔公」，談 AI coding 時代責任邊界退化的問題，此篇的 In Review 閘門可視為對那個問題的具體解法之一
 - [[team-of-teams-ai-coding-less-2026-07]] — 同作者，談協調落後於產出速度，此篇的看板正是補協調缺口的工具
 - [[pbr-genai-example-driven-refinement-2026-07]] — 同作者系列作，談 agent 動工「前」的需求釐清（PBR階段），跟此篇談 agent 做完事「後」的審查閘門正好是事前/事後兩端互補
