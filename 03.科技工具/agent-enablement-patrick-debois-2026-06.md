@@ -3,7 +3,7 @@ tags: [ai, agent, devops, agent-enablement, org-scaling, claude-code, governance
 source: Patrick Debois - The Rise of Agent Enablement - AI Native DevCon June 2026
 url: https://www.youtube.com/watch?v=I9RWrW32QEw&t=47s
 saved: 2026-07-18
-related: agentic-sop-to-work, scrum-ai-code-review-responsibility-2026-07, loop-engineering-agentic-ai
+related: agentic-sop-to-work, scrum-ai-code-review-responsibility-2026-07, loop-engineering-agentic-ai, ai-meetup-jackle-sunny-peggy-line-2026-07
 ---
 
 # DevOps 之父潑冷水：AI agent 寫錯，你跳進去改——這就是團隊卡住的原因
@@ -95,4 +95,4 @@ related: agentic-sop-to-work, scrum-ai-code-review-responsibility-2026-07, loop-
 - CLAUDE.md 就是派哥自己的「系統」，每次 Claude 犯同一種錯，該做的是把規則寫進 CLAUDE.md / skill，而不是每次手動糾正（這也是 memory 系統 feedback 類型存在的意義）
 - 「agent 要來回幾次才做對」這個指標，可以類比成派哥自己感受到的「同一個問題要提醒幾次」——如果同一件事一直要重複講，代表該補進 CLAUDE.md 或 skill 了，不是繼續口頭糾正
 
-延伸閱讀：[[agentic-sop-to-work]]（把人工 SOP 工程化成安全 agentic workflow 的具體工具）、[[scrum-ai-code-review-responsibility-2026-07]]（AI 產出責任歸屬的團隊心理層面）
+延伸閱讀：[[agentic-sop-to-work]]（把人工 SOP 工程化成安全 agentic workflow 的具體工具）、[[scrum-ai-code-review-responsibility-2026-07]]（AI 產出責任歸屬的團隊心理層面）、[[ai-meetup-jackle-sunny-peggy-line-2026-07]]（五個實戰者「由下而上」導入AI的具體做法，是本篇組織方法論的操作細節版）

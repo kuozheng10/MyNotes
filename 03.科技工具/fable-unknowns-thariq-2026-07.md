@@ -82,3 +82,6 @@ Thariq 用這套方法做 Fable 發表影片：
 - 這套「動手前五件事」跟你自己「跑 SOP」流程裡「先問Q&A釐清情境」的精神很像，但更系統化——尤其是 **Blind Spot Pass** 這招（明確用「blindspot pass」「unknown unknowns」這兩個詞下指令）可以直接拿來用，下次規劃新自動化流程（例如新銀行 onboarding、新 skill 設計）前，先請我做一次 blindspot pass 抓 unknown unknowns
 - **Quizzes（做完出題考自己）** 這招也值得挪用：cc_processor 或投資 dashboard 這類牽涉到錢的改動，合併前可以要求「出一份小測驗考我這次改動的理解」，跟你已經在用的「照妖鏡」「驗證才回報」原則同一個精神，只是換一種形式逼自己真的看懂
 - 「Unknown Knowns 光給選項不夠解，要先教你建立判斷標準」這個洞察，呼應你之前碰過的情境：不確定某個技術決策該怎麼判斷時，與其直接要 AI 出選項讓你選，不如先請 AI 教你判斷標準是什麼
+
+## 相關筆記
+- [[ai-meetup-jackle-sunny-peggy-line-2026-07]] — Jackle 提到 Fable 出現後直接打消請人念頭（6個Claude Max帳號當團隊），是這篇「模型能力已經夠強」論點的具體案例
