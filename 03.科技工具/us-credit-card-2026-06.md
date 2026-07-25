@@ -291,6 +291,27 @@ Amex 在美國發行三款個人白金卡：**香草白金（Vanilla）**、**�
 
 ---
 
+---
+
+## 2026-07-25 更新：點數旅人 FB 推薦 7 張近期值得辦的美卡
+
+> 來源：[Facebook 貼文](https://www.facebook.com/share/p/1MLzuDQEEF/?mibextid=wwXIfr)
+> 派哥筆記：最近要加辦美卡，先記錄這份清單
+
+| # | 卡名 | 開卡禮 | 消費門檻 | 年費 |
+|---|------|--------|----------|------|
+| 1 | Citi AAdvantage Platinum | 80,000 哩 | $3,500 / 4M | 首年$0，次年可降無年費卡 |
+| 2 | Citi AAdvantage Business | 65,000 點 | $4,000 / 4M | 首年$0，次年$99；不計入Chase 5/24 |
+| 3 | BoA Air France | 100,000 哩 | $3,000/90天得7萬哩；再$7,500/180天得3萬哩 | $89 |
+| 4 | BoA Atmos Alaska | 100,000 點 + 25k券 | $6,000 / 90天 | $395 |
+| 5 | Barclays Hawaiian | 70,000 點 | $1,000/90天；$2,000/180天 | $99 |
+| 6 | Chase Hyatt Business | 75,000 點 | $7,000 / 3M | $199 |
+| 7 | Chase Sapphire Preferred | 100,000 點 | — | $95（作者稱「新手必備神卡」，建議近期申辦） |
+
+**規則提醒（呼應上方 AA 家族限制）**：AA 卡（Citi AAdvantage 系列）**4 年才能辦一次**，作者強調「不要集中在同一年辦，會出事」——跟上方 [[us-credit-card-2026-06#Amex 開卡禮「家族限制」規則詳解（2026-06 更新）|Amex 家族限制]]是不同銀行、不同規則，申辦前要分開查各自的冷卻期。
+
+---
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
