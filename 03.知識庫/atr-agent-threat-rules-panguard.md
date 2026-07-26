@@ -64,3 +64,4 @@ npm install -g @panguard-ai/panguard && pga up
 ## 連結筆記
 - [[claude-code-source-leak-insights]] — Claude Code 安全性相關
 - [[agent-skills-standard]] — Skill 標準化（agentskills.io）
+- [[prompt-injection-transformer-mechanism-2026-07]] — 講「為什麼」Prompt注入防不住的底層原理(Transformer指令/資料邊界消融)，ATR/PanGuard是這篇講的「應用層防護」具體工具
