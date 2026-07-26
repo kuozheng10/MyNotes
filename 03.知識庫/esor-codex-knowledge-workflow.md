@@ -69,3 +69,6 @@ Codex 可以負責的操作類任務：
 2. 再考慮 Permanent Notes 整合層
 
 要做嗎？還是先存起來觀望？
+
+## 相關筆記
+- [[esor-workflow-chaos-copilot-teaser-2026-07]] — 同一個人受訪講「細節要即時歸位到對應專案筆記」，是這篇四層架構裡Card Notes那一層的職場實戰版
