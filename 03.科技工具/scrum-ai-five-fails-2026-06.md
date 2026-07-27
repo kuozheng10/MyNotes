@@ -130,6 +130,51 @@ cycle time、throughput 是落後指標，真正能控制的是 **WIP 數量**�
 
 ---
 
+---
+
+## AI Coding 時代，Retrospective 要檢討的東西變了（2026-07-27 補充）
+
+> 來源：敏捷三叔公，同系列課程推廣文
+
+### 核心命題：Retro 骨架沒變，檢討對象變了
+
+常有人問「AI寫程式之後Scrum還需要嗎」，作者觀察相反：**Retro變得更重要，前提是檢討的東西要跟著換**。Inspect and adapt骨架不變，變的是「檢視什麼」跟「改善行動落在哪」。
+
+### 四個變化
+
+**1. 檢討對象多了「AI agent的工作過程」**
+以前retro看人跟人的協作，現在多了人跟agent、agent跟codebase之間的摩擦。Scrum.org舉例：retro發現agent幻覺出不存在的API endpoint，改善動作是回頭修Definition of Ready，確保驗證過的API文件在agent開工前就進了context。**關鍵差異**：以前action item多半改人的行為/流程，現在一大類落點變成**context file、CLAUDE.md、spec這些「給AI看的工件」**。
+
+實用觀察：**新人是最敏感的context腐化偵測器**——新人腦中沒有隱性知識，AI產出完全反映context file現況，新人產出一直被糾正，問題八成在context file不在新人。
+
+**2. Agent本身變成retro的資料來源**
+Session結束前請agent回報這次遇到的摩擦：哪些資訊缺少、哪份文件過時、哪段指示能讀成三種意思。人會略過這些（人腦已自動補完），agent沒有，它撞到的每個坑都是「只存在某些人腦中、沒被寫下來的知識」。
+
+**3. 看的指標變了：從產出速度移到review和返工**
+Atlassian 2026研究稱「AI效率悖論」：個人產出變快後，堆積在review/審批這些需要人類判斷的節點，速度增益在到達系統層級前被吃掉大半。**retro該問的三個新問題**：
+- AI輔助的PR是否review得更久？（瓶頸位置）
+- AI產出的程式碼有多少短期內被刪除重寫？（高churn=產出快但產出錯的東西）
+- AI建議的接受率趨勢如何？（持續下降=context品質或信任出問題，review疲乏的領先指標）
+
+**Story point velocity在這件事上已經量不到重點了。**
+
+**4. AI幫忙開retro本身（配角）**
+主題聚類、摘要、追蹤action item有沒有真的執行都有用（補上「retro講完就忘」的老漏洞），但人際動態和團隊士氣這種深層議題還是要靠引導的功力，連工具商自己都承認。
+
+### 一句話收斂
+
+> Retro的迴路沒變，但adapt的產出物，從流程改善大量轉向可版本控制的工件。Spec、Definition of Ready、context file現在是團隊知識的載體，AI的表現直接反映它們的品質——每次retro修一點會複利成長，放著不管腐化得比想像中快。
+
+### 跟本筆記既有內容的關係
+
+這篇直接補強了上方兩個失效模式的「怎麼做」層面：
+- 呼應 [[#4. Scrum Master 盯錯地方|失效模式4：SM盯錯地方]]——這篇給了SM該盯的具體問題清單（PR review時長、churn率、AI建議接受率），把「該盯驗證缺口」這句話變成可操作的retro議程
+- 呼應 [[#5. Sprint 變成迷你 waterfall|失效模式5：mini-waterfall]]——AI效率悖論(產出快、review成瓶頸)正是燃盡圖斷崖背後的機制解釋
+
+### 對派哥的意義
+
+派哥自己沒有團隊sprint，但「retro產出物落在context file而非流程」這個轉變，直接對應派哥自己的CLAUDE.md/memory系統——每次我犯同一種錯被糾正，該做的正是回頭改CLAUDE.md/skill/memory，而不是下次靠自己記得。「新人是context腐化偵測器」這個觀察也有派哥版本：**每次開新session、我一開始沒查證就講錯的地方，就是CLAUDE.md/memory該補的地方**——這正是這次session裡user_profile.md、feedback類memory不斷被建立/修正的原因。
+
 ## 相關筆記
 
 - [[ai-dev-problems-amplified-2026-06]] — DORA 2025 研究視角：AI 放大了哪五件事
