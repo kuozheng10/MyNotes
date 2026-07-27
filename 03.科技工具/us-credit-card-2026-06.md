@@ -312,6 +312,28 @@ Amex 在美國發行三款個人白金卡：**香草白金（Vanilla）**、**�
 
 ---
 
+---
+
+## 2026-07-27 更新：CSP個人卡 vs Ink Business Preferred商業卡，怎麼選
+
+> 來源：[TripPlus - Randy Wang](https://blog.tripplus.cc/zh/117781/randy_limited_time_offer_chase_sapphire_preferred_ink_biz_preferred)（2026-07-19發布/更新版）
+
+Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，但消費門檻跟適合族群不同：
+
+| 項目 | Sapphire Preferred(個人) | Ink Business Preferred(商業) |
+|------|--------------------------|-------------------------------|
+| 開卡禮 | 10萬點 | 10萬點 |
+| 消費門檻 | $5,000/3個月 | $8,000/3個月 |
+| 年費 | $95 | $95 |
+| 加成類別 | 加油/EV充電/短租房屋/餐飲/串流/線上超市(不含Target/Walmart) 3x；旅遊2x | 旅遊/郵寄/網路廣告/電信電話網路帳單 3x |
+| 特殊福利 | Chase Travel Portal $100退額、免費DashPass、免費Apple TV+、每4年$120 Global Entry/TSA PreCheck/NEXUS退額 | 免費DashPass、**手機遺失/損壞保障**(用這張卡繳電信月租費即可申報理賠) |
+
+**作者建議**：
+- **哩程/點數初學者**：選CSP——消費門檻較低，旅遊+餐飲有加成，之後想升級可以換Chase Sapphire Reserve享更多福利
+- **常出門旅遊、容易摔手機/弄丟手機的人**：選Ink Business Preferred——旅遊/電信3x回饋+手機保障，**不需要真的在經營公司，只要是美國公民/永久居民(綠卡)就能申辦商業卡**
+
+兩張卡都是$95年費、10萬點的組合，其實可以考慮兩張都辦（分開的申請額度、Chase 5/24規則要注意），用CSP應付日常旅遊餐飲，Ink Business Preferred應付電信月租+額外的手機保障。
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
