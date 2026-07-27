@@ -121,6 +121,7 @@ Specs to code = divest（從系統設計裡抽走）
 
 ## 連結筆記
 
+- [[matt-pocock-skills-sdd-workflow-2026-07]] — 同作者，這篇哲學論述的具體實作版：他自己的Claude Code skill組合(grill with docs/to spec/to tickets/implement)實際怎麼用
 - [[grill-me-skill]] — 對應失敗模式一的解法
 - [[ai-coding-qa-myths]] — 相關的 AI 開發誤區
 - [[vibe-coding-architecture-debate]] — vibe coding 的架構爭議
