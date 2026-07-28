@@ -128,3 +128,4 @@ npm install -g @waishnav/devspace
 ## 相關筆記
 
 - [[chatgpt-work-launch-2026-07]] — Codex技術被包進「ChatGPT Work」這個消費級/企業級產品（2026-07推出），跟這篇講的Codex CLI plugin生態是同一個Codex技術的兩種產品形態
+- [[jason-liu-codex-work-system-2026-07]] — OpenAI DevEx工程師Jason Liu實戰案例，用Codex/Work打造個人chief-of-staff系統，含skill vs plugin的第一手說明
