@@ -55,3 +55,7 @@ curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.
 
 - 本地已有同名 skill 在跑，功能高度重疊，不需要重新安裝官方版
 - 若本地版本效果不如預期，可以參考官方 repo 的 `benchmarks/` 方法論來源，或直接切換成官方版本比較
+
+## 相關筆記
+
+- [[codex-custom-instructions-token-review-2026-07]] — 派哥自己寫的 Codex 自訂指令想省 token，評估後發現只有「避免冗長輸出」這條真的有效，其他要求（優先降低token消耗、塞七項結構化內容）反而互相矛盾；對照出 caveman 這種**有量化壓縮等級**的做法才是正解

@@ -90,6 +90,7 @@ Tesla 的 US$200 算在個人頭上，會導致「功能開發」跟「品質檢
 - **[[ai-testing-agile-quality]]**：Test Impact Analysis 在那篇是「加快CI」的理由，這篇補上「省token費」的理由，且給出「差十倍以上」的具體量級
 - **[[scrum-ai-five-fails-2026-06]]**：「SM盯錯地方」失效模式的成本版——帳單這週就看得到，驗證缺口的代價要等出事才看得到
 - **[[ai-dev-problems-amplified-2026-06]]**：DORA rework rate/verification overhead 的資料佐證了「省驗證只是把成本往後遞延」這個論點
+- **[[codex-custom-instructions-token-review-2026-07]]**：這篇的結論在個人層級的印證——派哥想靠系統提示詞裡一句「優先降低token消耗」省錢，但真正燒錢的是 agentic loop 呼叫次數/context大小，不是 prompt 字數，跟這篇「真正燒錢的是loop不是單次提問」同一個道理
 
 ---
 
