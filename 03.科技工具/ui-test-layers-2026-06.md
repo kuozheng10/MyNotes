@@ -94,7 +94,7 @@ UI Test 才能回答「使用者看到的是什麼」。
 
 ## 和 AI 時代測試的關係
 
-> 相關筆記：[[ai-testing-agile-quality]]、[[loop-engineering-testing]]
+> 相關筆記：[[ai-testing-agile-quality]]、[[loop-engineering-testing]]、[[ai-coding-e2e-test-speed-myth-2026-07]]（測試「跑得快不快」的架構層原因，跟這篇「驗證什麼」的分層責任互補）
 
 AI 自動生 code 的時代，測試分層更重要：
 - AI 容易把所有驗證邏輯都寫進 E2E → 慢且難維護
