@@ -59,3 +59,4 @@ curl -fsSL https://raw.githubusercontent.com/JuliusBrussee/caveman/main/install.
 ## 相關筆記
 
 - [[codex-custom-instructions-token-review-2026-07]] — 派哥自己寫的 Codex 自訂指令想省 token，評估後發現只有「避免冗長輸出」這條真的有效，其他要求（優先降低token消耗、塞七項結構化內容）反而互相矛盾；對照出 caveman 這種**有量化壓縮等級**的做法才是正解
+- [[agent-skill-eval-best-practices-2026-07]] — 這篇提到AI生成skill常塞No-op指令浪費token，caveman的壓縮邏輯是反面做法：明確量化、有測試基準

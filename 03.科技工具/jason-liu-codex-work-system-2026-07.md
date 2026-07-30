@@ -139,3 +139,4 @@ Jason 最期待 Codex 從桌面端擴展到 ChatGPT Work 雲端體驗，讓「�
 - [[lore-skill-implicit-knowledge-2026-06]] — skill 裡的隱性知識設計
 - [[codex-plugins-openai]] — Codex plugin 官方架構與範例庫
 - [[caveman-token-saving-skill-2026-07]] — token 省法 skill 案例
+- [[agent-skill-eval-best-practices-2026-07]] — 補上「self-improve skill怎麼驗證優化真的有效」的具體評估方法（Google DeepMind的Eval框架）

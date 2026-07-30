@@ -69,3 +69,7 @@ FB 短片連結（`facebook.com/share/v/195AV7QyCu`）本身讀不到完整影�
 > 倉頡.Skill 這個開源工具，讓你可以蒸餾任何影片。所謂蒸餾，就是把一部長影片的精華濃萃出來。以前這件事要靠人工看完、做筆記、再整理，現在 AI 直接幫你搞定。
 
 發布帳號：一人公司研究所。內容應該就是在介紹上面這個 cangjie-skill 工具，跟 GitHub 連結是同一件事，只是換了個宣傳角度。
+
+## 相關筆記
+
+- [[agent-skill-eval-best-practices-2026-07]] — Google DeepMind 的 Skill Eval 通用框架，這篇第6步「壓力測試」只是Eval精神的其中一種應用，那篇提供適用所有既有skill的完整評估方法（測試案例設計、regex斷言、LLM-as-judge、回歸測試流程）
