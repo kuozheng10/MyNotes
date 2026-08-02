@@ -122,6 +122,7 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 
 ## 相關筆記
 
+- [[alaska-mileageplan-malaysia-kul-stopover-2026-08]] — 系列 Vol.3：同一套「1,500哩內超低費率 + 免費stopover」玩法，套用在馬航 + 吉隆坡樞紐開東南亞雙城票
 - [[jal-rtw-award-120k-miles]] — JAL 環球票 120K 里程攻略
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍配對攻略
 - [[starlux-cosmile-first-class-2026-attack-guide]] — 用星宇**自家**COSMILE哩程兌頭等艙的規則（2026/10/1新制，Stopover大縮水），跟本篇用Alaska外部哩程兌星宇是兩套不同系統，可對照費率與Stopover政策決定燒哪邊的哩程
