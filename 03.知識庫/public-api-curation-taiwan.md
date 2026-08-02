@@ -30,6 +30,7 @@ source: goodarticle/2026-04-18_public-apis精選清單.md
 
 ## 連結筆記
 ## 連結筆記
+- [[publicapi-dev-directory-2026-08]] — PublicAPI.dev 搜尋目錄平台，遇到這份清單沒收錄的 API 需求時可以去那邊找
 - [[claude-routines-automation]]
 - [[claude-code-powerup-guide]]
 - [[agent-skills-standard]]
