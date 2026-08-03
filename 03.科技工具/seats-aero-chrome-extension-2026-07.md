@@ -38,3 +38,7 @@ Seats.aero 推出的 Chrome 擴充功能，把 Seats.aero 的里程票資料庫�
 
 - 懸浮視窗會標更新時間，太久遠（如 14 天前）建議點進去或到官網再確認機位還在
 - 灰底 `Award Not Available` 代表 Seats.aero 沒追蹤到該航班放票，省去逐一查官網的時間
+
+## 相關筆記
+
+- [[roame-eva-mile-ticket-tool-2026-08]] — 專攻長榮官網一次查一年票況的互補工具
