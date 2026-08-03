@@ -334,10 +334,70 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 
 兩張卡都是$95年費、10萬點的組合，其實可以考慮兩張都辦（分開的申請額度、Chase 5/24規則要注意），用CSP應付日常旅遊餐飲，Ink Business Preferred應付電信月租+額外的手機保障。
 
+---
+
+---
+
+## 2026-08-03 更新：三大銀行信用卡持滿一年後的降級／轉卡指南
+
+> 來源：[TripPlus - Randy Wang](https://blog.tripplus.cc/zh/122104/randy_newbie_amex_chase_citi_credit_cards_product_change_guide_new)（2026-07-09發布/更新版）
+> 派哥筆記：透過 FB 貼文存下
+
+辦了多張美卡後，滿一年該不該續繳年費、要降級成免年費版還是轉卡，這篇整理了 Chase / Amex / Citi 三大銀行的規則跟推薦轉卡對應表。**注意：不含 Capital One**——即使降級中高階卡也不退年費。
+
+### 三家銀行共同規則
+
+- 個人卡與商業卡不能互轉
+- 申請新卡後需持有滿 **12 個月**才能要求降級／轉卡
+- Chase／Amex：不同回饋系列不能互轉；Citi 較寬鬆，**不同系列可以互轉**
+
+### Chase 降級對應表
+
+原則：**盡量別關掉 UR 點數系統的卡**，商業卡跟個人卡都有免年費版，降級後可同時持有兩張以上同系列卡，維持信用歷史。
+
+| 原卡 | 降級為 | 結果 |
+|------|--------|------|
+| CSR Business / Ink Business Premier / Ink Business Preferred | Ink Business Cash | 免年費，特定消費5x |
+| CSR Business / Ink Business Premier / Ink Business Preferred | Ink Business Unlimited | 免年費，任何消費1.5x |
+| CSR / CSP | Freedom Flex | 免年費，季節性消費5x |
+| CSR / CSP | Freedom Unlimited | 免年費，任何消費1.5x |
+| Marriott Boundless / Bountiful | Marriott Bonvoy Bold | 免年費 |
+| IHG Premier | IHG Traveler | 免年費 |
+| United Explorer / Quest / Club | United Gateway | 免年費 |
+
+**沒有免年費版、不想續卡就滿一年直接關卡**：World of Hyatt（個人/商業）、IHG Premier Business、Southwest 全系列、United Business、Air Canada Aeroplan、British Airways、Iberia、Aer Lingus。
+
+### Amex 降級對應表
+
+⚠️ **一生一次開卡禮規則**：持有過某張卡（不論當時有沒有拿開卡禮），未來都無法再拿該卡開卡禮——降級/轉卡前務必先確認自己想收的開卡禮都已經拿到手。
+
+| 原卡 | 降級為 | 年費降至 | 回饋 |
+|------|--------|----------|------|
+| Amex Platinum | Amex Green | $150 | 旅遊/餐飲3x |
+| Amex Platinum | Amex Gold | $325 | 餐飲/超市4x |
+| Amex Gold | Amex Green | $150 | 旅遊/餐飲3x |
+| Amex Business Platinum | Amex Business Gold | $375 | 特定消費4x |
+| Amex Blue Cash Preferred | Blue Cash Everyday | 免年費 | — |
+| Hilton Aspire / Surpass | Hilton Honors（免年費版） | 免年費 | — |
+| Delta SkyMiles Reserve / Platinum | Blue Delta SkyMiles | 免年費 | — |
+
+**沒有免年費版可降、想關卡等滿一年**：Amex Business Gold、Hilton Business、Marriott Bonvoy Business/Brilliant/Bevy、Delta SkyMiles Reserve/Platinum/Gold Business。
+
+### Citi 降級對應表（規則最寬鬆，可跨系列轉）
+
+有年費的 Citi 卡滿一年後，推薦直接轉成以下免年費卡：
+
+| 轉入卡 | 特色 |
+|--------|------|
+| Citi Double Cash | 免年費，無限2x點數 |
+| Citi Custom Cash | 免年費，多項消費5x（已無法直接申請，但仍可用轉卡拿到） |
+| Citi Strata | 免年費，持卡點數不過期 |
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
 - 文章：[Randy - 10張高額開卡禮信用卡](https://blog.tripplus.cc/zh/118331/randy_limited_time_offer_10_us_credit_cards_with_high_opening_bonus)
 - 文章：[TripPlus 2026-06-22 更新](https://blog.tripplus.cc/zh/207642/us_credit_card_best_ever_welcome_bonus_recommendation)
 - 文章：[Ocean - 三種 Amex 白金卡比較](https://blog.tripplus.cc/zh/208753/ocean_three_types_amex_platinum_intro)
+- 文章：[Randy - 三大銀行降級／轉卡指南](https://blog.tripplus.cc/zh/122104/randy_newbie_amex_chase_citi_credit_cards_product_change_guide_new)
 - 相關筆記：[[eva-award-tickets]]
