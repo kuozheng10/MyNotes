@@ -68,4 +68,4 @@ date: 2026-07-09
 ---
 
 ## 相關筆記
-[[claude-code-setup-plugin-2026-06]] · [[agentic-sop-to-work]] · [[anthropic-skill-three-layers-2026-06]] · [[ai-engineering-evolution]]
+[[claude-code-setup-plugin-2026-06]] · [[agentic-sop-to-work]] · [[anthropic-skill-three-layers-2026-06]] · [[ai-engineering-evolution]] · [[local-agent-mcp-strategy-2026-08]]（地端Agent+MCP分工策略，互補視角）
