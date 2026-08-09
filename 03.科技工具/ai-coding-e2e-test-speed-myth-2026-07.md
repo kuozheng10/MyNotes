@@ -58,3 +58,4 @@ AI **不能**加速瀏覽器載入或後端處理時間——即時 AI agent 操
 - [[ui-test-layers-2026-06]] — 測試分層責任邊界（Unit/Integration/E2E該驗證什麼）
 - [[ai-testing-agile-quality]] — Test Impact Analysis 加速CI的理由
 - [[loop-engineering-testing]] — Loop的stop condition該對應正確測試層次
+- [[playwright-trace-viewer-2026-08]] — 同系列Day10：測試失敗時用Trace Viewer查根因
