@@ -109,3 +109,4 @@ reporter: [['html', { open: 'on-failure' }]],
 
 - [[ai-coding-e2e-test-speed-myth-2026-07]] — 同系列：AI時代UI測試變快的真正原因（架構不是AI）
 - [[ui-test-layers-2026-06]] — 測試分層責任邊界
+- [[playwright-popups-iframe-newtab-datepicker-2026-08]] — 同系列Day17：彈窗/iframe/新分頁/日期選擇器處理法
