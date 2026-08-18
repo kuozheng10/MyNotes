@@ -33,3 +33,4 @@ Junjun Zhang 表示認同：自建 Agent 搭配 MCP，能同時兼顧「模型�
 
 - [[ai-framework-vs-harness-2026-07]] — 同樣討論「自建編排邏輯 vs 用供應商 Harness」的分野，可對照參考：陳盟升這篇更聚焦在「資料留地端、能力接雲端」的分工策略，而非 Framework/Harness 的技術站位選擇
 - [[gpt-claude-gemini-20usd-comparison-2026-08]] — 同作者：GPT/Claude/Gemini三家$20方案使用比較
+- [[pxpipe-token-saving-image-compression-2026-08]] — 同作者：pxpipe文字轉圖片省token工具評估（派哥結論：不建議用在現有工作流）
