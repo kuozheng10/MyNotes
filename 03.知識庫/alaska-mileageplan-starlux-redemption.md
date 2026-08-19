@@ -8,7 +8,8 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 
 ## 一句話核心
 
-> Alaska Mileage Plan 是目前**唯一**能兌換星宇航空 (Starlux) 的外部里程計畫，台灣出發特別有價值。
+> Alaska Mileage Plan 是能兌換星宇航空 (Starlux) 的外部里程計畫裡歷史最久、規則最成熟的一個，台灣出發特別有價值。
+> ⚠️ **注意（2026-08-19更新）**：「唯一」這個說法已經過時，可兌換星宇的外部里程計畫正在增加中，見文末「星宇外部兌換選項擴大」章節。
 
 ---
 
@@ -117,6 +118,24 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 
 - 完整攻略（含兩張商務艙航線、免費中停城市清單、雙段商務艙路線）在該電子報之後發布的深度長文中，**目前只有預告，尚未拿到完整航線清單**
 - 若後續訂閱到完整版，回來這篇補上具體航線代碼與可開票時間窗
+
+---
+
+## 星宇外部兌換選項擴大中（2026-08-19 更新）
+
+> 來源：[Trip+ FB貼文](https://www.facebook.com/share/p/19UNneLkd1/?mibextid=wwXIfr)，[完整影片](https://l.tripplus.cc/4clUXF6)
+
+**核心更新**：星宇的哩程兌換選擇正慢慢增加，不再只有 Alaska Mileage Plan 一條路：
+
+| 里程計畫 | 狀態 |
+|---------|------|
+| Alaska Mileage Plan | ✅ 既有主力選項（本篇上方費率表都是這個） |
+| **阿提哈德航空 Etihad Guest** | ✅ **新增**，現已可兌換星宇機位 |
+| 美國航空 AAdvantage | 🔜 **即將加入**（貼文發布時尚未上線） |
+
+**對派哥的意義**：多一條兌換路徑代表議價空間變大——之後訂不到 Alaska 的位子時，可以改查 Etihad 有沒有放票；等 AAdvantage 上線後，如果手上剛好有較多美國航空哩程（而非 Alaska），也不用再靠轉點換到 Alaska 才能兌星宇，可以省一手轉點手續。
+
+⚠️ **待補充**：這篇只是預告貼文，Etihad/AA 兌換星宇的費率表、艙等對應、Stopover 規則是否比照 Alaska，都還沒查證，之後有完整資訊要回來補上，不要直接套用本篇上方 Alaska 的費率表去猜其他計畫的價格。
 
 ---
 
