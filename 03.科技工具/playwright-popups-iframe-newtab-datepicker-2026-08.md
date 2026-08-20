@@ -2,12 +2,12 @@
 tags: [testing, e2e, playwright, popup, iframe, dialog, claude-code, automation]
 source: DavidKo Learning Journey，FB分享 https://m.facebook.com/story.php?story_fbid=pfbid02jj2oesw6AXVUnbD7sqnCZwDCHQaX6Dma1cWcSMVcPPrYD9Htf2pGEi9Ew5RVZbual ／ [原文iThome鐵人賽Day17](https://ithelp.ithome.com.tw/articles/10403221)
 date: 2026-08-17
-related: playwright-trace-viewer-2026-08, ai-coding-e2e-test-speed-myth-2026-07
+related: playwright-trace-viewer-2026-08, ai-coding-e2e-test-speed-myth-2026-07, playwright-page-object-model-2026-08
 ---
 
 # Playwright 四種難搞畫面元素：彈窗、iframe、新分頁、日期選擇器
 
-> **系列**：「AI 時代下最值得投資的 UI 自動化：30 天用 Claude Code 學會寫 Playwright」Day 17（作者 kojenchieh，同系列另見 [[playwright-trace-viewer-2026-08]] Day10）
+> **系列**：「AI 時代下最值得投資的 UI 自動化：30 天用 Claude Code 學會寫 Playwright」Day 17（作者 kojenchieh，同系列另見 [[playwright-trace-viewer-2026-08]] Day10、[[playwright-page-object-model-2026-08]] Day21）
 > **核心方法**：不用背 API，你負責「看懂場景、講清楚現象」，技術細節交給 AI。四種元素的共通點：都不在「目前這個網頁」的正常範圍裡，一般 locator 摸不到。
 
 ---
@@ -154,3 +154,4 @@ test('跨月選日期', async ({ page }) => {
 
 - [[playwright-trace-viewer-2026-08]] — 同系列Day10：測試失敗時用Trace Viewer查根因
 - [[ai-coding-e2e-test-speed-myth-2026-07]] — 同作者：AI時代UI測試變快的真正原因
+- [[playwright-page-object-model-2026-08]] — 同系列Day21：用Claude Code做Page Object Model重構
