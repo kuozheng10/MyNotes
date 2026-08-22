@@ -2,7 +2,7 @@
 tags: [testing, e2e, playwright, ai-coding, automation, performance]
 source: DavidKo Learning Journey，FB分享，https://www.facebook.com/share/p/1AoRLzF51B/?mibextid=wwXIfr
 date: 2026-07-30
-related: ui-test-layers-2026-06, ai-testing-agile-quality, loop-engineering-testing
+related: ui-test-layers-2026-06, ai-testing-agile-quality, loop-engineering-testing, playwright-page-object-model-2026-08, playwright-fixtures-test-data-2026-08
 ---
 
 # AI Coding 時代的 UI 自動化測試速度：真正變快的是架構，不是 AI
@@ -59,4 +59,6 @@ AI **不能**加速瀏覽器載入或後端處理時間——即時 AI agent 操
 - [[ai-testing-agile-quality]] — Test Impact Analysis 加速CI的理由
 - [[loop-engineering-testing]] — Loop的stop condition該對應正確測試層次
 - [[playwright-trace-viewer-2026-08]] — 同系列Day10：測試失敗時用Trace Viewer查根因
+- [[playwright-page-object-model-2026-08]] — 同系列Day21：用Claude Code做Page Object Model重構
+- [[playwright-fixtures-test-data-2026-08]] — 同系列Day22：用Fixture解決測試資料互踩的問題
 - [[playwright-page-object-model-2026-08]] — 同系列Day21：用Claude Code做Page Object Model重構

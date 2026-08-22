@@ -2,7 +2,7 @@
 tags: [testing, e2e, playwright, trace-viewer, claude-code, debugging, automation]
 source: DavidKo Learning Journey，FB分享 https://www.facebook.com/share/p/1AHjecRzBu/?mibextid=wwXIfr ／ [原文iThome鐵人賽Day10](https://ithelp.ithome.com.tw/articles/10402215)
 date: 2026-08-10
-related: ai-coding-e2e-test-speed-myth-2026-07, ui-test-layers-2026-06
+related: ai-coding-e2e-test-speed-myth-2026-07, ui-test-layers-2026-06, playwright-page-object-model-2026-08, playwright-fixtures-test-data-2026-08
 ---
 
 # Playwright Trace Viewer：測試失敗時讓證據說話
@@ -111,3 +111,4 @@ reporter: [['html', { open: 'on-failure' }]],
 - [[ui-test-layers-2026-06]] — 測試分層責任邊界
 - [[playwright-popups-iframe-newtab-datepicker-2026-08]] — 同系列Day17：彈窗/iframe/新分頁/日期選擇器處理法
 - [[playwright-page-object-model-2026-08]] — 同系列Day21：用Claude Code做Page Object Model重構
+- [[playwright-fixtures-test-data-2026-08]] — 同系列Day22：用Fixture解決測試資料互踩的問題

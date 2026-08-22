@@ -2,12 +2,12 @@
 tags: [testing, e2e, playwright, page-object-model, claude-code, refactor, automation]
 source: DavidKo Learning Journey，FB分享，https://www.facebook.com/share/p/1Bf6jEDxVd/?mibextid=wwXIfr
 date: 2026-08-21
-related: playwright-popups-iframe-newtab-datepicker-2026-08, playwright-trace-viewer-2026-08, ai-coding-e2e-test-speed-myth-2026-07, ui-test-layers-2026-06
+related: playwright-popups-iframe-newtab-datepicker-2026-08, playwright-trace-viewer-2026-08, ai-coding-e2e-test-speed-myth-2026-07, ui-test-layers-2026-06, playwright-fixtures-test-data-2026-08
 ---
 
 # Playwright 測試維護的真正痛點：用 AI 做 Page Object Model 重構
 
-> **系列**：「AI 時代下最值得投資的 UI 自動化：30 天用 Claude Code 學會寫 Playwright」Day 21（作者 kojenchieh，同系列另見 [[playwright-popups-iframe-newtab-datepicker-2026-08]] Day17、[[playwright-trace-viewer-2026-08]] Day10）
+> **系列**：「AI 時代下最值得投資的 UI 自動化：30 天用 Claude Code 學會寫 Playwright」Day 21（作者 kojenchieh，同系列另見 [[playwright-popups-iframe-newtab-datepicker-2026-08]] Day17、[[playwright-trace-viewer-2026-08]] Day10、[[playwright-fixtures-test-data-2026-08]] Day22）
 
 ---
 
@@ -45,3 +45,4 @@ related: playwright-popups-iframe-newtab-datepicker-2026-08, playwright-trace-vi
 - [[playwright-trace-viewer-2026-08]] — 同系列Day10：測試失敗時用Trace Viewer查根因
 - [[ai-coding-e2e-test-speed-myth-2026-07]] — AI對測試的實際貢獻在腳本生成與維護，不是加速瀏覽器
 - [[ui-test-layers-2026-06]] — 測試分層責任邊界（Unit/Integration/E2E該驗證什麼）
+- [[playwright-fixtures-test-data-2026-08]] — 同系列Day22：用Fixture解決測試資料互踩的問題
