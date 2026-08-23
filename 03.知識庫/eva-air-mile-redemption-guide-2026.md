@@ -150,3 +150,5 @@
 ## 相關筆記
 
 - [[project_eva_award_tickets]] — 長榮里程票監控計畫
+- [[taiwan-mileage-credit-card-combo-2026-08]] — 台灣哩程信用卡分工策略（華航/星宇卡是不同哩程系統，不能餵長榮哩程）
+- [[hsbc-traveler-card-points-redemption-tips]] — HSBC旅人卡積分兌換最佳路徑

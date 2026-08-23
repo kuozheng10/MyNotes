@@ -66,4 +66,5 @@ created: 2026-05-22
 ---
 
 ## 相關連結
-- [[eva-award-tickets]] — 長榮里程票規劃（派哥 2027 日本行）
+- [[eva-air-mile-redemption-guide-2026]] — 長榮里程兌換攻略（派哥 2027 日本行規劃參考）
+- [[taiwan-mileage-credit-card-combo-2026-08]] — HSBC旅人卡在三張哩程卡分工策略裡的角色（平常海外消費主力卡）
