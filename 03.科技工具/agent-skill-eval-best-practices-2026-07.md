@@ -103,3 +103,4 @@ Skillsbench 分析超過 **50,000 個 Skill**，發現絕大多數沒有 Eval。
 - [[cangjie-skill-distill-2026-07]] — 把長內容蒸餾成skill的七階段流水線，第6步壓力測試是這篇Eval精神的其中一種應用
 - [[jason-liu-codex-work-system-2026-07]] — self-improve skill實戰案例，這篇補上「怎麼驗證優化有效」的評估方法
 - [[caveman-token-saving-skill-2026-07]] — 這篇提到的No-op指令浪費token問題，caveman skill的壓縮邏輯剛好是反面做法（明確量化、有測試基準的節省）
+- [[ecpay-api-skill-vendor-pattern-2026-08]] — ECPay官方API skill實際落實「skill也要有eval」的商業案例（25組加密測試向量CI跑過才發布）

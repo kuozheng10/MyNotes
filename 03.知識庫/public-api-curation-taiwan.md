@@ -36,3 +36,4 @@ source: goodarticle/2026-04-18_public-apis精選清單.md
 - [[agent-skills-standard]]
 - [[claude-subagent-context-management]]
 - [[claude-code-subagent-environment]]
+- [[ecpay-api-skill-vendor-pattern-2026-08]] — 廠商出「API skill」取代文件的新模式，考慮更新清單時可把這點列為加分項
