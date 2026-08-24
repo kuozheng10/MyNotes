@@ -22,6 +22,38 @@ source: goodarticle/2026-04-21_CC_狀態列插件.md
 ## 對派哥的啟示
 這對於開發自動化 AI 工具非常有參考價值。在派哥處理如「業務業績統計」或「銷售報告分析」等長時間運行的 Agent 任務時，可以參考此專案的 Hooks 實作方式，為自己的自動化流程加入可視化的儀表板或狀態監控，精確掌控 Token 成本與 API 配額，提升工具的穩定性與使用者體驗。
 
+---
+
+## 補充：不裝插件、直接請 Claude Code 幫你寫一支 statusLine 腳本
+
+> 來源：卡斯伯（Facebook），https://www.facebook.com/share/1FeVEW5tqL/?mibextid=wwXIfr，2026-08-24
+
+比起上面的完整插件，這是更輕量的DIY做法：`~/.claude/settings.json` 的 `statusLine` 欄位可以指向一支腳本，Claude Code 每次刷新會把一包 JSON 從 stdin 餵給它，腳本印到 stdout 的內容就是狀態列（可多行、可用 ANSI 顏色）。
+
+**作者實際顯示的 7 項資訊：**
+
+1. **資料夾名稱** — 同時開多個 Claude Code 視窗時，快速確認目前是哪個專案，避免做到一半跑錯地方
+2. **Git 分支名稱** — 隨時確認現在在哪個 branch，不容易跟預期不一致
+3. **目前使用的模型** — 切換模型後忘記換回來，容易跑出不如預期的結果或浪費額度，顯示出來就不會忘
+4. **目前的思考等級（Effort）** — 簡單任務不用開太高、複雜任務拉高，跟模型一樣容易忘記切回來
+5. **Context 剩餘量** — 快用完時該不該先 `/compact`，看這個百分比決定，呼應派哥自己「60%就壓縮」的額度管理習慣
+6. **5 小時額度剩餘量** — 額度快用完可以先停下來、排程等 reset 後再跑，處理大型工作時比較好抓節奏
+7. **Session 名稱** — 現在 Claude Code 可跨 Session 延續工作，同時開多個 Session 時方便分辨是在跟哪個 Session 對話
+
+**可直接丟給 Claude Code 的提示詞（照抄可用）：**
+
+```
+幫我做 Claude Code 的 status line。
+設定在 `~/.claude/settings.json` 的 `statusLine`，指向一支腳本：
+Claude Code 每次刷新會執行它、把一包 JSON 從 stdin 餵進來，腳本印到 stdout 的就是狀態列（可多行、可用 ANSI 顏色）。
+
+我要顯示內容如下：
+第一行　資料夾名稱｜git 分支｜模型｜effort 等級
+第二行　context 剩餘 %｜5 小時額度剩餘 %｜session 名稱（整行 dim 灰）
+```
+
+**跟上面 cc-statusline 插件的差異**：插件是別人維護好的完整套件（費用追蹤、Subagent狀態、MCP健康度都有），這個是「自己講需求、讓 Claude Code 現場幫你刻一支」——客製化程度更高，但要自己維護。派哥如果只是想要「一眼看到context/額度剩餘量」，這個DIY提示詞比裝整個插件更輕量。
+
 ## 連結筆記
 ## 連結筆記
 - [[boris-15-claude-code-tips]]
