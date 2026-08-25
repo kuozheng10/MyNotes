@@ -85,3 +85,4 @@ Taste       → 決定你實際推到哪裡（你的選擇）
 - [[agents-md-context-engineering]] — context engineering 實作
 - [[ai-subscription-downgrade-agent-addiction-reflection]] — 過度依賴 AI 的反思
 - [[agent-governance-production-service]] — agent 治理原則
+- [[uncle-bob-dont-read-agent-code-2026-08]] — Uncle Bob：不讀Agent寫的Code，靠測試/驗證機制信任輸出，跟「交接時要求硬證據」同一邏輯

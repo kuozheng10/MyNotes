@@ -546,3 +546,4 @@ Uncle Bob 敢不讀碼，是因為設計關卡的判斷力來自近六十年讀�
 - [[ai-dev-problems-amplified-2026-06]] — DORA/Faros 數據：PR review +441%
 - [[scrum-ai-five-fails-2026-06]] — 敏捷三叔公系列：AI 讓 Scrum 五個舊病惡化（症狀篇）
 - [[ai-token-cost-governance-tesla-2026-07]] — Test Impact Analysis補上「省token費」的理由，整包重測vs只測相關部分費用可能差十倍以上
+- [[uncle-bob-dont-read-agent-code-2026-08]] — Uncle Bob：測試/驗證機制取代逐行閱讀，成為信任AI程式碼的唯一憑證

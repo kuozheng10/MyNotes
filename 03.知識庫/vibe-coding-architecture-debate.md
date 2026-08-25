@@ -44,3 +44,4 @@ source: 社群討論（Facebook/Threads）
 - [[ai-coding-shift-left]] — 壓力左移法（同樣強調 spec 先行）
 - [[SDD-vs-SBE]] — SDD 就是 AI 時代的「施工藍圖」方法
 - [[claude-code-feature-workflow]] — 派哥的實作版 Vibe Coding 流程
+- [[uncle-bob-dont-read-agent-code-2026-08]] — Uncle Bob具體示範「設計層」在AI時代的樣子：約束+驗證取代逐行閱讀
