@@ -400,4 +400,5 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 - 文章：[TripPlus 2026-06-22 更新](https://blog.tripplus.cc/zh/207642/us_credit_card_best_ever_welcome_bonus_recommendation)
 - 文章：[Ocean - 三種 Amex 白金卡比較](https://blog.tripplus.cc/zh/208753/ocean_three_types_amex_platinum_intro)
 - 文章：[Randy - 三大銀行降級／轉卡指南](https://blog.tripplus.cc/zh/122104/randy_newbie_amex_chase_citi_credit_cards_product_change_guide_new)
-- 相關筆記：[[eva-award-tickets]]
+- 相關筆記：[[eva-air-mile-redemption-guide-2026]]
+- [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy個人長期持有美卡總覽（含13張卡的個別留卡理由，非開卡禮快照）

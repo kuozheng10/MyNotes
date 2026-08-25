@@ -114,3 +114,4 @@
 - [[citi-custom-cash-tripplus-miles-strategy]] — Citi 哩程策略
 - [[us-credit-card-points-transfer-time-airlines]] — 美卡轉點時間比較
 - [[jal-rtw-award-120k-miles]] — 長榮/日航里程兌換
+- [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽（含個人版Venture X的長期持有理由）

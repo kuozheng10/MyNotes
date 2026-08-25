@@ -68,3 +68,4 @@ author: Randy Wang（TripPlus，原文發布於 2025-09-02）
 
 - [[alaska-mileageplan-starlux-redemption]] — Alaska 哩程兌換星宇航空的完整費率表、Free Stopover 玩法
 - [[us-credit-card-2026-06]] — 2026/6 美國信用卡開卡禮彙整（當月列表已含這張卡但開卡禮數字為當時快照，本篇 Q&A 內容更完整、更新）
+- [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，這張卡上榜理由：星宇兌換管道+海外消費無上限3x哩程

@@ -53,3 +53,8 @@ source: TripPlus / Randy（Telegram 派哥分享）
 - 信用卡「組合技」思維 → 主卡負責轉換，副卡負責回饋特定類別
 - TYP 可轉長榮哩程，符合派哥 2027/5月商務艙計畫
 - 若未來有美國帳戶/身份，Citi Custom Cash + Citi Premier 是哩程最大化的標準組合
+
+⚠️ **更新（2026-08-23）**：[[randy-us-credit-card-long-term-keepers-2026-08]] 提到 Citi Custom Cash **已經停止開放申請**，現在只能靠已持有的舊戶保留，新戶辦不到了——若未來真的有美國身份，這張卡的組合技已無法從零開始複製。
+
+## 相關筆記
+- [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，含此卡已停開放申請的更新資訊
