@@ -109,6 +109,29 @@
 
 ---
 
+## 同門對照：Spark Cash Plus（2% 無腦回饋版）
+
+> 來源：Trip+ FB 推廣貼文 https://www.facebook.com/share/p/1Bq8Er5ZUV/ （2026-08 存檔，內含 affiliate 連結）
+> ⚠️ 以下開卡數字為當期限時活動，會變動，申請前以官網為準
+
+Capital One 現金回饋商業卡系列的中階簽帳卡，定位比 Venture X Business 低一階，給「消費大但不想研究哩程」的人。
+
+| 項目 | Spark Cash Plus（貼文版本） |
+|------|------|
+| 卡片性質 | 商業簽帳卡（charge card，需每月全額繳清） |
+| 年費 | 貼文檔期：**首年免年費** |
+| 開卡獎勵 | **$1,000（≈ 100,000 點）** |
+| 額外補助 | **$250 退款補助** |
+| 消費回饋 | 所有消費**無上限 2% 現金回饋** |
+| 轉哩程 | 本身是現金回饋卡，需**同時持有 Venture 系列個人/商業卡**，才能把現金回饋轉成 Capital One Miles 靈活點數 |
+
+**跟 Venture X Business 怎麼選**
+- 只想要「全消費 2x、簡單」→ Spark Cash Plus 就夠，年費更低
+- 要貴賓室（C1 Lounge + PPS）、$300 旅遊退額、Capital One Travel 5x/10x → Venture X Business
+- 兩張都是商業卡：不佔個人信用報告、不吃 Chase 5/24
+
+---
+
 ## 相關筆記
 
 - [[citi-custom-cash-tripplus-miles-strategy]] — Citi 哩程策略
