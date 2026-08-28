@@ -209,3 +209,4 @@ Claude 每次都重寫同一段 Python 來套投影片格式 → 把那段腳本
 - [[agentic-sop-to-work]] — Agentic SOP 實務
 - [[loop-engineering-agentic-ai]] — 寫審分離 + 硬訊號門控
 - [[ecpay-api-skill-vendor-pattern-2026-08]] — 廠商把skill當對外產品介面的實例（ECPay官方API skill）
+- [[eli5-plugin-marketplace-2026-08]] — ELI5 是第三層做得極簡（SKILL.md 只有 10 行）的案例；官方 plugin marketplace 成形

@@ -51,3 +51,7 @@ npx skills@latest add emilkowalski/skills
 
 - 派哥已有 `frontend-design`、`impeccable`、`web-design-guidelines` 等 UI 設計相關 skill，這套是**作者本人（真正資深設計工程師）背書**的版本，專攻動畫細節（緩動函數、視覺元素選擇），跟現有 skill 互補而非取代
 - 若之後有派哥自己的 Vercel 專案（investment-dashboard / my-wallet-trip / insurance-tracker）要做動畫細節優化，可以考慮安裝這套來源
+
+## 相關筆記
+
+- [[eli5-plugin-marketplace-2026-08]] — Skills 生態演進「中期：有人把 skill 打包成模組」的代表案例，這套就是；現在進到官方 marketplace 階段

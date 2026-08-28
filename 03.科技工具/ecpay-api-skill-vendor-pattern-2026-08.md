@@ -71,3 +71,4 @@ git clone https://github.com/ECPay/ECPay-API-Skill.git ~/.claude/skills/ecpay
 - [[agent-skill-eval-best-practices-2026-07]] — Skill也要寫測試/eval的最佳實踐（Google DeepMind），ECPay這套是實踐範例
 - [[anthropic-skill-three-layers-2026-06]] — Anthropic官方Skill三層架構設計原則
 - [[public-api-curation-taiwan]] — 派哥的台灣Public API精選清單
+- [[eli5-plugin-marketplace-2026-08]] — Anthropic官方plugin community marketplace成形，廠商/社群skill有統一提交安裝管道
