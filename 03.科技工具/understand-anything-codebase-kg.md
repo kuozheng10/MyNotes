@@ -47,3 +47,4 @@ npx understand-anything init
 ## 關聯筆記
 
 - [[agentic-sop-to-work]] — Claude Code 輔助工具生態
+- [[hung-yi-lee-skill-2026-08]] — 同樣的 god-node / 概念社群概念，用在一位老師的課程知識而非 codebase

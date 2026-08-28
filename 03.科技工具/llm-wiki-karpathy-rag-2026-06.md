@@ -78,3 +78,4 @@ LLM token 貴 → 以前燒不起。
 
 - [[understand-anything-codebase-kg]] — 知識圖譜理解大型 codebase
 - [[headroom-context-compression]] — Context 壓縮與記憶管理
+- [[hung-yi-lee-skill-2026-08]] — 把 YouTube 頻道 pre-compile 成含知識圖譜 + wiki 的 skill，持久化結構 vs 每次 RAG 的實例

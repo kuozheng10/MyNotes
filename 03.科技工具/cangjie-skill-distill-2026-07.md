@@ -73,3 +73,4 @@ FB 短片連結（`facebook.com/share/v/195AV7QyCu`）本身讀不到完整影�
 ## 相關筆記
 
 - [[agent-skill-eval-best-practices-2026-07]] — Google DeepMind 的 Skill Eval 通用框架，這篇第6步「壓力測試」只是Eval精神的其中一種應用，那篇提供適用所有既有skill的完整評估方法（測試案例設計、regex斷言、LLM-as-judge、回歸測試流程）
+- [[hung-yi-lee-skill-2026-08]] — 這套方法論的完整成品範例：voidful 把李宏毅整個 YouTube 頻道 + 訪談蒸餾成含 916 節點知識圖譜的 skill

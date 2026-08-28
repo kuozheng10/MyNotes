@@ -89,3 +89,4 @@ Marketplace 就是讓整個生態從「個人手工」走向「可規模化」�
 - [[boris-cherny-cleaner-maintainer-2026-07]] — Boris AI Adoption Steps 出處
 - [[ecpay-api-skill-vendor-pattern-2026-08]] — 廠商把 skill 當對外產品介面，marketplace 成形後的延伸玩法
 - [[claude-skill-social-post]] — Claude Code skill 社群分享
+- [[hung-yi-lee-skill-2026-08]] — 同系列貼文，把一位老師的知識體系整包做成 skill 的範例（voidful）
