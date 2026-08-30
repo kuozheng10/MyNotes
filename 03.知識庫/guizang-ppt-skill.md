@@ -80,3 +80,4 @@ git clone https://github.com/op7418/guizang-ppt-skill.git ~/.claude/skills/guiza
 - [[ppt-master-ai-ppt]] — 另一個 PPT 工具（Markdown + reveal.js 風格）
 - [[claude-code-powerup-guide]] — Claude Code Skill 生態
 - [[agent-skills-standard]] — Skill 安裝與管理規範
+- [[html-anything-agentic-html-editor-2026-08]] — 把這個 skill 原樣收進去當 `deck-guizang-editorial`

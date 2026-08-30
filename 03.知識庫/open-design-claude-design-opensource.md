@@ -90,3 +90,4 @@ pnpm tools-dev run web
 - [[claude-design-best-practices]] — Claude Design 七招實戰
 - [[awesome-design-systems]] — 設計系統資源
 - [[my-wallet-trip-setup]] — My Wallet Trip 專案
+- [[html-anything-agentic-html-editor-2026-08]] — 同團隊新作，架構照搬 open-design，聚焦「出 HTML 卡片/簡報」
