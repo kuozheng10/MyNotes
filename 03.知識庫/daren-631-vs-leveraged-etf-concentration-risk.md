@@ -93,3 +93,4 @@ source: 大仁哥 Facebook 貼文
 - [[howard-marks-long-term-investing-survive-bad-years]] — 長期投資視角，承擔波動換取報酬
 - [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書寫明不適合長期投資，用耗損公式拆解報酬來源
 - [[spy-gld-gde-comparison-2026-08]] — 同作者：SPY/GLD/GDE(黃金+股票90/90槓桿基金)報酬率比較
+- [[qingliujun-buy-borrow-die-vs-73-2026-09]] — 買借死 vs 75/25(0050+正二) 退休提領回測，兩者只差 0.77%，重點是曝險控制

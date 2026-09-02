@@ -100,3 +100,5 @@ date: 2026-06-07
 反方論點對照：[[00631l-not-suitable-long-term-prospectus]] — 發行商公開說明書寫明00631L不適合長期投資，用耗損公式論證過去十年報酬主要來自「強趨勢低波動行情」而非槓桿本身優勢
 
 另見 [[howard-marks-long-term-investing-survive-bad-years]] — 長期投資存活關鍵
+
+[[qingliujun-buy-borrow-die-vs-73-2026-09]] — 買借死 vs 75/25(0050+正二) 退休提領回測，兩者只差 0.77%，重點是曝險控制：
