@@ -75,3 +75,9 @@ git clone https://github.com/Agents365-ai/drawio-skill.git ~/.claude/skills/draw
 - 跟別人說明複雜 sync 流程（notion_sync、bank sync）
 
 ⚠️ **前提**：需要 draw.io desktop app 安裝，才能用 CLI 渲染匯出
+
+---
+
+## 相關
+
+- [[codex-builtin-chart-skill-45-types-2026-09]] — Codex 內建圖表 skill（45 種），不用裝 draw.io，AI 直接吐 HTML/SVG/mermaid；要正式 .drawio 檔才用這個 drawio-skill
