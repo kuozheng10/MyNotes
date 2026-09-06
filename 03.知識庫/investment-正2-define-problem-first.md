@@ -108,3 +108,4 @@ tags: #投資 #正2 #槓桿ETF #問題框架 #財富階梯
 - [[google-sheets-gas-investment-dashboard-正二]] — 正二戰情室
 - [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書自己說不適合長期投資，用耗損公式拆解過去十年報酬的真正來源
 - [[qingliujun-buy-borrow-die-vs-73-2026-09]] — 買借死 vs 75/25(0050+正二) 退休提領回測，兩者只差 0.77%，重點是曝險控制
+- [[leejiada-minerva-ai-thinking-method-2026-09]] — 密涅瓦「問對問題」框架：先區分限制 vs 障礙，再選解法（同精神）
