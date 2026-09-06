@@ -75,9 +75,16 @@ author: Randy Wang（TripPlus，原文發布於 2025-09-02）
 
 - **3 個月內刷 $4,000 美金** → 80,000 points ＋ 一張 25,000 points 的「全世界」通用同行者機票兌換券 (Global Companion Award)
 
-### 年費
+### 卡組織 / 年費（2026-09 查證）
 
-- **$395 美金**（旅遊類，不免年費、首年不折抵）
+Atmos Rewards 個人聯名卡系列**共 2 張**，都是 **Visa**，沒有免年費／低階版：
+
+| 卡 | 卡組織 | 年費 | 定位 |
+|---|---|---|---|
+| Atmos Rewards **Ascent** Visa Signature | Visa Signature | **$95** | 中階，開卡禮低、福利陽春 |
+| Atmos Rewards **Summit** Visa Infinite | **Visa Infinite** | **$395** | 高階，本篇這張 |
+
+Summit 才有的東西：每季貴賓室券、每年續卡 25K 同行券 + 10K 定級點、$120 Global Entry、海外消費 3x。要賺開卡禮 + 每年同行券就直接上 Summit，$95 那張不划算。
 
 ### 刷卡回饋倍率
 
