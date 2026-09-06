@@ -93,3 +93,4 @@ Claude 也主動加了免責：通路比對是關鍵字比對，**實際認列�
 - [[html-anything-agentic-html-editor-2026-08]] — 另一個 agentic HTML/Artifact 編輯工具
 - [[static-site-ai-rebuild-2026-07]] — AI 重建靜態網站
 - [[leejiada-minerva-ai-thinking-method-2026-09]] — AI 思考法：「既有資料 × AI = 個人化工具」的框架版
+- [[feichangjiandan-ai-daily-miles-digest-2026-09]] — 同類：AI 排程每天自動收哩程情報

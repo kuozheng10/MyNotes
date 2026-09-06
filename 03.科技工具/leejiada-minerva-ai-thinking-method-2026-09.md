@@ -157,3 +157,4 @@ AI 應用：引導 AI 區分問題中的「限制」與「障礙」。
 - [[ai-self-learning-vs-paid-courses-2026-07]] — AI 自學 vs 付費課程
 - [[ai-framework-vs-harness-2026-07]] — 框架 vs harness
 - [[jason-liu-codex-work-system-2026-07]] — 另一套 AI 協作工作系統
+- [[feichangjiandan-ai-daily-miles-digest-2026-09]] — 「把『幫我查一下』改成『設成自動化』」的實例
