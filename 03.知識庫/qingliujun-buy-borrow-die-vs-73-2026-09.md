@@ -71,6 +71,7 @@ category: 理財投資
 
 ## 相關筆記
 
+- [[qingliujun-gk-dynamic-withdrawal-0050-2026-09]] — 同作者，Guyton-Klinger 動態提領法以 0050 回測
 - [[investment-正2-define-problem-first]] — 先定義你的問題，別爭工具好壞
 - [[00631l-not-suitable-long-term-prospectus]] — 反方：發行商說明書自己說不適合長期
 - [[daren-631-vs-leveraged-etf-concentration-risk]] — 大仁：00631L vs 正二集中度
