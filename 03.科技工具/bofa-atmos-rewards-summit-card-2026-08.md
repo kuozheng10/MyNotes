@@ -136,6 +136,7 @@ Randy 官方說法：「若未來打算兌換寰宇一家／星宇的哩程機�
 
 ## 相關筆記
 
+- [[boa-credit-card-basic-rules-2026-09]] — BoA 所有卡共通的申辦規則（2/3/4、24 個月、3/12 與 7/12 新帳戶紅線、Match/Expedite/轉額度）
 - [[alaska-mileageplan-starlux-redemption]] — Alaska 哩程兌換星宇航空的完整費率表、Free Stopover 玩法
 - [[us-credit-card-2026-06]] — 2026/6 美國信用卡開卡禮彙整（當月列表已含這張卡但開卡禮數字為當時快照，本篇 Q&A 內容更完整、更新）
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，這張卡上榜理由：星宇兌換管道+海外消費無上限3x哩程
