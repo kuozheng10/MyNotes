@@ -107,7 +107,7 @@
 
 ## 對派哥的價值評估
 
-跟現有目標直接相關：[[project_eva_award_tickets]] 記錄 2027/5 月要換 3 人商務艙去日本。這篇提供了「怎麼累積可 1:1 轉長榮的美金點數」的具體卡組打法，籌備期（2026/5 月中開始盯 seats.aero 之前）可以先評估要不要申辦 Citi Strata Elite/Premier 開始養點數。
+跟現有目標直接相關：派哥 2027/5 月要換 3 人商務艙去日本（見 [[roame-eva-mile-ticket-tool-2026-08]]）。這篇提供了「怎麼累積可 1:1 轉長榮的美金點數」的具體卡組打法，籌備期（2026/5 月中開始盯 seats.aero 之前）可以先評估要不要申辦 Citi Strata Elite/Premier 開始養點數。
 
 實際下手前務必記住**148/865/HP 三條申請規則**（見上方段落）——尤其是「HP 6 個月內別超過 2 個」跟「865 規則連沒核准的申請也算」這兩點最容易踩雷。如果同期間還有計畫辦其他銀行的卡，建議先排申辦順序，把花旗 TYP 系列卡排在 HP 較少的時間點申請，降低被拒機率。
 
@@ -117,5 +117,45 @@
 - 本文含有申辦連結的推薦報酬揭露（affiliate disclosure）
 - YouTube 影片來源（2026-08 補充）另有 MooMoo 美股帳戶開戶優惠工商時間（3.35%基礎年利率＋60天4.75%加碼、入金滿$500/1萬/10萬美金分階拿NVIDIA股票），屬贊助商廣告內容，與 TYP 信用卡策略本身無關，故未收錄進本筆記正文
 
+---
+
+## 2026-09 補充（來源 3：TripPlus Ocean〈佈局兌換星宇/長榮，Citi ThankYou 申請攻略〉2026-08-17）
+
+來源：<https://blog.tripplus.cc/zh/211421/apply_citi_thankyou_rewards_card_strategy>（整理自 TripPlus YouTube 影片）
+大方向跟上面兩篇一致，以下只記**新增或更明確的細節**：
+
+### TYP 「唯一性」再確認
+- 花旗 TY 點數是目前**唯一**可 1:1 把美國信用卡靈活點數轉入長榮無限萬哩遊的系統
+- 未來若 AA × 星宇合作成局 → 持 TY 的人可 1:1 轉 AA → 換星宇機位。所以「現在就累積 TY，不管之後換哪家都划算」
+
+### 這篇的框架：「目前接受新申請的 TYP 卡＝4 張」
+Double Cash、Strata、Strata Premier、Strata Elite。
+⚠️ 跟上面正文列的 5 張差在 **Citi Custom Cash**——這篇沒把它算進 TYP 系列。可能是 Custom Cash 已不列入 TYP 主推陣容 / 轉點功能受限，實際申辦前要再查證 Custom Cash 現況。
+
+### 免年費雙卡的轉點限制（講得更白）
+Double Cash + Strata 這兩張免年費卡**也能轉航空/酒店常客計畫，但比例較差（非 1:1）**。要 1:1 一定要搭一張中/高階（Premier 或 Elite）。
+
+### CitiGold 具體門檻（新數字）
+- 取得 CitiGold 會籍：**總資產至少達 $200,000 美金**轉入花旗理財帳戶（股票搬過去不影響持股）
+- 每張高階卡年費折 **$145**（可疊 Strata Elite / 已停售的 Prestige / AA Executive）
+- 另有每年 **$200 訂閱制退額**（可折 Amazon Prime 或 Costco 會員費）
+- Strata Elite 倒賺年費算法：$595 −$145(CitiGold) −$300(酒店退額) −$200(Splurge) −$200(訂閱退額) → 負值
+
+### 申辦策略：兩階段
+1. **第一階段**：依序把 4 張 TYP 卡的開卡禮拿好拿滿（嚴守 8/65 + HP 節奏）
+2. **第二階段**：長期持有套卡組合二選一
+   - 組合 A（低成本高效率）：Strata Premier + Strata(免年費) + Double Cash
+   - 組合 B（高端旅遊）：Strata Elite + Strata(免年費) + Double Cash
+
+### 新的實務提醒
+- **點數帳戶整合**：所有卡累積的 TY 點數要合併到**同一個 TY 帳戶**（打客服請他們合併），才方便統一轉點
+- 嚴格控管申請節奏：8/65 規則 + 留意 HP 次數，別短時間連續申請
+
+### 對派哥
+派哥只有 1 張美卡（Amex Bonvoy Brilliant），HP 乾淨，很適合開始跑第一階段。若打算之後也辦 BoA Atmos（見 [[bofa-atmos-rewards-summit-card-2026-08]]），要排申辦順序——花旗對 HP 敏感，建議花旗 TYP 系列先辦、6 個月內少碰別家。CitiGold 那條門檻 $200K 美金資產不低，先不用急，Strata Premier（$95、靠 $100 酒店退額打平）就夠開始養點數。
+
 ## 相關筆記
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，Citi Strata Premier是目前唯一低成本維持1:1轉長榮(BR)的花旗卡
+- [[bofa-atmos-rewards-summit-card-2026-08]] — Alaska/Atmos 聯名卡（另一條換星宇的路），申辦順序要跟花旗排開
+- [[roame-eva-mile-ticket-tool-2026-08]] — 長榮里程票查詢工具
+- [[feichangjiandan-ai-daily-miles-digest-2026-09]] — 用 AI 排程每天追蹤哩程/卡的活動變動
