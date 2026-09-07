@@ -208,7 +208,8 @@ ITIN ✅｜美國地址 ✅（代收信箱服務，加州）｜美國門號 ✅�
 **準備**：① 開 Wise 美金帳戶（台灣可辦，繳卡費用）② 申請前 6 個月不辦任何其他銀行卡（HP 乾淨）
 
 **第一階段拿開卡禮**：
-- 第 1 批（隔 8~14 天）：Citi Strata Premier（$95/60k）→ Citi Strata Elite（$595/75k）。掛美國 IP 線上申請，進 pending 打重審電話說明 ITIN + 備 CP565/護照影本
+- 第 1 批（隔 8~14 天）：Citi Strata Premier（$95/60k）→ Citi Strata Elite（$595/75k）。線上申請，進 pending 打重審電話說明 ITIN + 備 CP565/護照影本
+  - **IP 問題**：商業 VPN（機房 IP）會被 BoA/Chase 直接擋、頁面進不去；Citi/C1 沒那麼兇。做法：先「裸連」（台灣 IP）試填試送——派哥有美國 Amex 信用紀錄，多半會過。想要美國 IP 又不被擋 → 把 Ultra Mobile 美國 SIM 插手機、用行動數據（非 wifi）申請，漫遊流量常繞回美國 T-Mobile 出口＝住宅型美國 IP。不要硬開機房 VPN。
 - 等 ~65 天
 - 第 2 批（隔 8~14 天）：Citi Strata（免年費/20k）→ Citi Double Cash（免年費/20k）→（可選）Capital One Venture
 
