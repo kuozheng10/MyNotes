@@ -69,6 +69,7 @@ Block 握有買賣雙方的真實金流，用交易資料建客戶模型是有�
 - [[ai-engineering-evolution]] — AI 如何改變工程組織形態
 - [[loop-engineering-agentic-ai]] — Agent 架構下的自主協調
 - [[team-of-teams-ai-coding-less-2026-07]] — 同樣是 LeSS 視角談協調，但站在「協調給人」這一端（McChrystal Team of Teams），跟本篇「協調給機器」（Block）互為光譜兩端
+- [[guo-yiling-ai-era-ceo-memo-middle-management-2026-09]] — 商周郭奕伶同主題 CEO 備忘錄，Uber/Intel/Google/Coinbase 實例 + 「分減算畫」四步；比 Block 溫和（先分清哪些協調該交出去）
 
 ---
 
