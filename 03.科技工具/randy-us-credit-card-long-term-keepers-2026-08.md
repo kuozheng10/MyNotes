@@ -6,9 +6,10 @@ date: 2026-08-23
 related: capital-one-venture-x-business-card, citi-custom-cash-tripplus-miles-strategy, bofa-atmos-rewards-summit-card-2026-08, citi-thankyou-eva-air-2026-07, us-credit-card-2026-06
 ---
 
-# Randy長期持有的美國信用卡完整清單（六大銀行、13張卡）
+# Randy長期持有的美國信用卡完整清單（六大銀行、14張卡）
 
 > 作者Randy Wang自己長期居住美國，這篇是他個人實際持有並打算長期保留的卡片清單，每張卡都附上「為什麼值得留」的具體理由（退額補助/回饋率/福利），不是行銷推薦文。
+> （2026-09-08 派哥再次丟同一篇的 FB 分享連結 — 內容就是這篇 2026-08-23 更新版，無新增；本筆記已完整涵蓋。）
 
 ---
 
@@ -28,13 +29,13 @@ related: capital-one-venture-x-business-card, citi-custom-cash-tripplus-miles-st
 | **Chase Freedom Flex** | 免年費 | 餐飲/藥妝3x；每季輪替類別5x（消費上限$1,500），一年最多可賺30,000點 |
 | **Chase Ink Business Cash** | 免年費 | 辦公用品店/電信/有線電視/網路 5x點數 |
 | **Chase Ink Business Preferred** | $95 | 旅遊/郵寄/網路廣告/電信 3x；含手機保險（用卡付話費即有保障）+旅遊保險（班機延誤/行李遺失有賠償） |
-| **Chase World of Hyatt** | — | 每年5晚定級房晚（保級用）；續卡送等級1-4單晚住宿券；消費滿$5,000加贈2晚定級房晚，滿$15,000再送一張住宿券 |
+| **Chase World of Hyatt** | $95 | 每年5晚定級房晚（保級用）；續卡送等級1-4單晚住宿券；消費滿$5,000加贈2晚定級房晚，滿$15,000再送一張住宿券。**只有凱悅腦粉才值得長期留** |
 
 ## 花旗銀行（Citi）
 
 | 卡片 | 年費 | 長期持有的理由 |
 |------|------|----------------|
-| **Citi Strata Premier** | — | 機票/酒店/加油/餐廳/超市 3x；目前**唯一**能低持卡成本維持1:1轉點的花旗卡，且TY點數是美國少數能1:1轉長榮航空(BR)的管道 |
+| **Citi Strata Premier** | $95 | 機票/酒店/加油/餐廳/超市 3x；目前**唯一**能低持卡成本維持1:1轉點的花旗卡，且TY點數是美國少數能1:1轉長榮航空(BR)的管道 |
 | **Citi Custom Cash**（已停開放申請） | 免年費 | 當月消費最高類別5x（餐飲/加油/超市/旅遊/運輸/影音串流/藥妝/家庭用品/健身房/娛樂表演），可與Strata Premier點數合併 |
 | **Citi Double Cash** | 免年費 | 任何消費2x，可與Strata Premier點數合併 |
 
@@ -54,7 +55,7 @@ related: capital-one-venture-x-business-card, citi-custom-cash-tripplus-miles-st
 
 | 卡片 | 年費 | 長期持有的理由 |
 |------|------|----------------|
-| **BofA Atmos Rewards Summit** | — | 阿拉斯加航空哩程可兌星宇航空(Starlux)機票；貴賓室免費券＋機上WiFi免費券；續卡送25,000哩「全球通用同行者機票」兌換券；**美國以外消費無上限3x哩程**，市場少見的海外加成 |
+| **BofA Atmos Rewards Summit** | $395 | 阿拉斯加航空哩程可兌星宇航空(Starlux)機票；貴賓室免費券＋機上WiFi免費券；續卡送25,000哩「全球通用同行者機票」兌換券；**美國以外消費無上限3x哩程**，市場少見的海外加成 |
 
 ---
 
