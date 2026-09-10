@@ -272,6 +272,26 @@ ITIN ✅｜美國地址 ✅（代收信箱服務，加州）｜美國門號 ✅�
 ### 對派哥
 派哥只有 1 張美卡（Amex Bonvoy Brilliant），HP 乾淨，很適合開始跑第一階段。若打算之後也辦 BoA Atmos（見 [[bofa-atmos-rewards-summit-card-2026-08]]），要排申辦順序——花旗對 HP 敏感，建議花旗 TYP 系列先辦、6 個月內少碰別家。CitiGold 那條門檻 $200K 美金資產不低，先不用急，Strata Premier（$95、靠 $100 酒店退額打平）就夠開始養點數。
 
+## 換 EVA 商務艙的美卡路徑總表（2026-09，Citi 卡住時的備案）
+
+| 點數 | → 長榮直轉 | → Aeroplan（星盟開長榮、免燃油）| 備註 |
+|---|---|---|---|
+| Citi ThankYou | **1:1** | — | 最好；2026 新制：每人每年轉出/收 上限 100k、收到 90 天內要轉入長榮否則歸零 |
+| Amex MR | ✗ 不能 | **1:1** | 也能轉 ANA / 新加坡航空 |
+| Capital One | 4:3（2026/7 曾加碼近 1:1）| **1:1** | 也轉國泰 Asia Miles / 英航 Avios |
+| Bilt | ✗ | 1:1 | 要付房租才賺得到，無傳統開卡禮 |
+| Wells Fargo | ✗ | 1:1 | 要 Autograph Journey($95) 或 Autograph(免年費) 解鎖轉點 |
+
+Amex SUB（2026-09）：Gold $325 年費 / 最高 10 萬 MR（6 月刷 $6,000）；Platinum $895 / 最高 17.5 萬 MR（刷 $12,000）；**Green 卡 2026-07 已停售**。
+Capital One（2026-09）：Venture $95 / 75,000 哩 + $300 旅遊金（3 月刷 $4,000）；Venture X $395 / 75,000 哩 + $300 旅遊金 + 每年 10,000 週年點。ITIN 收；薄信用檔較嚴（建議 12 個月美國紀錄）；**拉三家聯徵**（建議先凍結一家）。
+
+### 派哥狀況（2026-09-10，Citi Strata Premier 卡在錯誤頁）
+
+Citi 申請最後一步炸掉、打客服查無 ITIN/mobile（可能沒進系統、多半沒 hard pull）。2027/5 才要用、時間夠，不急著疊。
+- 等 24-48h 確認 Citi 沒進系統
+- 登入 Amex 帳號看 pre-approved targeted offer + 做 Capital One pre-qualify（都軟查詢）
+- 有 pre-approved → 挑那張；都沒有 → **Amex Gold** 最穩（既有 Amex 客戶、不在乎 HP 數量），MR → Aeroplan → 長榮商務艙
+
 ## 相關筆記
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，Citi Strata Premier是目前唯一低成本維持1:1轉長榮(BR)的花旗卡
 - [[bofa-atmos-rewards-summit-card-2026-08]] — Alaska/Atmos 聯名卡（另一條換星宇的路），申辦順序要跟花旗排開
