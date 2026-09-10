@@ -197,6 +197,16 @@ BoA 重審專線：**1-888-503-6090**（信用卡分析師/重審，最直接）
 
 繳卡費：Wise 美金帳戶遠端開（見上）。現階段結論：**Citi TYP 卡組 + Capital One**，兩條線遠端可做。
 
+### 透過 Rakuten 申請的加贈（2026-09-10 派哥問）
+
+兩個分開的獎勵：
+- **Rakuten 新會員 $50**（史高，延到 2026/9/30）：用推薦連結註冊 → 90 天內透過 Rakuten 連結「購物」滿 $50 → $50。跟辦卡無關。
+- **Citi Strata Premier via Rakuten $100**：Rakuten 有列這張卡，透過它的連結申請核准 → 額外 $100，疊加在花旗 60,000 點之上。⚠️ Rakuten 要選「賺現金回饋」或 Bilt 點，選 Amex MR 這 $100 會顯示 $0。
+
+步驟：推薦連結註冊 Rakuten → 登入搜 "Citi Strata Premier" → 確認顯示 $100 cash → 點 Apply Now（帶 tracking cookie 跳花旗申請頁）→ 照 ITIN/重審流程申請 → 核准後看 Rakuten 有沒有 pending $100，48h 沒出現用「Missing Cash Back」申訴（社群 95%+ 客服會手動補）。
+
+⚠️ 對派哥的實況：Rakuten 加贈的「追蹤」對「ITIN + 進審核 + 打重審電話」這種路徑不一定跟得到（進「審核」有 DP 可追，「打電話人工審」無明確 DP）。當加菜、可事後申訴，不要指望。只能擇一：Rakuten $100 vs TripPlus 部落格連結加贈，銀行 60k 點兩條都拿。$50 新會員對派哥尷尬（沒在美國網購，除非寄美國地址）。
+
 ### 派哥的申辦基礎（2026-09-07 全部到位）
 
 ITIN ✅｜美國地址 ✅（代收信箱服務，加州）｜美國門號 ✅（Ultra Mobile PayGo，見 [[reference_ultra_mobile_paygo_sim]]）｜已有美國信用紀錄 ✅（大聰明掛 ITIN 檔）
