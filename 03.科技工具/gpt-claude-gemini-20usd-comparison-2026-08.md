@@ -52,3 +52,4 @@ related: local-agent-mcp-strategy-2026-08
 ## 相關筆記
 
 - [[local-agent-mcp-strategy-2026-08]] — 同作者：地端Agent+MCP分工策略
+- [[openai-gpt6-astra-2026-09]] — OpenAI GPT-6 Astra（2026-09發布）追蹤：能力/入口/對派哥的建議
