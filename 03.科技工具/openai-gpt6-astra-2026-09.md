@@ -39,6 +39,14 @@ tags: [openai, chatgpt, gpt-6, astra, ai模型, ai-comparison]
 - Fast mode：速度快最多2倍，價格也貴2倍
 - 長上下文（超過27.2萬token）：輸入$20/百萬token、輸出$75/百萬token
 
+## 跟「Codex」的關係（派哥追問）
+
+- OpenAI「Codex」是軟體工程AI agent產品線，目前有4種形式：ChatGPT桌面App裡的Codex模式、**Codex CLI**（終端機工具）、IDE擴充套件（VS Code/JetBrains）、雲端網頁版（chatgpt.com/codex）
+- `codex exec` 是 Codex CLI 底下一個非互動指令模式（一次性任務/CI適用），**就是派哥CLAUDE.md「純實作→`codex exec --full-auto`」用的那個工具**，不是另一個東西
+- **GPT-6 Astra已經是Codex CLI可用的模型**（2026-09-03起），但官方要求 **Codex CLI版本 ≥ 0.153.0** 才吃得到；免費方案的Codex預設模型線截至2026-09-07仍是GPT-5.6家族（Sol/Terra/Luna），Astra要嘛手動指定要嘛看方案是否預設切過去
+- **派哥本機現況**（2026-09-13查）：已安裝 `@openai/codex@0.136.0`，低於0.153.0門檻，**還吃不到Astra**；npm上最新版是 `0.154.0`，升級指令：`npm install -g @openai/codex@latest`
+- auth用的是 `~/.codex/auth.json`（ChatGPT帳號登入），不是走API key單獨計費，跟訂閱方案綁定
+
 ## 對派哥的建議
 
 **不用特別去試，維持現有Claude Code為主就好**，理由：
