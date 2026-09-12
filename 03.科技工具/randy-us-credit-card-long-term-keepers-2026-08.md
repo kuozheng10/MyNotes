@@ -75,3 +75,4 @@ related: capital-one-venture-x-business-card, citi-custom-cash-tripplus-miles-st
 - [[citi-thankyou-eva-air-2026-07]] — Citi ThankYou套卡兌換長榮航空哩程必備組合
 - [[us-credit-card-2026-06]] — 2026年6月美國信用卡高額開卡禮彙整
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — Hilton Surpass（中階）vs 大聰明 Bonvoy Brilliant（頂級）酒店卡對比
+- [[buy-iphone-best-us-credit-card-2026-09]] — 買iPhone該用哪張美卡：延長保固/回饋率/湊開卡禮消費門檻

@@ -60,3 +60,4 @@ Hilton Surpass 的「降級再升級」玩法（免 Hard Pull 還能再拿一次
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy 長期持有美卡清單（含 Amex Hilton Honors Aspire，更高階的希爾頓聯名卡）
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍對應指南
 - [[citi-thankyou-eva-air-2026-07]] — 派哥現在進行中的美卡計畫（長榮哩程路線）
+- [[buy-iphone-best-us-credit-card-2026-09]] — 買iPhone湊開卡禮消費門檻攻略，含Hilton卡系列SUB對照表
