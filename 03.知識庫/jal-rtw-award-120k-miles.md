@@ -72,3 +72,4 @@ source: telegram/手打
 
 - [[tripplus-ryan-premium-cc-1year-review-amex-csr-citi]] — 信用卡哩程策略
 - [[us-credit-card-points-transfer-time-airlines]] — 積點轉哩程時機
+- [[eva-air-mile-redemption-guide-2026]] — 長榮/星盟環球票325,000哩詳細規則對照（同一張表裡的比較對象）
