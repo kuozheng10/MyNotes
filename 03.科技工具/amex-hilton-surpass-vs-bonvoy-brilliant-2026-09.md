@@ -9,7 +9,7 @@ category: AI工具
 
 # Amex Hilton Honors Surpass 開卡禮 vs 大聰明（Marriott Bonvoy Brilliant）
 
-> 起因：派哥丟 TripPlus 的希爾頓聯名卡限時開卡禮貼文，問「比較大聰明」（他的暱稱：Amex Marriott Bonvoy Brilliant）。
+> 起因：派哥丟 TripPlus 的希爾頓聯名卡限時開卡禮貼文，問「比較大聰明」（他的暱稱：Amex Marriott Bonvoy Brilliant）。2026-09-13 又補了同系列的商業卡版本（Amex Hilton Honors Business）進來對比。
 
 ## Amex Hilton Honors Surpass（這篇主角）
 
@@ -25,6 +25,33 @@ category: AI工具
 - **降級/再升級玩法**：持卡滿一年可降級成免年費版 Hilton Honors Amex；之後再滿一年可再升回 Surpass——**免 Hard Pull**，還有機會再拿一次 5~10 萬點的「升級禮」，之後不想付年費再降回免年費版
 - **開卡技巧**：同一天申請 Amex 信用卡＋簽帳卡容易被合併成一個 Hard Pull（同一天申兩張信用卡不易過，但信用卡+簽帳卡各一張較容易）
 - **審核部門電話**：1-800-567-1083（線上沒秒過就打電話重審，機率高）
+
+## Amex Hilton Honors Business（商業卡版，2026-09-13補）
+
+> 來源：[TripPlus文章](https://blog.tripplus.cc/zh/creditcarddatabase/amex_hh_biz)（FB分享：https://www.facebook.com/share/p/18MCvrpyw6/），派哥丟連結沒說要幹嘛，判斷跟上面 Surpass 是同系列卡，直接補進來對比。
+
+跟上面「Surpass」是**同一個希爾頓聯名卡家族，但這張是商業卡版本**，數字都不一樣：
+
+- **年費**：$195 美金（比 Surpass 的 $150 貴 $45）
+- **開卡禮（限時，到 2027/1/13，跟 Surpass 同一個截止日）**：6 個月內刷 **$8,000**（比 Surpass 的 $3,000 高）→ **150,000 點**（比 Surpass 的 130,000 點多）+ 1 張單晚免費住宿券
+- **會籍**：一樣是希爾頓**金卡**
+- **回饋**：希爾頓旗下酒店 12x（跟Surpass一樣）｜其他消費 **5x**（比Surpass的3x高），但**每日曆年 $100,000 消費以上降回3x**
+- **持卡福利**：
+  - 每年 $240 美金希爾頓退額（每季 $60 給，跟 Surpass 每季$50給、年度也是$200不同——這張退額比Surpass多）
+  - 免費 National 租車高階會籍（跟Surpass一樣，注意要登入Amex帳戶手動加入才生效，"enrollment required"）
+  - 年消費滿 $40,000 → 一樣直升鑽石會籍
+- **⭐ 最大差異（也是這篇貼文的重點）**：因為是**商業卡**，申請核准**不會佔用 Chase 5/24 額度**——適合已經卡在5/24、但還想拿希爾頓金卡會籍的人
+- **開卡技巧**：跟Surpass一樣，同一天申請Amex信用卡+簽帳卡容易合併成一個Hard Pull；審核沒過打電話 1-800-567-1083 重審
+
+**Business vs Surpass 該選哪張**：
+| | Surpass（個人卡） | Business（商業卡） |
+|---|---|---|
+| 年費 | $150 | $195 |
+| 開卡禮 | $3,000刷卡→130,000點 | $8,000刷卡→150,000點 |
+| 佔用5/24 | 會佔用 | **不佔用** |
+| 其他消費回饋 | 3x | 5x（$10萬內） |
+
+→ 已經卡在 Chase 5/24 額度、或想衝更高消費拿更高回饋的人選 Business；只是想低成本拿金卡會籍、還沒用完5/24額度的人選 Surpass 更划算（年費便宜、門檻低）。
 
 ## 大聰明（Amex Marriott Bonvoy Brilliant，2026-09 查證）
 
