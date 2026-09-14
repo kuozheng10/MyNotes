@@ -59,3 +59,4 @@ bonvoy.program.cn@marriott.com
 ## 相關筆記
 
 - [[marriott-jal-status-match-2026-07]] — 萬豪×日航會籍互相配對合作
+- [[marriott-bonvoy-dynamic-pricing-category-2026-09]] — 萬豪Category分級制廢除後的動態計價機制、查價技巧、FNA/住五付四省分招式
