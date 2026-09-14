@@ -111,3 +111,4 @@ Hilton Surpass 的「降級再升級」玩法（免 Hard Pull 還能再拿一次
 - [[citi-thankyou-eva-air-2026-07]] — 派哥現在進行中的美卡計畫（長榮哩程路線）
 - [[buy-iphone-best-us-credit-card-2026-09]] — 買iPhone湊開卡禮消費門檻攻略，含Hilton卡系列SUB對照表
 - [[marriott-bonvoy-dynamic-pricing-category-2026-09]] — 萬豪動態計價積分完整解析，FNA住宿券規則對照大聰明的續卡禮
+- [[us-credit-card-credits-checklist-2026-09]] — 主流美卡退額總表，確認大聰明餐飲退額$25/月的官方頻率
