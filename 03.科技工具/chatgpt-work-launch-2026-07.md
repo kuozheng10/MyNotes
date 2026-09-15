@@ -74,3 +74,7 @@ Codex app 已併入全新 ChatGPT 桌面版：diff裡行內編輯、側邊欄審
 - 跟已存的 [[codex-plugins-openai]]（Codex plugin生態、173個插件）是同系列，那篇講的是Codex CLI本身的plugin系統，這篇講的是Codex技術被包進消費級/企業級的ChatGPT Work產品——同一個Codex技術兩種產品形態
 - 「上傳Claude skill檔案到ChatGPT Work也成功」這件事值得留意：如果skill格式真的能跨平台通用，你寫的skill（save-sop、cc_processor相關）以後可能不只能在Claude Code用，值得之後找時間實測驗證
 - Auto-review「100%擋下紅隊測試攻擊」這個數字要謹慎看待——這是OpenAI自己公布的行銷數字，沒有第三方驗證細節，跟你一貫「驗證才回報」的原則放在一起看會更有警覺心
+
+## 相關筆記
+
+- [[meta-muse-free-ai-agent-2026-09]] — 同系列消費級AI Agent對照，Meta的免費「AI私人管家」Muse，逐項分析跟我(Claude)能力的差異
