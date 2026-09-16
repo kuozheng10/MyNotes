@@ -108,6 +108,25 @@ Brilliant只在這一個類別出現，沒有酒店/購物/航空類的額外退
 | Chase | Sapphire Reserve Business | 每半年 | $50 | giftcards.com |
 | Citi | Strata Elite | 每日曆年 | $200 | 「Splurge」退額，Bestbuy/1stDibs |
 
+## Amex Platinum 拿到卡後必做10件事（逐項啟用步驟，2026-09-16補）
+
+> 來源：[TripPlus - Randy Wang](https://blog.tripplus.cc/zh/6425/10_things_to_do_amex_platinum)（2026-08-25更新版），派哥丟連結說「save sop」。上面表格只列退額「金額/頻率」，這篇補上「怎麼實際去啟用/使用」的操作步驟，兩篇合看才完整。
+
+Amex Platinum年費$895，以下10件事全部用好才划算：
+
+1. **選$200航空退額(Airline Credit)適用的航空公司**：登入Amex帳號→白金卡Benefits→Airline Credit→選一家「美國籍」航空公司。只能折抵行李費/改票費/取消費/貴賓室入場費，不能買機票本身
+2. **註冊希爾頓金卡會籍**：同樣路徑→Benefits裡找Hilton Honors Gold Status→輸入希爾頓帳號送出，最多等72小時
+3. **註冊Priority Pass(新貴通)會員卡**：Benefits→American Express Global Lounge Collection→照指示註冊，約10~14天卡片寄到家，之後帶卡就能進全球合作機場貴賓室
+4. **註冊租車高階會籍**：Benefits裡選National/Hertz/Avis其中之一註冊，可省排隊領車+升等車款
+5. **用FHR/THC訂高級酒店，花掉$600住宿退額**：透過Amex Travel訂房(要選「預先支付」)，享中午Check-in/升等/兩人免早餐/免費wifi/下午4點才要退房。退額**分上下半年各$300**，記得排時間用掉
+6. **用數位娛樂退額**：每月$25(全年$300)，可折抵Disney+/ESPN+/Hulu/YouTube Premium/YouTube TV等訂閱
+7. **用Resy餐廳退額**：每季$100(全年$400)，只要餐廳有列在Resy網站上，用白金卡付款就有退額，不一定要事先在Resy訂位
+8. **用百夫長貴賓室(Centurion Lounge)**：Amex自營貴賓室，餐飲/素質公認比一般美籍航空自營貴賓室好很多，缺點是容易客滿
+9. **用Uber退額(限美國)**：每月$15(12月$35)，一年$200，要把卡加進Uber App才會自動出現額度，**當月沒用完會直接消失不能累積**
+10. **用Lululemon購物退額(限美國)**：每季$75(全年$300)，實體店/官網都能用，但官網買電子禮品卡不算
+
+⚠️ **共同注意事項**：大部分退額都是「用完當期就歸零，不能累積到下一期」，尤其Uber(按月)、Lululemon/FHR(按季/半年)這幾項，要主動排時間去用，不然就浪費掉了。
+
 ## 對派哥的意義
 
 - 派哥手上目前有Bonvoy Brilliant（大聰明），今天也在討論Amex Gold/Capital One Venture X當「下一張」——這篇表格剛好把三張的退額並排看：Gold($424組合，多為美國限定商家)、Brilliant($300/年，每月$25餐飲)、Venture X($300/年旅遊網站，門檻最寬鬆好用)
