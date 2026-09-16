@@ -164,3 +164,4 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍配對攻略
 - [[starlux-cosmile-first-class-2026-attack-guide]] — 用星宇**自家**COSMILE哩程兌頭等艙的規則（2026/10/1新制，Stopover大縮水），跟本篇用Alaska外部哩程兌星宇是兩套不同系統，可對照費率與Stopover政策決定燒哪邊的哩程
 - [[bofa-atmos-rewards-summit-card-2026-08]] — 怎麼**賺到**本篇要花的 Alaska 哩程：美國銀行 Atmos Rewards Summit 聯名卡開卡禮 80,000 點 + 25,000 點同行者券的申辦資格與福利 Q&A
+- [[china-airlines-award-chart-change-2026-09]] — 華航九州三航點+新幹線的open-jaw玩法，跟本篇Alaska免費stopover思路類似

@@ -177,3 +177,4 @@
 - [[taiwan-mileage-credit-card-combo-2026-08]] — 台灣哩程信用卡分工策略（華航/星宇卡是不同哩程系統，不能餵長榮哩程）
 - [[hsbc-traveler-card-points-redemption-tips]] — HSBC旅人卡積分兌換最佳路徑
 - [[jal-rtw-award-120k-miles]] — 日航環球票只要12萬哩，比長榮325,000哩環球票便宜超多，可對比評估
+- [[china-airlines-award-chart-change-2026-09]] — 華航2026/9/16改表，跟本篇是台灣兩大航空哩程系統對照
