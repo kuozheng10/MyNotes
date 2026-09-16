@@ -78,3 +78,4 @@ category: 理財投資
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置與致富心路
 - [[aliang-three-swords-leveraged-etf-strategy]] — 阿良：三劍合一
 - [[ib01-vs-sgov-treasury-cash-2026-09]] — 現金端的稅務效率（另一種「成本落點」思考）
+- [[caven-three-year-reserve-global-etf-retirement-2026-09]] — 三年金庫策略×全世界股票ETF，313段回測，含報酬序列風險實測案例

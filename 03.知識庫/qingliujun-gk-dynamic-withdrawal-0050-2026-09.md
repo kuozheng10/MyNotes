@@ -126,3 +126,4 @@ GK **沒有創造額外報酬**。它能從較高初始提領率開始，是因�
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置與致富心路
 - [[daren-631-vs-leveraged-etf-concentration-risk]] — 00631L vs 正二集中度
 - [[ib01-vs-sgov-treasury-cash-2026-09]] — 現金端稅務效率（另一種「成本落點」思考）
+- [[caven-three-year-reserve-global-etf-retirement-2026-09]] — 三年金庫策略(全世界股票ETF)，不同機制的退休提領對照：用緩衝資產池平滑 vs 本篇用規則式動態調整生活費
