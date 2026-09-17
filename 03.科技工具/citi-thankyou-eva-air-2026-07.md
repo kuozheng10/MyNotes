@@ -296,6 +296,20 @@ Citi 申請最後一步炸掉、打客服查無 ITIN/mobile（可能沒進系統
 - 登入 Amex 帳號看 pre-approved targeted offer + 做 Capital One pre-qualify（都軟查詢）
 - 有 pre-approved → 挑那張；都沒有 → **Amex Gold** 最穩（既有 Amex 客戶、不在乎 HP 數量），MR → Aeroplan → 長榮商務艙
 
+### ❌ 結果：Citi Strata Premier 申請被拒（2026-09-17）
+
+9/17 重新申請後拿到明確拒絕頁：「Unfortunately, we were not able to approve your application」，Citi 表示 7-10 天內會用 email 或紙本信件寄送**具體拒絕原因**到美國地址。
+
+**這次跟 9/10 那次不同**：9/10 是頁面炸掉、系統查無資料（可能根本沒送出）；這次是**確實送出並被正式否決**，代表 hard pull 大機率已經發生。
+
+**下一步（未完成，待派哥執行）**：
+1. **打重審專線 1-800-695-5171**（被拒後 30 天內有效）——ITIN 被自動系統拒掉很常見，人工重審有機會翻盤
+2. 打之前備妥：ITIN 核發函（IRS CP565）或護照影本
+3. 講法：說明使用 ITIN 非 SSN，願意補任何身分/地址證明
+4. **等那封拒絕信**看真正原因：若是「無法驗證身分/地址」→ 補件可解；若是「信用紀錄不足/薄檔」→ 結構性問題，重審也難翻，該放棄改走 Amex Gold
+
+⚠️ **推測但未證實**：拒絕時間點落在 [2026/5 行政命令把 ITIN 列為銀行風險因子、7/18 起加嚴驗證] 之後（見本篇上方 ITIN 章節），不排除是新規則造成，但**拒絕信還沒到、真正原因尚未確認，不要先下結論**。
+
 ## 相關筆記
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，Citi Strata Premier是目前唯一低成本維持1:1轉長榮(BR)的花旗卡
 - [[bofa-atmos-rewards-summit-card-2026-08]] — Alaska/Atmos 聯名卡（另一條換星宇的路），申辦順序要跟花旗排開
