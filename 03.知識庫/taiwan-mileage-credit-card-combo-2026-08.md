@@ -61,3 +61,4 @@ related: hsbc-traveler-card-points-redemption-tips, eva-air-mile-redemption-guid
 - [[hsbc-traveler-card-points-redemption-tips]] — HSBC旅人卡積分兌換最佳路徑（轉雅高/QF等）
 - [[eva-air-mile-redemption-guide-2026]] — 長榮里程票規劃（派哥2027日本行）
 - [[china-airlines-award-chart-change-2026-09]] — 華航2026/9/16改表，開票策略與亮點航線
+- [[ctbc-china-airlines-metal-card-2026-09]] — 中信華航聯名卡三等級完整對照(鼎尊/璀璨/御璽)，補上鼎尊金屬卡的完整福利細節

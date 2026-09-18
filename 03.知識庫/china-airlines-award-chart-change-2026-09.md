@@ -94,3 +94,4 @@ category: 知識庫
 - [[eva-air-mile-redemption-guide-2026]] — 長榮哩程兌換攻略，跟本篇是台灣兩大航空的哩程系統對照
 - [[taiwan-mileage-credit-card-combo-2026-08]] — 台灣哩程信用卡分工策略，華航/星宇卡是不同哩程系統
 - [[alaska-mileageplan-starlux-redemption]] — Alaska兌星宇的免費stopover玩法，跟本篇open-jaw思路類似
+- [[ctbc-china-airlines-metal-card-2026-09]] — 中信華航聯名卡三等級對照，金卡會籍怎麼靠信用卡快速取得
