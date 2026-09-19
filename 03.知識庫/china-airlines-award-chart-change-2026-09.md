@@ -95,3 +95,4 @@ category: 知識庫
 - [[taiwan-mileage-credit-card-combo-2026-08]] — 台灣哩程信用卡分工策略，華航/星宇卡是不同哩程系統
 - [[alaska-mileageplan-starlux-redemption]] — Alaska兌星宇的免費stopover玩法，跟本篇open-jaw思路類似
 - [[ctbc-china-airlines-metal-card-2026-09]] — 中信華航聯名卡三等級對照，金卡會籍怎麼靠信用卡快速取得
+- [[china-airlines-award-chart-change-criticism-2026-09]] — 同一次改制的反方視角：「改惡」批評，長程商務艙旺季漲1.5萬~3萬哩、開票日認定沒早鳥保護
