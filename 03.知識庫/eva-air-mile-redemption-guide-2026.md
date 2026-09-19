@@ -179,3 +179,4 @@
 - [[jal-rtw-award-120k-miles]] — 日航環球票只要12萬哩，比長榮325,000哩環球票便宜超多，可對比評估
 - [[china-airlines-award-chart-change-2026-09]] — 華航2026/9/16改表，跟本篇是台灣兩大航空哩程系統對照
 - [[lifemiles-eva-air-business-class-devaluation-2026-09]] — 外部星盟哩程LifeMiles兌長榮商務艙東京/札幌調降，比自家哩程便宜的另一條路
+- [[aerolopa-seat-selection-app-2026-09]] — SeatGuru接班工具AeroLOPA，訂票後可請Claude用瀏覽器自動化幫忙搶3人連坐窗位
