@@ -76,3 +76,4 @@ Trip.com 對不同國家/地區顯示不同價格。切到俄文版（定價區�
 ## 相關筆記
 
 - [[my-wallet-trip-setup]] — My Wallet Trip 記帳 PWA
+- [[outer-station-multi-segment-ticket-strategy-2026-09]] — 「跟著揪哥買機票不用賣腎」布拉格外站四段票案例，留言區的Trip.com「中文版/跳區版」雙連結就是本篇切語系鎖低價技巧的實例
