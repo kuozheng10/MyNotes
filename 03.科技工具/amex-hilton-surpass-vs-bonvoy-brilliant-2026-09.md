@@ -1,6 +1,6 @@
 ---
-title: Amex Hilton Honors Surpass 限時開卡禮 vs 大聰明（Marriott Bonvoy Brilliant）比較
-source: https://blog.tripplus.cc/zh/creditcarddatabase/amex_hacd （FB分享：https://www.facebook.com/share/p/1CByDz1VVj/）
+title: Amex Hilton Honors 家族（Surpass/Business/Aspire）vs 大聰明（Marriott Bonvoy Brilliant）比較
+source: https://blog.tripplus.cc/zh/creditcarddatabase/amex_hacd （FB分享：https://www.facebook.com/share/p/1CByDz1VVj/）＋Aspire篇：https://blog.tripplus.cc/zh/176399/randy_newbie_5_reasons_to_apply_amex_hilton_honors_aspire
 author: Randy Wang（TripPlus）
 tags: [信用卡, 酒店卡, amex, hilton, marriott, bonvoy, 開卡禮, 哩程]
 date: 2026-09-12
@@ -90,6 +90,36 @@ category: AI工具
 - **Bevy 不建議**：金卡會籍對派哥是**倒退**——你已經因為Brilliant自動拿到更高的白金菁英，Bevy的會籍/回饋類別大量跟Brilliant重疊，$250年費换不到什麼新東西，CP值低
 - **Business 可以考慮，但不是核心優先**：年費只要$125（三張裡最便宜），100k點+免費住宿券成本不差，商業卡走個人事業路線你符合資格，而且跟Amex「90天內最多核准2張信用卡」的個人卡池是分開算的，比較不會卡到你正在跑的其他Amex申請
 - **但要注意萬豪點數兌長榮效率不好**：轉航空哩程是「60,000萬豪點→25,000哩」，比Citi TY的1:1差很多，這張的價值主要在**萬豪酒店住宿本身**，不是餵長榮哩程——如果你本來就沒有頻繁住萬豪的需求，這張的100k點意義不大，優先度應該低於你正在跑的Citi TYP + Capital One主線
+
+## Amex Hilton Honors Aspire（希爾頓最高階聯名卡，2026-09-22補）
+
+> 來源：[FB「Trip+」貼文](https://www.facebook.com/share/p/1DUfagM6mA/?mibextid=wwXIfr) + [完整文章](https://blog.tripplus.cc/zh/176399/randy_newbie_5_reasons_to_apply_amex_hilton_honors_aspire)（作者Randy Wang），派哥丟連結說「save sop」。這是希爾頓聯名卡家族裡比Surpass/Business更高一階的版本，之前只在[[randy-us-credit-card-long-term-keepers-2026-08]]提過一句話，這篇補上完整細節+目前限時開卡禮。
+
+- **年費**：$550美金（比Surpass的$150貴很多，是家族裡年費最高的一張）
+- **開卡禮（貼文標題稱「史高」，目前正逢高點）**：6個月內刷$6,000 → **200,000 Hilton Honors點**，消費門檻不算高，開卡禮CP值被作者列為五個理由的第一個
+- **會籍**：直接給希爾頓**鑽石(Diamond)會籍**（比Surpass的金卡再高一級）——免費早餐(美國境內酒店/渡假村沒早餐則給餐飲退額)、行政酒廊免費使用、房型升等機會(視當日空房狀況非保證)、**用點數兌房時"連續兌5晚送1晚"**(銀卡以上都有這個福利，鑽石當然也有)
+- **持卡福利**：
+  - 每年**$400美金希爾頓集團旗下「渡假村」消費退額**（每半年$200給，渡假村類別消費或直接付房費都能用）
+  - 每年**$200美金航空相關消費退額**（每季$50給，任何航空公司官網或amextravel.com訂機票都能用，使用彈性高、容易用滿）
+  - 每年續卡繳年費後，送一張**「不限等級」免費住宿券**（幾乎希爾頓集團所有酒店/渡假村都能兌一晚免費，少數酒店除外），通常申辦或續卡後8~12週才會收到
+- **作者算的CP值**：光是$400渡假村退額+$200航空退額就有$600，只要能用滿(即使不是每年都住渡假村，至少航空退額很容易用掉)，就已經超過$550年費，等於這張「倒賺」還附贈鑽石會籍跟免費住宿券
+
+### Surpass / Business / Aspire 三張一次看
+
+| | Surpass | Business | Aspire |
+|---|---|---|---|
+| 年費 | $150 | $195 | **$550** |
+| 開卡禮 | $3,000刷卡→130,000點 | $8,000刷卡→150,000點 | $6,000刷卡→**200,000點** |
+| 會籍 | 金卡 | 金卡 | **鑽石** |
+| 主要退額 | 年$200酒店退額 | 年$240酒店退額 | 年$400渡假村+$200航空 |
+| 佔用5/24 | 會 | **不會**(商業卡) | 會 |
+| 適合 | 低成本拿金卡會籍 | 已卡5/24或想衝5x回饋 | 常住希爾頓、想要鑽石會籍+高額開卡禮的人 |
+
+### 對派哥的意義
+
+- 派哥現在持有的是萬豪系(大聰明)，Aspire是希爾頓系裡CP值最高的一張(200k點+鑽石會籍+$600年度退額)，但$550年費是三張裡最貴的，要實際評估希爾頓入住頻率再決定值不值得辦
+- 開卡禮消費門檻只要$6,000/6個月，比大聰明的$6,000/6個月門檻一樣、但點數更多(20萬 vs 大聰明15萬)，如果之後有計畫湊多張卡的消費門檻，這張的點數效率值得排進考慮順序
+- 跟本篇上方Surpass的「降級再升級」玩法邏輯類似——Aspire目前沒有查到同款玩法，之後若查到可以補進來對照
 
 ## 對比一句話
 
