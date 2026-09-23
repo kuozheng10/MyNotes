@@ -94,3 +94,4 @@ source: 大仁哥 Facebook 貼文
 - [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書寫明不適合長期投資，用耗損公式拆解報酬來源
 - [[spy-gld-gde-comparison-2026-08]] — 同作者：SPY/GLD/GDE(黃金+股票90/90槓桿基金)報酬率比較
 - [[qingliujun-buy-borrow-die-vs-73-2026-09]] — 買借死 vs 75/25(0050+正二) 退休提領回測，兩者只差 0.77%，重點是曝險控制
+- [[leverage-for-the-long-run-200ma-timing-2026-09]] — 同作者(大仁哥)另一篇，用200日均線濾網動態決定要不要維持槓桿部位，補上「怎麼動態控制曝險」這個維度，跟本篇「集中/槓桿/因子」的靜態配置角度互補
