@@ -85,3 +85,4 @@ category: AI工具
 - [[ai-engineering-evolution]] — AI 如何改變工程組織形態
 - [[scrum-ai-five-fails-2026-06]] — AI 導入組織的常見失敗
 - [[leejiada-minerva-ai-thinking-method-2026-09]] — 「增值型」工作的核心是判斷/取捨，對應密涅瓦思考法
+- [[ai-era-seniority-redefined-agents-2026-09]] — 同一個分裂邏輯的個人尺度版本：資深工程師的「執行經驗」被AI壓縮、「判斷經驗」被放大，跟本篇「協調型 vs 增值型管理」是組織/個人兩個切面

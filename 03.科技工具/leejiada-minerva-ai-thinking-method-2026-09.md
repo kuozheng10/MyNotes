@@ -158,3 +158,4 @@ AI 應用：引導 AI 區分問題中的「限制」與「障礙」。
 - [[ai-framework-vs-harness-2026-07]] — 框架 vs harness
 - [[jason-liu-codex-work-system-2026-07]] — 另一套 AI 協作工作系統
 - [[feichangjiandan-ai-daily-miles-digest-2026-09]] — 「把『幫我查一下』改成『設成自動化』」的實例
+- [[ai-era-seniority-redefined-agents-2026-09]] — 「怎麼把話講清楚、怎麼拆問題、怎麼要求結果」正是本篇「框架>prompt本身」的另一種說法，也是Daytona案例裡「最會用AI agents的人」的共同特徵

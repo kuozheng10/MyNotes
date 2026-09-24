@@ -103,3 +103,4 @@ docs/lore/
 - [[anthropic-skill-three-layers-2026-06]] — Skill 三層架構 + 自我進化迴圈
 - [[claude-skill-social-post]] — Skill 社群實踐
 - [[agentic-sop-to-work]] — Agentic SOP 流程
+- [[ai-era-seniority-redefined-agents-2026-09]] — 「一個架構看起來沒問題，資深工程師就是知道六個月後會變成災難」這種踩坑判斷力，正是 lore 想記錄、AI光看程式碼讀不出來的東西
