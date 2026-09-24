@@ -137,6 +137,28 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 
 ⚠️ **待補充**：這篇只是預告貼文，Etihad/AA 兌換星宇的費率表、艙等對應、Stopover 規則是否比照 Alaska，都還沒查證，之後有完整資訊要回來補上，不要直接套用本篇上方 Alaska 的費率表去猜其他計畫的價格。
 
+### 2026-09-24補：AA×星宇合作從「預測」變「官方證實籌備中」
+
+> 來源：[FB「點數旅人」貼文](https://www.facebook.com/share/p/18Q2wzKKWY/?mibextid=wwXIfr)，派哥丟連結說「save sop」。上面2026-08-19那則還只是部落客根據協議文件裡出現的「Frequent Flyer Participating Carrier Agreement」字眼做的**推測**；這次是**星宇航空官方FB親口證實**：「A frequent flyer partnership is also in the works, opening up even more ways to earn miles and redeem award tickets. Together with American Airlines, we're connecting more horizons」——狀態從「部落客預測即將加入」正式升級為「官方承認合作籌備中」，但**還沒正式上線、還不能兌換**，不要誤以為現在就能查票。
+
+**這位作者(點數旅人)7/22就已經根據協議文件字眼提前預測**這一步，當時預測時間點是「今年底或明年初」，目前看起來方向正確。
+
+**AA哩程現有兌換表(拿來當之後對照星宇兌換價的基準，不是星宇本身的價格)**：
+| 航段 | 商務艙 | 頭等艙 |
+|---|---|---|
+| 亞洲A區→北美 | 60,000哩 | 80,000哩 |
+| 亞洲B區→北美 | 70,000哩 | 110,000哩 |
+
+**值得關注的4個未知數（合作正式上線後才會揭曉）**：
+1. 開放兌換時會不會「wide open放票」——很多日期都查得到位？還是稀少
+2. 會不會沿用AA現有「亞洲-北美」的兌換價格表？如果沿用，商務艙兌換可能成為目前已知最低門檻，非常有吸引力
+3. AA夥伴兌換是**採區域制**（不是單純按飛行距離計價）——台北-鳳凰城、甚至未來如果星宇開東岸航線，理論上都可能落在同一個兌換區間，值得期待星宇未來繼續拓展美國航網
+4. AA哩程對美國居民本來就容易取得(多張聯名卡、信用卡可轉點)，**台灣人也可以從萬豪Bonvoy 3:1轉點到AA**——這條路徑派哥手上已有大聰明(Bonvoy Brilliant)，等於現有資產本來就有機會餵到這條新開的兌換路徑
+
+**另一個觀察點**：星宇對合作夥伴的放票模式，目前只知有經濟/商務艙度，**頭等艙目前沒有對任何合作夥伴開放**(連既有的Alaska都沒有頭等艙兌換位)，AA上線後會不會比照辦理值得觀察。
+
+**對派哥的意義**：等這條路徑正式上線，可以比照本篇既有Alaska/Etihad的做法，直接查AA的兌換表跟放票量，不用等到上線才臨時反應。派哥手上的大聰明(Bonvoy Brilliant)累積的點數，多了一條「轉AA再兌星宇」的潛在路徑，之後規劃點數去向時可以納入考慮。
+
 ### 補一個實際案例（2026-09-14，FB網友分享）
 
 > 來源：FB網友「KI MO Gi」分享（[原貼文](https://www.facebook.com/share/p/1Z2Y7iYFPR/?mibextid=wwXIfr)），派哥丟連結問「不懂？用alaska？用阿提哈德常客，比較？」
