@@ -114,3 +114,4 @@ author: Randy（TripPlus 主編）
 - [[tripplus-快訊260401-信用卡哩程新聞]] — 最新哩程動態
 - [[citi-strata-premier-ty-rewards-5-best-ways]] — Citi TYP 點數最佳用法
 - [[aliang-three-swords-leveraged-etf-strategy]] — 資產配置另一面向
+- [[united-mileageplus-explorer-business-card-2026-09]] — UA自家聯名卡的Saver Award機位+10%折扣，Chase UR轉點之外的另一條加強路徑

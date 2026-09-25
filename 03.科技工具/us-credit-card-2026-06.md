@@ -402,3 +402,4 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 - 文章：[Randy - 三大銀行降級／轉卡指南](https://blog.tripplus.cc/zh/122104/randy_newbie_amex_chase_citi_credit_cards_product_change_guide_new)
 - 相關筆記：[[eva-air-mile-redemption-guide-2026]]
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy個人長期持有美卡總覽（含13張卡的個別留卡理由，非開卡禮快照）
+- [[united-mileageplus-explorer-business-card-2026-09]] — United個人卡/商業卡比較+哩程票10%折扣+Saver Award機位，解釋為何有人願意長期留卡付年費
