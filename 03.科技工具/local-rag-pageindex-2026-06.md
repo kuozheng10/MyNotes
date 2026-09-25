@@ -101,3 +101,7 @@ date: 2026-06-26
 - 如果未來 MyClaude 的筆記量大到 Obsidian 搜尋不夠用，這套架構可以參考
 - 本地 LLM 的門檻（需要 GPU）目前不適合 Mac mini M4，但 Qdrant + FastAPI 部分可以跑在本機
 - 重點是「混合檢索後撈原文再回答」的設計，比純向量 RAG 準確
+
+## 相關筆記
+
+- [[weknora-tencent-enterprise-knowledge-base-2026-09]] — 另一個更「企業/團隊」規模的自架RAG選項(騰訊開源)，同一類自架知識庫比較
