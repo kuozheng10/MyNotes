@@ -38,3 +38,4 @@ category: 知識庫
 ## 相關筆記
 
 - [[outer-station-multi-segment-ticket-strategy-2026-09]] — 同作者(喵爸喵媽)家族其他機票技巧筆記，含同一組trip.com折扣碼
+- [[okinawa-kokusai-dori-hotel-hinode-resort-2026-09]] — 沖繩國際通飯店推薦(入住免費喝酒吃拉麵)，機票+住宿同行程可搭配規劃
