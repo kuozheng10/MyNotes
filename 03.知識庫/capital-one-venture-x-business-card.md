@@ -138,3 +138,4 @@ Capital One 現金回饋商業卡系列的中階簽帳卡，定位比 Venture X 
 - [[us-credit-card-points-transfer-time-airlines]] — 美卡轉點時間比較
 - [[jal-rtw-award-120k-miles]] — 長榮/日航里程兌換
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽（含個人版Venture X的長期持有理由）
+- [[capital-one-venture-rewards-card-2026-09]] — 同系列入門款(Venture Rewards)，年費$95/門檻$4,000，開卡禮75,000哩+$300退額，比本篇門檻低很多
