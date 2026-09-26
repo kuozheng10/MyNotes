@@ -403,3 +403,4 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 - 相關筆記：[[eva-air-mile-redemption-guide-2026]]
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy個人長期持有美卡總覽（含13張卡的個別留卡理由，非開卡禮快照）
 - [[united-mileageplus-explorer-business-card-2026-09]] — United個人卡/商業卡比較+哩程票10%折扣+Saver Award機位，解釋為何有人願意長期留卡付年費
+- [[chase-csr-business-edit-credit-and-5-24-rumor-2026-09]] — Chase Sapphire Reserve Business退額增至$1,600+商業卡5/24可能收緊3/24傳聞
