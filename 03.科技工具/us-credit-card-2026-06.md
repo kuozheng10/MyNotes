@@ -105,6 +105,29 @@
 
 ---
 
+## 2026-09-26更新：同一篇Randy十大卡片清單最新版（派哥「save sop」）
+
+> 這篇是「持續更新」的活文章，數字會隨時間變動。跟上面06-22抓的版本比對，清單本身已經換了3張卡，BoA Atmos Summit的開卡禮也降了。
+
+| # | 卡名 | 開卡禮 | 消費門檻 | 年費 | 跟06-22版比較 |
+|---|------|--------|----------|------|---|
+| 1 | Chase Sapphire Reserve Business | 200,000 UR | $30k/6M | $795 | 不變 |
+| 2 | **Chase Sapphire Reserve**(個人卡) | **100,000 UR** | $6k/3M | $795 | **新進榜**，取代原本的Chase Sapphire Preferred |
+| 3 | Amex Business Platinum | 最高300,000 MR | $20k/3M | $895 | 不變 |
+| 4 | Amex Platinum | 最高175,000 MR | $12k/6M | $895 | 不變 |
+| 5 | **Amex Hilton Honors Aspire** | **200,000點** | $6k/6M | $550 | **新進榜**(截止2027/1/13)，見[[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] |
+| 6 | **Amex Hilton Honors Business** | **150,000點+1張FNR** | $8k/6M | $195 | **新進榜**(截止2027/1/13) |
+| 7 | Citi Strata Elite | 75,000 TYP | $6k/3M | $595 | 不變 |
+| 8 | Capital One Venture X Business | 150,000哩 | $30k/3M | $395 | 不變 |
+| 9 | Capital One Venture Business | 100,000哩 | $10k/3M | $95 | 不變 |
+| 10 | Bank of America Atmos Rewards Summit | **70,000點+25,000同行者券** | **$3k/3M** | $395 | ⚠️**開卡禮從100,000點降到70,000點**，但門檻也從$6k降到$3k |
+
+**已從榜單移除**：Chase Sapphire Preferred（個人卡，100k UR/$5k/3M/$95）、Chase Ink Business Cash、Chase Ink Business Unlimited（兩張都是100k/$8k/4M/免年費）——這三張06-22時還在榜上，這次抓取已經不在最新10張清單裡，不代表開卡禮完全終止，只是作者這次沒把它們排進「最推薦」的10張
+
+**⚠️ BoA Atmos Summit的數字要注意**：[[bofa-atmos-rewards-summit-card-2026-08]]那篇8月存的是80,000點，06-22這篇存的是100,000點，這次(9/26)查到是70,000點——同一張卡3個月內至少有3種開卡禮數字，證實這張促銷變動很頻繁，之後查證要抓當下最新版本，不要直接沿用任何一篇舊筆記的數字
+
+---
+
 ---
 
 ## 2026-06-22 更新：CSP 改版 + 六月最新攻略
