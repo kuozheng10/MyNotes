@@ -171,6 +171,7 @@ Hilton Surpass 的「降級再升級」玩法（免 Hard Pull 還能再拿一次
 
 ## 相關筆記
 
+- [[hilton-3-cards-conrad-osaka-8-nights-2026-09]] — 實際兌換規劃：Aspire+Surpass+免年費卡 400k點+3FNR 換大阪 Conrad 8 晚，含辦卡節奏(Amex 90天2張)
 - [[us-credit-card-2026-06]] — 2026/6 美國信用卡開卡禮彙整，含 Amex 家族限制對照表
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy 長期持有美卡清單（含 Amex Hilton Honors Aspire，更高階的希爾頓聯名卡）
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍對應指南
