@@ -157,6 +157,22 @@ category: AI工具
 - 影片作者建議優先辦**Surpass和Honors**（不是Aspire），邏輯是先用低成本卡+一年升級大法拿到3~4張FNR，比直接辦Aspire拿1張FNR划算，等於用時間換FNR數量
 - 這招用在派哥還沒辦過Aspire的前提下才有意義（用來疊FNR數量），如果之後真的評估要辦，Surpass比Honors划算一些(消費力如果到得了$3,000/6個月，130k點+多1張年刷FNR，比70k點多60k點只多花$1,000刷卡額度)
 
+## 2026-09-29補：Trip+「申辦希爾頓聯名卡的理由」更新版——四大酒店集團聯名卡規則比較
+
+> 來源：[FB Trip+ 貼文](https://m.facebook.com/story.php?story_fbid=pfbid02otdV649WFWRro6D3iSQXxT8n8kj4qmDMZTpMtWHnsx8YF9kzsRtSdLM6NWWZia4kl&id=100068628994126) → [完整文章](https://blog.tripplus.cc/zh/100121/randy_newbie_reasons_to_apply_for_amex_hilton_credit_cards_new)（Randy Wang，2026-09-28）。派哥丟連結說「save sop」。開卡禮、會籍、退額數字都跟上面一致，只有下面兩點是新的：
+
+- **會籍跟著卡走，不用保級**：持有 Surpass／Business 就一直是金卡、持有 Aspire 就一直是鑽石，不用另外住房衝等級
+- **四大酒店集團裡，希爾頓的開卡禮規定最寬鬆**：
+
+| 集團 | 聯名卡數量 | 開卡禮限制 |
+|---|---|---|
+| **希爾頓（Amex）** | 4 張（3 張個人卡 + 1 張商業卡） | **同系列卡之間互不牽制**，最寬鬆 |
+| 萬豪（Amex + Chase） | 6 張（5 張個人卡 + 1 張商業卡） | 同系列卡開卡禮互相牽制，**規定極嚴** |
+| 凱悅（Chase） | 2 張（1 張個人卡 + 1 張商業卡） | 受 Chase **5/24** 限制 |
+| 洲際 IHG（Chase） | 3 張（2 張個人卡 + 1 張商業卡） | 受 Chase **5/24** 限制 |
+
+→ 派哥已經有萬豪大聰明，萬豪系再辦其他卡會被互相牽制的規定卡住；要再多拿酒店開卡禮，希爾頓系是障礙最少的一條路（跟 [[hilton-3-cards-conrad-osaka-8-nights-2026-09]] 的三卡計畫一致）。
+
 ## 對比一句話
 
 大聰明是「頂級酒店卡」（$650年費、白金菁英會籍、貴賓室、大量退額），Hilton Surpass 是「中階酒店卡」（$150年費、金卡會籍、退額較少但開卡禮成本低）。兩者集團不同（萬豪 vs 希爾頓），不是二選一取代關係，是看你實際住哪個集團比較多——如果兩邊都常住，可以雙卡布局；只常住萬豪，Hilton Surpass 就不必要。
