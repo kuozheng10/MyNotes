@@ -437,7 +437,7 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 **對派哥（2026-10 狀況：ITIN、只有大聰明、Citi Strata Premier 剛被拒）**：
 - **Citi AA Platinum**：Citi 剛因為「卡太少＋信用紀錄太短」拒絕，短期內再送 Citi 意義不大
 - **Amex Hilton 系列**：Amex 已經核過派哥的 ITIN（大聰明），是目前最有機會的一條路；Amex 5 張上限，派哥目前只有 1 張
-- **商業卡**（BoA Alaska／Chase UA／USBank）：要有美國商業身分，派哥目前不適用
+- **商業卡**（BoA Alaska／Chase UA／USBank）：一般可用個人獨資名義申請，但用 ITIN、非美國居民能不能過沒有查證；Chase 對 ITIN 又最不友善，先不列入
 - 跟最近的建議一致：先養信用紀錄，Capital One Venture 或 Amex Hilton 擇一先辦
 
 ## 參考
