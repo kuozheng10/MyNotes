@@ -416,6 +416,30 @@ Chase同時推出兩張卡的高額開卡禮，都是**10萬點、年費$95**，
 | Citi Custom Cash | 免年費，多項消費5x（已無法直接申請，但仍可用轉卡拿到） |
 | Citi Strata | 免年費，持卡點數不過期 |
 
+## 2026-10-02 更新：點數旅人「近期值得辦的美國信用卡」（9 月底版）
+
+> 來源：[FB 點數旅人](https://www.facebook.com/share/1DipGF9uZQ/?mibextid=wwXIfr)，派哥丟連結說「save sop」。作者說留言區放的都不是推薦連結。
+
+| 卡 | 年費 | 開卡禮 | 重點 |
+|---|---|---|---|
+| **BoA Alaska Business**（商業卡） | $95（不一定值回年費） | **85,000 Alaska 哩** | 不影響 5/24；特殊連結申請，要輸入任意 7 位數 promo code |
+| **Citi AA Platinum** | $99（首年免年費） | **80,000 AA 哩** | 一年後可降成免年費卡 |
+| **Chase UA Business**（商業卡） | $150（等效年費低） | **100,000 UA 哩**（加副卡再 +10,000） | UA 哩程燃油稅低、適合新手，10 萬哩可換台美長程商務艙 |
+| **Amex Hilton 四張**（Honor／Surpass／Aspire／Business） | — | 各卡首年都送 1 張住宿券 | 一生一次開卡禮，挑以前沒辦過的；Honor、Surpass 可以升降級，低成本拿 3 張住宿券（見 [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]]）；在意 5/24 就辦商業卡 |
+| **USBank Business Essentials**（新卡） | 免年費 | 150 天內刷 $5,000 → **$500** | 所有消費 2%、首年 0% APR；拿來繳稅＋把 $5,000 放定存一年約 $150，首年等效 $650；不影響 5/24 |
+
+**作者的注意事項**：
+1. **Chase 商業卡 3/24**：最近兩年核卡 3 張以上（所有銀行都算）就比較難核，是最新的「3/24」規則（有例外，不是絕對）→ 之前只是傳聞，這篇講成規則了
+2. 辦其他銀行的**個人卡**都算進 5/24；辦**商業卡**不算
+3. 每張卡的開卡任務不同，辦之前要評估刷不刷得到
+4. **Amex 有 5 張卡上限**：已經有 5 張 Amex 信用卡（商業卡也算）就會被拒
+
+**對派哥（2026-10 狀況：ITIN、只有大聰明、Citi Strata Premier 剛被拒）**：
+- **Citi AA Platinum**：Citi 剛因為「卡太少＋信用紀錄太短」拒絕，短期內再送 Citi 意義不大
+- **Amex Hilton 系列**：Amex 已經核過派哥的 ITIN（大聰明），是目前最有機會的一條路；Amex 5 張上限，派哥目前只有 1 張
+- **商業卡**（BoA Alaska／Chase UA／USBank）：要有美國商業身分，派哥目前不適用
+- 跟最近的建議一致：先養信用紀錄，Capital One Venture 或 Amex Hilton 擇一先辦
+
 ## 參考
 
 - 影片：[TripPlus 六月信用卡](https://youtu.be/-d8pOJCwcMw)
