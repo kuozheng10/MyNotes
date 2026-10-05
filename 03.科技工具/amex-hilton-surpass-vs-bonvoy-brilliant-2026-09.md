@@ -134,6 +134,8 @@ category: AI工具
 | Hilton Business | $195 | 150,000點 + 1 FNR | 6個月刷$8,000 |
 | Hilton Aspire | $550 | 200,000點(本身年費福利就內含1張不限等級FNR，開卡禮不另外送) | 6個月刷$6,000 |
 
+> 2026-10-05：派哥又丟了同一支影片的 [FB Reel 精華版](https://www.facebook.com/share/v/1MZL65wGhU/?mibextid=wwXIfr)，內容相同；說明欄補一句：免房券**從京都 SOWAKA 到大阪 Conrad 都能直接兌換入住**（見 [[hilton-3-cards-conrad-osaka-8-nights-2026-09]]）。
+
 跟本篇前面存的數字一致(Surpass 130k/Business 150k/Aspire 200k)，這次的新資訊是**FNR這次開卡禮也一起送**，作者強調FNR沒有兌換等級限制，任何酒店只要有釋出點數房就能兌，拿來換Conrad/Waldorf Astoria/SLH這種高階酒店特別划算。
 
 ### 一年升級大法——疊到3~4張免費住宿券
