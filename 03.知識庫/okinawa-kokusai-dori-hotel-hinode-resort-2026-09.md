@@ -30,4 +30,5 @@ category: 知識庫
 
 ## 相關筆記
 
+- [[kawaguchiko-the-garden-fuji-view-apartment-hotel-2026-10]] — 同一位作者推薦的河口湖富士山景公寓式旅館
 - [[jta-okinawa-cheap-flight-deal-2026-12]] — 台北⇄沖繩特價機票(JTA，2026/12出發)，同行程規劃可搭配
