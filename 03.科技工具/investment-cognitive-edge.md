@@ -91,4 +91,5 @@ B公司（PE 40x，市場估成長20%，你估40%）比 A公司（PE 10x，雙�
 
 ## 關聯筆記
 
+- [[song-fen-discipline-32-sell-half-after-doubling-2026-10]] — 同作者投資紀律 #32：股票翻倍要不要先賣一半、賣出的四種理由
 - [[us-credit-card-2026-06]] — 資產配置相關
