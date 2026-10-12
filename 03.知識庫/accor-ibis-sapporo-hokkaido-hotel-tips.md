@@ -60,6 +60,20 @@ tags: #雅高 #Accor #IBIS #札幌 #北海道 #飯店 #旅行住宿
 
 ---
 
+## 2026-10-13補：札幌新飯店「凱悅尚萃 Hyatt Centric Sapporo」（2026/10/3 開幕）
+
+> 來源：[FB 衝日本](https://www.facebook.com/share/p/1GefvrTraD/?mibextid=wwXIfr)，派哥丟連結說「save sop」。
+
+- **2026 年 10 月 3 日**才正式開幕，Hyatt Centric 系列在**北海道的第一間**
+- **全部房間 36 平方公尺以上**（貼文說是很多飯店的 2 倍大）
+- 高樓層景觀房：看得到**北海道舊道廳紅磚廳舍、大通公園、山景**
+- 位置：**鄰近札幌站、大通站**；搭 JR 玩北海道、看雪祭、逛大通公園、狸小路都方便
+- 訂房：Agoda <https://www.agoda.com/zh-tw/hyatt-centric-sapporo/hotel/otaru-jp.html>
+
+**對派哥**：
+- 凱悅（Hyatt）系統，點數主要靠 **Chase 轉點**或 Chase 凱悅聯名卡；派哥目前沒有 Chase 卡（ITIN 不友善），先用現金價參考
+- 搭配 [[outer-station-multi-segment-ticket-strategy-2026-09]] 裡的札幌賞楓四段票（11 月初）或冬天雪祭，是新的住宿選項；新飯店開幕初期常有優惠，可以比價
+
 ## 相關筆記
 
 - [[jal-rtw-award-120k-miles]] — JAL 環球獎勵機票
