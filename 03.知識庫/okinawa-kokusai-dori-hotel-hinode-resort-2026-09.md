@@ -28,6 +28,24 @@ category: 知識庫
 - 跟已存的 [[jta-okinawa-cheap-flight-deal-2026-12]]（JTA台北-沖繩特價機票，2026/12出發）同一個沖繩行程知識群組，機票+住宿可以合起來規劃
 - 入住免費無限暢飲+拉麵這種「一價全包」的沖繩飯店在市場上不算普遍，如果之後真的要訂沖繩住宿，這是一個候選
 
+## 2026-10-13補：同作者另一家——國際通公寓式旅館「旅の邸宅 沖縄那覇 2nd」
+
+> 來源：[FB 莉芙小姐愛旅遊](https://www.facebook.com/share/p/186NoQxHAM/?mibextid=wwXIfr)（2026-10-11），派哥丟連結說「save sop」。名稱從留言的訂房連結確認（Booking／Agoda 網址都是 `tabinoteitaku-okinawa-naha-2nd`）。
+
+| 項目 | 內容 |
+|---|---|
+| 類型 | **一層一戶**的公寓式旅館 |
+| 房型 | **2～4 人房**，空間偏大，行李可以完全攤開 |
+| 設備 | 小廚房（冰箱、微波爐，可簡單料理）、兩座洗手台、泡澡浴缸、**洗衣機＋烘衣機＋洗衣粉** |
+| 購物 | 走 3 分鐘有 **24 小時 AEON**；走遠一點有大間的 MaxValue |
+| 交通 | 近**單軌美榮橋站**跟國際通；附近有多個停車場，適合自駕 |
+
+訂房：
+- Booking：<https://www.booking.com/hotel/jp/tabinoteitaku-okinawa-naha-2nd.zh-tw.html>
+- Agoda：<https://www.agoda.com/zh-tw/tabinoteitaku-okinawa-naha-2nd/hotel/okinawa-main-island-jp.html>
+
+**對派哥**：家庭 3 人、自駕、要洗衣服的話，比上面那家飯店更像「住家」；兩家都在國際通附近，可以一起比價。
+
 ## 相關筆記
 
 - [[kawaguchiko-the-garden-fuji-view-apartment-hotel-2026-10]] — 同一位作者推薦的河口湖富士山景公寓式旅館
