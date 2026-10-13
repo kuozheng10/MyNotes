@@ -67,6 +67,27 @@ category: 知識庫
 
 **對派哥**：三家那霸住宿可以一起比——想要飯店設施（泳池、夕陽）選 THE NEST NAHA；想要像家（廚房、洗衣機、4 人房）選旅の邸宅 2nd；要租車的話 NEST 離 ORIX 近。
 
+## 2026-10-13補：同作者第三家——高 CP 值「ESTINATE HOTEL 那霸」（免費生啤酒）
+
+> 來源：[FB 莉芙小姐愛旅遊](https://www.facebook.com/share/p/1ByPT5YHmD/?mibextid=wwXIfr)，派哥丟連結說「save sop」。名稱從留言連結確認（Booking `estination`、Agoda `estinate-hotel`）。
+
+| 項目 | 內容 |
+|---|---|
+| 房型 | 沖繩主題 **1～4 人房**，有家庭客喜歡的**上下舖** |
+| 裝潢 | 2020 年 5 月重新裝潢 |
+| 備品 | 法國品牌 Provinscia |
+| 公設 | 一樓休息區、頂樓文青交誼廳、微波爐、洗衣機＋烘衣機 |
+| 特色 | **下午有免費生啤酒** |
+| 其他 | 退房後可寄放行李；自駕可停飯店停車場 |
+| 交通 | 美榮橋站步行約 5 分鐘、泊港渡輪碼頭約 10 分鐘、國際通約 12 分鐘、**搭車到機場約 15 分鐘** |
+| 周邊 | 超商、AEON 超市、居酒屋、燒烤店；離波上宮、波之上海灘很近 |
+
+訂房：
+- Booking：<https://www.booking.com/hotel/jp/estination.zh-tw.html>
+- Agoda：<https://www.agoda.com/zh-tw/estinate-hotel/hotel/okinawa-main-island-jp.html>
+
+**對派哥**：那霸現在有四家可以比——ESTINATE（平價、上下舖、免費啤酒、離泊港近，適合要搭船去離島）、旅の邸宅 2nd（公寓式、廚房洗衣）、THE NEST NAHA（新、頂樓泳池）、加上最早那家。
+
 ## 相關筆記
 
 - [[kawaguchiko-the-garden-fuji-view-apartment-hotel-2026-10]] — 同一位作者推薦的河口湖富士山景公寓式旅館
