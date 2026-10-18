@@ -54,6 +54,32 @@ related: us-premium-credit-cards-comparison-2026, us-credit-card-2026-06, citi-t
 - 轉入 **全日空 ANA**：**65,000 miles** 兌換美國～台灣航線的**長榮航空皇璽桂冠艙**單程機票
 - 轉入 **加拿大航空 Aeroplan**：可兌換可中停的長程跨洋航班
 
+### ⚠️ 2026-10 更新：MR 點數不再自動合併
+
+> 來源：[FB「老狐狸的信用卡日記」貼文](https://www.facebook.com/share/p/19uHUjAmvN/?mibextid=wwXIfr)（2026-10-19），派哥丟連結說「save sop」。Amex 官方沒公告，是條款悄悄改的
+
+**以前 vs 現在（白話）**
+
+| | 以前 | 現在 |
+|---|---|---|
+| 新開 MR 卡 | 自動流進同一個點數池，什麼都不用做 | **自己開一個獨立的 rewards account**，點數待在自己的小池子 |
+| 舊卡 | — | 目前**不受影響** |
+| 已合併的餘額 | — | 目前**不會被拆開** |
+| 想合併 | — | 要**手動**：Amex app/網站 → **Manage Connections** 把帳戶綁起來，合併後餘額要**等幾個小時**才同步 |
+
+**實際該怎麼做**
+- 每辦一張新的 MR 卡（Gold/Platinum/商業卡…），**第一件事就去 Manage Connections 確認**有沒有跟舊卡連在一起
+- 不要等到要轉點開票才發現：開卡禮點數還卡在新卡的小池子，臨時合併要等幾小時，看中的獎勵機位可能就被搶走
+
+**作者的擔心（推測，非官方）**
+- 池子分開後，Amex 理論上可以**不同卡不同轉點待遇**，像 Chase：Sapphire Preferred 轉 Hyatt 從 1:1 變 4:3，要完整 1:1 得辦 Sapphire Reserve（作者說法，未另行查證）
+- 等於高階卡可能有特殊轉點福利，低階卡越來越吃虧，Amex 正往其他點數系統的模式靠攏
+
+**留言補充**
+- 香港 Amex 從 Explorer 卡推出後就已經這樣分開且不能合併；沒自動合併的要打客服
+
+**跟派哥的關係**：目前持有的 Amex Bonvoy Brilliant 賺的是萬豪點數，不是 MR，**不受影響**。之後若辦 Amex Gold/Platinum 等 MR 卡，記得辦完先去 Manage Connections 綁定。
+
 ---
 
 ## 花旗銀行 (Citi) — ThankYou Rewards (TY)
