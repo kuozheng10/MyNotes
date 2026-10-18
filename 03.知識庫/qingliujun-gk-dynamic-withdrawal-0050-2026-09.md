@@ -182,3 +182,4 @@ GK **沒有創造額外報酬**。它能從較高初始提領率開始，是因�
 - [[daren-631-vs-leveraged-etf-concentration-risk]] — 00631L vs 正二集中度
 - [[ib01-vs-sgov-treasury-cash-2026-09]] — 現金端稅務效率（另一種「成本落點」思考）
 - [[caven-three-year-reserve-global-etf-retirement-2026-09]] — 三年金庫策略(全世界股票ETF)，不同機制的退休提領對照：用緩衝資產池平滑 vs 本篇用規則式動態調整生活費
+- [[labor-insurance-early-pension-60-vs-65-2026-10]] — 勞保 60 歲提早領（打八折，兩平點約 85 歲），作者同樣主張勞保只當輔助、主力靠自建退休金
