@@ -97,3 +97,4 @@ category: 知識庫
 - [[ctbc-china-airlines-metal-card-2026-09]] — 中信華航聯名卡三等級對照，金卡會籍怎麼靠信用卡快速取得
 - [[china-airlines-award-chart-change-criticism-2026-09]] — 同一次改制的反方視角：「改惡」批評，長程商務艙旺季漲1.5萬~3萬哩、開票日認定沒早鳥保護
 - [[outer-station-multi-segment-ticket-strategy-2026-09]] — 外站四段票/反向票/Parking/無限循環，同一原則(利用多航段規則放大機票價值)的系統化教學版
+- [[hsbc-traveller-direct-transfer-by-destination-2026-10]] — 旅人卡直轉華航 vs 長榮：華航長程只有「充足」級才比長榮 100,000 省，稀少候補北美 105,000/歐洲 110,000 反而更貴

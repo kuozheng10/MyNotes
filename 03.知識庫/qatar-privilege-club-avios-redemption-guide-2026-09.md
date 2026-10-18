@@ -104,3 +104,4 @@ related: hsbc-traveler-card-points-redemption-tips
 
 - [[hsbc-traveler-card-points-redemption-tips]] — HSBC旅人卡積分兌換路徑，路徑C(→雅高→IB→BA/QR)就是通往這個Avios系統的入口
 - [[eva-air-mile-redemption-guide-2026]] — 長榮哩程主力規劃，可對照Avios系統的兌換效率
+- [[hsbc-traveller-direct-transfer-by-destination-2026-10]] — 旅人卡直轉卡達(即時到帳)做香港→倫敦：103,000 Avios + NT$19,435，Combine my Avios 搬去英航

@@ -98,3 +98,4 @@ created: 2026-05-22
 - [[eva-air-mile-redemption-guide-2026]] — 長榮里程兌換攻略（派哥 2027 日本行規劃參考）
 - [[taiwan-mileage-credit-card-combo-2026-08]] — HSBC旅人卡在三張哩程卡分工策略裡的角色（平常海外消費主力卡）
 - [[qatar-privilege-club-avios-redemption-guide-2026-09]] — 路徑C通往的Avios系統完整攻略，含完整兌換表(國泰TPE-HKG商務艙只要6,000 Avios)、會籍制度、名單規則
+- [[hsbc-traveller-direct-transfer-by-destination-2026-10]] — 1:1 直轉 16 家航空依目的地選哪家（日本經濟艙日航 18,000、長程華航只有充足級才贏長榮），跟本篇雅高放大路線互補
