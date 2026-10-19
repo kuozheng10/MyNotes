@@ -81,3 +81,4 @@ AI 的信心 ≠ 能力。它在「問題出在自己身上」時會自以為是
 - [[ai-coding-team-cld]] — AI 時代 WIP 煞車消失的 CLD
 - [[ai-testing-agile-quality]] — Eval Gate + 照妖鏡概念互補
 - [[ai-dev-workflow-antigravity-2026-06]] — Opus + Flash 雙模型分工
+- [[anthropic-claude-code-team-code-review-2026-10]] — Anthropic 多 agent 平行找 bug + 另一組投票驗證才貼出，跟雙 AI 互審同概念

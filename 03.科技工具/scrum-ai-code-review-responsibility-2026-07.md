@@ -141,3 +141,4 @@ Sprint Review 時 PO 的一句話讓全場沉默：
 - [[scrum-ai-five-fails-2026-06]] — 這個案例是失效模式 3（各做各的）跟失效模式 4（SM盯錯地方）的具體化敘事版：小磊的「這樣搞只是變相多做事」呼應「SM 盯卡片速度、沒盯驗證缺口」；PR 名存實亡的 approve 呼應「各做各的」被 AI 放大的樣子
 - [[ai-dev-problems-amplified-2026-06]] — DORA 2025 研究視角：code review 名存實亡正是「驗證跟不上產出」的具體案例
 - [[ai-testing-agile-quality]] — 「測試是 AI 產的，涵蓋了 AI 認為該測的情境，卻漏掉權限邊界」這個情節，是測試品質缺口最好的敘事範例
+- [[anthropic-claude-code-team-code-review-2026-10]] — Anthropic 實際做法：下指令的人是 agent PR 的必要 reviewer、AI approve 不能算人的 approve

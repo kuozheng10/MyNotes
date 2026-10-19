@@ -64,3 +64,4 @@ Boris Cherny 的框架：
 - [[ai-dev-problems-amplified-2026-06]] — AI 放大器效應：DORA 數據視角的瓶頸位移
 - [[hr-it-merge-ai-agent-management-2026-07]] — AI Agent 當數位員工，組織角色邊界模糊的另一個切面
 - [[eli5-plugin-marketplace-2026-08]] — 用 Boris AI Adoption Steps 對照 Skills 生態從「個人手工」走向「可規模化」的演進
+- [[anthropic-claude-code-team-code-review-2026-10]] — Boris：給 Claude 驗證自己成果的方法，結果好 2–3 倍；Claude Code 團隊七層 review 架構

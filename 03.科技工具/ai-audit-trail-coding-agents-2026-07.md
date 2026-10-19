@@ -87,3 +87,7 @@ AI 動手當下要錄下四件事：
 - ARMO,〈The Minimum Viable Audit Trail〉
 - Superblocks,〈AI Audit Trail: 7 Things to Log for Compliance〉
 - 2026年AI agent資安事件調查（88%/21%數據）
+
+## 相關筆記
+
+- [[anthropic-claude-code-team-code-review-2026-10]] — Anthropic approve 只綁特定 commit、新 commit 要重新 approve，另一種稽核做法
