@@ -229,3 +229,4 @@ Randy 官方說法：「若未來打算兌換寰宇一家／星宇的哩程機�
 - [[alaska-mileageplan-starlux-redemption]] — Alaska 哩程兌換星宇航空的完整費率表、Free Stopover 玩法
 - [[us-credit-card-2026-06]] — 2026/6 美國信用卡開卡禮彙整（當月列表已含這張卡但開卡禮數字為當時快照，本篇 Q&A 內容更完整、更新）
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡總覽，這張卡上榜理由：星宇兌換管道+海外消費無上限3x哩程
+- [[us-credit-card-high-welcome-bonus-top10-2026-10]] — 2026-10 開卡禮：3 個月刷 $3,000 送 70,000 哩 + 25,000 哩全球同行者券，10 張裡門檻最低

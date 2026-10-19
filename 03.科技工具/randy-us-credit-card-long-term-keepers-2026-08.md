@@ -76,3 +76,4 @@ related: capital-one-venture-x-business-card, citi-custom-cash-tripplus-miles-st
 - [[us-credit-card-2026-06]] — 2026年6月美國信用卡高額開卡禮彙整
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — Hilton Surpass（中階）vs 大聰明 Bonvoy Brilliant（頂級）酒店卡對比
 - [[buy-iphone-best-us-credit-card-2026-09]] — 買iPhone該用哪張美卡：延長保固/回饋率/湊開卡禮消費門檻
+- [[us-credit-card-high-welcome-bonus-top10-2026-10]] — 同作者 Randy 的「短期衝開卡禮」清單（2026-10 版），跟本篇長期持有角度互補

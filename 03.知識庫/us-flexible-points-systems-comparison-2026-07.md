@@ -166,3 +166,4 @@ related: us-premium-credit-cards-comparison-2026, us-credit-card-2026-06, citi-t
 - [[citi-thankyou-eva-air-2026-07]] — Citi TY 轉長榮航空的實戰細節，補充這篇「亮點」提到的長榮升等
 - [[marriott-jal-status-match-2026-07]] — JAL相關哩程規劃，可對照這篇Bilt/Capital One轉JAL的兌換路徑
 - [[us-credit-card-points-transfer-time-airlines]] — 各家轉點到帳時間的詳細版，補充這篇「馬上到帳」的具體數字
+- [[us-credit-card-high-welcome-bonus-top10-2026-10]] — 2026-10 高額開卡禮 10 張，辦 Amex 白金(MR)記得 Manage Connections 綁定

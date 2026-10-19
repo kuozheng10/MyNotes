@@ -86,3 +86,4 @@ Amex 潛規則：**90 天內最多核准 2 張信用卡**。保守做法是第�
 - [[us-credit-card-2026-06]] — 美卡開卡禮彙整，含 Amex 家族限制
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍對應指南
 - [[marriott-award-stay-tips-2026-08]] — 萬豪點數房技巧（對照希爾頓住五送一）
+- [[us-credit-card-high-welcome-bonus-top10-2026-10]] — Trip+ 2026-10 高額開卡禮 10 張：Hilton Aspire 200,000 / Hilton Business 150,000 + 住宿券，**至 2027/1/13 截止**
