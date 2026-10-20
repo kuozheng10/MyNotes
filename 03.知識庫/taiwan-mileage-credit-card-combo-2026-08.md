@@ -58,6 +58,8 @@ related: hsbc-traveler-card-points-redemption-tips, eva-air-mile-redemption-guid
 
 ## 相關筆記
 
+- [[cathay-cube-tree-points-airline-2027-cut-2026-10]] — 國泰 CUBE 小樹點 2027 航空兌換大砍
+
 - [[hsbc-traveler-card-points-redemption-tips]] — HSBC旅人卡積分兌換最佳路徑（轉雅高/QF等）
 - [[eva-air-mile-redemption-guide-2026]] — 長榮里程票規劃（派哥2027日本行）
 - [[china-airlines-award-chart-change-2026-09]] — 華航2026/9/16改表，開票策略與亮點航線

@@ -118,6 +118,8 @@ created: 2026-10-18
 
 ## 相關筆記
 
+- [[cathay-cube-tree-points-airline-2027-cut-2026-10]] — 國泰小樹點 2027 只剩 6 家航空，被刪的 Aeroplan/United/Qatar/KrisFlyer 改走滙豐旅人
+
 - [[hsbc-traveler-card-points-redemption-tips]] — 雅高放大路線（1.5x–1.875x），跟本篇直轉互補
 - [[eva-air-mile-redemption-guide-2026]] — 長榮哩程兌換完整攻略
 - [[qatar-privilege-club-avios-redemption-guide-2026-09]] — 卡達 Avios 系統（本篇香港→倫敦路線）
