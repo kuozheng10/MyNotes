@@ -260,6 +260,24 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 - 台北/台中都能當中停樞紐，如果派哥規劃日本+韓國或日本+港澳的連續行程，這是目前查到最具體的路線清單，不用自己臨場試錯
 - 大韓航空中停首爾這條路徑是新資訊（之前只查過星宇/馬航兩個中停樞紐），代表Alaska哩程的中停玩法不限星宇一家航空，只要符合1,500哩+14天+同航空公司規則，寰宇一家/星空聯盟夥伴應該都能比照套用，值得之後展開查其他航空的中停組合
 
+## Atmos Rewards「旅遊社群」：替 12 歲以下小孩換票，搭完退 20% 點數（2026-10-22補）
+
+> 來源：[FB Trip+](https://www.facebook.com/share/1Db8ourn7H/?mibextid=wwXIfr)，派哥丟連結說「save sop」；另用 WebSearch 對了 [Doctor of Credit](https://www.doctorofcredit.com/atmos-launches-atmos-communities-choose-a-community-get-different-benefits/)、[The Points Guy](https://thepointsguy.com/loyalty-programs/alaska-airlines-hawaiian-atmos-communities)、[Thrifty Traveler](https://thriftytraveler.com/?p=147695)。官網說明：<https://l.tripplus.cc/47qiSAq>
+
+**是什麼**：Alaska／Hawaiian 合併後的 Atmos Rewards，**2026-10-01** 推出 6 種「旅遊社群」（Atmos Communities），會員**免費選一個**，各有不同福利。**一人只能選一個**，但同一家人可以各選不同的。
+
+| 社群 | 福利 | 對誰有用 |
+|---|---|---|
+| **親子旅行 Families on the Go** | 用自己的點數幫 **12 歲以下（含）**小孩換哩程票，**搭完退 20% 點數**；**合作航空的哩程票也適用**（例如兌星宇、日航） | 帶小孩出國換票 |
+| **國際旅行 Global Locals** | 起點或終點在美國以外的航班，**會籍積分多 10%**（只加會籍，不加可用點數）；另外從 Bilt／Marriott 轉點進 Atmos，每 25 點給 1 會籍積分 | 想衝 Atmos 會籍 |
+| 美食、戶外等其他 4 種 | 指定城市挑戰＋專屬優惠 | 看個人 |
+
+**細節**：
+- 小孩年齡看**搭機當天**是否 ≤12 歲；點數要從選了這個社群的會員帳戶扣；小孩本身不用是會員
+- 留言有人問「小孩用 25k 同行者券還能疊 20% 退點嗎？」→ Trip+ 回「通常可以」（非官方確認）
+
+**對派哥**：派哥 Atmos 點數主要拿來兌星宇（見上面各段）。如果家裡有 12 歲以下小孩同行，先在 Atmos 帳戶選「Families on the Go」，之後幫小孩換的星宇票都能退 20%，免費選、沒成本。家裡沒有 12 歲以下的話，選 Global Locals 也只加會籍，用處不大。
+
 ## 相關筆記
 
 - [[cathay-cube-tree-points-airline-2027-cut-2026-10]] — ⚠️ 國泰小樹點 2027 起不能換 EY 哩程
