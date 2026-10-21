@@ -132,6 +132,21 @@ Capital One 現金回饋商業卡系列的中階簽帳卡，定位比 Venture X 
 
 ---
 
+## 2026-10-22 更新：史高 300,000 點＋$1,000 旅遊網站退額（Trip+）
+
+> 來源：[FB Trip+](https://www.facebook.com/share/p/1B4K2LXUze/?mibextid=wwXIfr)，派哥丟連結說「記一下」。申請連結：<https://l.tripplus.cc/4yyBOrT>
+
+| 項目 | 2026-05 本篇 | **2026-10-22 新版** |
+|---|---|---|
+| 開卡禮 | 150,000 點／3 個月刷 $30,000 | **300,000 點＋$1,000「Capital One Business Travel」退額** |
+| 年費 | $395 | $395 |
+| 回饋 | 2x／機票 5x／酒店租車 10x | 不變 |
+| 海外手續費 | 0% | 0% |
+
+⚠️ **貼文沒寫消費門檻**。查過去紀錄（[Frequent Miler](https://frequentmiler.com/capital-one-venture-x-business-300k-welcome-offer-ending-soon/)、[Doctor of Credit](https://www.doctorofcredit.com/capital-one-venture-x-business-card-150000-300000-signup-bonus-20000-100000-spend-required)）：300k 都是**分兩段**——2024 版是 3 個月 $20k 拿 150k＋6 個月共 $100k 再 150k；更早還有要 12 個月刷 $500k 的版本。這次大概也是**很高的分段門檻**，申請前點連結看清楚。
+
+**對派哥**：是**商業簽帳卡**（Charge card），門檻通常是大額商業支出等級；一般個人消費刷不到，看看就好。
+
 ## 相關筆記
 
 - [[citi-custom-cash-tripplus-miles-strategy]] — Citi 哩程策略
