@@ -151,6 +151,8 @@ Amex Platinum年費$895，以下10件事全部用好才划算：
 
 ## 相關筆記
 
+- [[us-premium-cards-renewal-checkup-2026-10]] — Strata Elite／CSR／Amex Plat 續卡體檢，哪些退額真的用得到
+
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — 大聰明完整持卡福利(FNA住宿券/會籍/回饋倍數)，本篇補充官方退額頻率確認
 - [[citi-thankyou-eva-air-2026-07]] — 派哥現在進行中的美卡計畫
 - [[us-credit-card-2026-06]] — 美卡開卡禮總表

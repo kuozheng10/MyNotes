@@ -94,6 +94,8 @@
 
 ## 相關筆記
 
+- [[us-premium-cards-renewal-checkup-2026-10]] — 三大高階卡滿週年續卡體檢（實拿價值、該續該剪）
+
 - [[capital-one-venture-x-business-card]] — 商務版 Venture X 詳細分析
 - [[travel-hacks-trip-agoda-jcb-lounge]] — 機場貴賓室省錢技巧
 - [[us-credit-card-points-transfer-time-airlines]] — 轉點時間比較
