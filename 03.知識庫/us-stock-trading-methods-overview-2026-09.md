@@ -78,4 +78,4 @@ Substack連結：https://goestomoon.substack.com/p/2026-2-09212026
 
 ## 相關筆記
 
-（目前MyNotes尚無其他交易策略/Order Flow相關筆記，本篇是這個主題的第一篇，之後累積更多可以回來補相關連結）
+- [[00406a-covered-call-monthly-dividend-tradeoff-2026-10]] — Covered Call 實際產品案例：台股主動 ETF 00406A 怎麼用賣買權收權利金配息

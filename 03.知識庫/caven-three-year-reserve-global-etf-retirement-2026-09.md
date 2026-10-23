@@ -108,3 +108,4 @@ B先生（1971/2退休）vs I女士（1977/5退休）：**兩人30年CAGR幾乎�
 - [[qingliujun-buy-borrow-die-vs-73-2026-09]] — 買借死 vs 75/25退休提領回測
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 累積期的正2+現金/短債ETF緩衝概念，跟本篇提領期的金庫概念是同一邏輯的不同應用階段
 - [[labor-insurance-early-pension-60-vs-65-2026-10]] — 勞保 60 vs 65 歲請領取捨，政府年金只當輔助
+- [[00406a-covered-call-monthly-dividend-tradeoff-2026-10]] — 00406A 月配息 Covered Call 的取捨（現金流 vs 資產累積怎麼選）
