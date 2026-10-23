@@ -243,6 +243,12 @@ Randy 官方說法：「若未來打算兌換寰宇一家／星宇的哩程機�
 
 **對派哥**：先看上面 2026-09-20 的判斷——近 12 個月新卡多，非 BofA 客戶大概率被拒；要辦先開 BofA 支票帳戶。這次 Summit 回到 100k（歷史高點），是比之前 70k/80k 好的時機。
 
+**2026-10-23 Trip+ 也發文確認 Ascent 80,000 哩開卡禮**（[FB Trip+](https://www.facebook.com/share/p/1CXg1ixdPq/)，申辦連結 https://l.tripplus.cc/4sjx73I → TripPlus 信用卡資料庫 Ascent 頁）。Trip+ 的看法：
+- Ascent 是 Alaska＋Hawaiian 合併成 Atmos Rewards 以後推出的「中階」聯名卡
+- Atmos 雖然常特價賣哩程，但靠開卡禮拿一大筆哩程更划算
+- 以後想換寰宇一家夥伴或**星宇**的哩程票，推薦辦這張賺開卡禮
+- 門檻沒有另外寫，照上面老狐狸的數字：90 天刷 $3,000 拿 60k，刷到 $5,000 再加 20k
+
 ## 相關筆記
 
 - [[boa-credit-card-basic-rules-2026-09]] — BoA 所有卡共通的申辦規則（2/3/4、24 個月、3/12 與 7/12 新帳戶紅線、Match/Expedite/轉額度）
