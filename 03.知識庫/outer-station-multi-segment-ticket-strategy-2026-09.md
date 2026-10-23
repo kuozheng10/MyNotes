@@ -384,3 +384,4 @@ category: 知識庫
 - [[alaska-mileageplan-starlux-redemption]] — Alaska兌星宇的免費stopover，同一原則的另一種應用
 - [[eva-air-mile-redemption-guide-2026]] — 派哥長榮哩程主力規劃
 - [[tripcom-region-switch-visa-discount]] — 揪哥貼文裡「中文版/跳區版」雙連結用的就是這篇的切語系鎖低價技巧
+- [[kumamoto-travel-guide-william-amy-2026-10]] — 熊本總攻略（威廉艾米）：星宇台中直飛熊本、OMO5、阿蘇/天草行程

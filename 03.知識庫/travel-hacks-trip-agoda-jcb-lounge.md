@@ -129,3 +129,4 @@
 
 - [[project_eva_award_tickets]] — 長榮里程商務艙兌換計畫
 - [[us-credit-card-2026-06]] — Amex 白金卡（含 PP/LoungeKey 權益）
+- [[kumamoto-travel-guide-william-amy-2026-10]] — 熊本總攻略（威廉艾米）：星宇台中直飛熊本、OMO5、阿蘇/天草行程

@@ -289,3 +289,4 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 - [[bofa-atmos-rewards-summit-card-2026-08]] — 怎麼**賺到**本篇要花的 Alaska 哩程：美國銀行 Atmos Rewards Summit 聯名卡開卡禮 80,000 點 + 25,000 點同行者券的申辦資格與福利 Q&A
 - [[china-airlines-award-chart-change-2026-09]] — 華航九州三航點+新幹線的open-jaw玩法，跟本篇Alaska免費stopover思路類似
 - [[outer-station-multi-segment-ticket-strategy-2026-09]] — 外站四段票/反向票/Parking/無限循環，同一原則的系統化教學版
+- [[kumamoto-travel-guide-william-amy-2026-10]] — 熊本總攻略（威廉艾米）：星宇台中直飛熊本、OMO5、阿蘇/天草行程
