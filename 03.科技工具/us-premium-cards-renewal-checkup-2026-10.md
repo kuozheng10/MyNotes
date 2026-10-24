@@ -82,3 +82,4 @@ category: 03.科技工具
 - [[us-credit-card-credits-checklist-2026-09]] — 各卡退額清單
 - [[us-credit-card-high-welcome-bonus-top10-2026-10]] — 高開卡禮 Top 10
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — 長期值得留的卡
+- [[chase-sapphire-reserve-first-year-135-2026-10]] — 點數旅人：CSR 首年等效年費約 $135 的算法＋對派哥評估

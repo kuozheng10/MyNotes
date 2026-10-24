@@ -45,3 +45,4 @@ category: 知識庫
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — 同一部影片的Hilton四卡比較部分
 - [[us-credit-card-2026-06]] — 美卡候選清單總覽
 - [[capital-one-venture-x-business-card]] — 另一張商業卡選項
+- [[chase-sapphire-reserve-first-year-135-2026-10]] — 點數旅人：CSR 首年等效年費約 $135 的算法＋對派哥評估
