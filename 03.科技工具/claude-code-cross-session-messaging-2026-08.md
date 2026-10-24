@@ -130,3 +130,7 @@ Claude 自己判斷要傳給誰、自己決定內容怎麼寫。**Claude 也會�
 這個功能跟目前用的 Agent/fork 機制不太一樣——`SendMessage`/`ListAgents` 是給**手動開的、彼此獨立的多個 Claude Code 視窗**互通消息用的，不是自動化 pipeline（cc_processor/investment 排程那些）會用到的東西。適合的場景：如果派哥同時開好幾個終端機視窗，一個在改程式、一個在跑很久的資料處理，需要跨視窗互相通知進度時可以用；跟現在這種單一 TG 對話 session 裡處理任務的模式是不同的使用情境。
 
 官方文件：https://code.claude.com/docs/en/cross-session-messaging
+
+## 相關筆記
+
+- [[block-buzz-ai-agent-team-chat-2026-10]] — Buzz（Block 開源）：真人＋多個 AI 在同一群組分工互審，可接 Claude Code／Codex

@@ -94,3 +94,7 @@ AI Agent × 多角色 × 真實搜尋 → 模擬企業會議決策流程
 - 企業 AI 信任問題 → [[enterprise-ai-market-signal-2026-06]]
 - 一人公司 vs 大公司 AI 策略 → [[enterprise-ai-market-signal-2026-06]]
 - Anthropic 官方一人公司 Playbook（四階段 + 護城河在哪）→ [[anthropic-founder-playbook-solo-startup-2026-07]]
+
+## 相關筆記
+
+- [[block-buzz-ai-agent-team-chat-2026-10]] — Buzz（Block 開源）：真人＋多個 AI 在同一群組分工互審，可接 Claude Code／Codex

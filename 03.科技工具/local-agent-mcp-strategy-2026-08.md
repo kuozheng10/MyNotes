@@ -35,3 +35,4 @@ Junjun Zhang 表示認同：自建 Agent 搭配 MCP，能同時兼顧「模型�
 - [[gpt-claude-gemini-20usd-comparison-2026-08]] — 同作者：GPT/Claude/Gemini三家$20方案使用比較
 - [[pxpipe-token-saving-image-compression-2026-08]] — 同作者：pxpipe文字轉圖片省token工具評估（派哥結論：不建議用在現有工作流）
 - [[weknora-tencent-enterprise-knowledge-base-2026-09]] — 騰訊開源企業知識庫框架，Agent+MCP+RAG三合一，企業規模場景的對照案例
+- [[block-buzz-ai-agent-team-chat-2026-10]] — Buzz（Block 開源）：真人＋多個 AI 在同一群組分工互審，可接 Claude Code／Codex
