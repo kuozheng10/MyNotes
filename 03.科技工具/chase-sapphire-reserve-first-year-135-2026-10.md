@@ -68,3 +68,4 @@ author: 點數旅人（FB）
 - [[chase-sapphire-preferred-100k-2026]] — CSP（中階卡）開卡禮與 5/24
 - [[us-credit-card-credits-checklist-2026-09]] — 各卡退額總表
 - [[citi-thankyou-eva-air-2026-07]] — 派哥目前的長榮累哩主線
+- [[itin-us-credit-score-equifax-bureau-pulls-2026-10]] — ITIN 怎麼查信用分數＋各銀行拉哪家信用局

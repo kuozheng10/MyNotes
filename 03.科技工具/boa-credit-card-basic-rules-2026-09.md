@@ -56,3 +56,4 @@ BoA 不限一個人持有幾張自家卡，看的是**總信用額度上限**。
 - [[alaska-mileageplan-starlux-redemption]] — Alaska 哩程兌換星宇航空費率表
 - [[us-credit-card-2026-06]] — 2026/6 美國信用卡開卡禮彙整
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy 長期持有美卡總覽
+- [[itin-us-credit-score-equifax-bureau-pulls-2026-10]] — ITIN 怎麼查信用分數＋各銀行拉哪家信用局
