@@ -44,6 +44,13 @@ author: 點數旅人（FB）
 - 商業卡：6 個月刷 **$30,000** 拿 200,000 點
 - 貼文開頭說「Amex 白金卡福利改惡」：Gemini 搜不到 10 月的官方公告，可能指 [[us-credit-card-credits-checklist-2026-09]] 裡提到的 2027 FHR 改兩晚傳聞
 
+## 留言區補充（2026-10-26，派哥用另一個分享連結再丟一次）
+
+- 附卡年費從 $75 漲到 **$195**，主卡＋附卡兩人快 $1,000（網友）
+- 搭**星空聯盟**航班可以進 **Air Canada 楓葉貴賓室**，例如 SFO T3／國際航廈 G（網友，未查證）
+- 紐約 LGA 第 B 航廈有 Sapphire Lounge（網友）
+- 作者另有三篇延伸：4 張高階卡比較（[連結](https://www.facebook.com/share/1LHQVAgXTV/)）、費城 Sapphire 貴賓室體驗（[連結](https://www.facebook.com/share/14rnkEtqu97/)）、CSR 福利盤點（[連結](https://www.facebook.com/share/1JtAyTRxJ3/)）
+
 ## 對派哥
 
 | 面向 | 評估 |
