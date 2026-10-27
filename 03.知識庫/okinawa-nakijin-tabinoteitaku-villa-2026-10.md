@@ -62,5 +62,6 @@ category: 知識庫
 
 ## 相關筆記
 
+- [[okinawa-onna-blisstia-suites-resort-2026-10]] — 恩納 BLISSTIA 新飯店（中部，全套房有廚房）
 - [[okinawa-kokusai-dori-hotel-hinode-resort-2026-09]] — 那霸國際通飯店合集（含同品牌旅の邸宅 那覇 2nd、THE NEST NAHA）
 - [[jta-okinawa-cheap-flight-deal-2026-12]] — JTA 台北-沖繩特價機票

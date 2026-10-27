@@ -90,6 +90,7 @@ category: 知識庫
 
 ## 相關筆記
 
+- [[okinawa-onna-blisstia-suites-resort-2026-10]] — 恩納 BLISSTIA 新飯店（中部，全套房有廚房）
 - [[okinawa-nakijin-tabinoteitaku-villa-2026-10]] — 北部今歸仁同品牌「旅の邸宅」獨棟古民家（近美麗海水族館，親子自駕＋BBQ）
 
 - [[kawaguchiko-the-garden-fuji-view-apartment-hotel-2026-10]] — 同一位作者推薦的河口湖富士山景公寓式旅館
