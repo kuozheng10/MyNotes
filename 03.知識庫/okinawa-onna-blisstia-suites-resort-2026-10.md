@@ -56,3 +56,4 @@ category: 知識庫
 - [[okinawa-nakijin-tabinoteitaku-villa-2026-10]] — 今歸仁獨棟古民家（同作者）
 - [[okinawa-kokusai-dori-hotel-hinode-resort-2026-09]] — 那霸國際通飯店合集
 - [[jta-okinawa-cheap-flight-deal-2026-12]] — JTA 台北－沖繩特價機票
+- [[miyakojima-hotel-torifito-resort-2026-10]] — 宮古島平價飯店 Torifito
