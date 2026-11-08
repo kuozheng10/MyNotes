@@ -151,3 +151,4 @@ YouTube「阿良的正二人生」頻道的三刀流資產配置策略，師承�
 - [[00631l-not-suitable-long-term-prospectus]] — 反方論點：發行商公開說明書寫明00631L不適合長期投資，跟三刀流「正二可作退休核心資產」的立場相反，值得對照著看
 - [[spy-gld-gde-comparison-2026-08]] — 同樣是槓桿/資產配置思路的延伸比較（GDE股票+黃金槓桿基金）
 - [[caven-three-year-reserve-global-etf-retirement-2026-09]] — 同樣主張退休預留3年生活費，EP157 股災加碼SOP 的預備金概念可對照
+- [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置主文；2026-11-09 補了陳重銘股災買00685L的正2資金配置試算
