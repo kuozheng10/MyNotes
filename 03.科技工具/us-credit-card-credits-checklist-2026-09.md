@@ -158,3 +158,4 @@ Amex Platinum年費$895，以下10件事全部用好才划算：
 - [[us-credit-card-2026-06]] — 美卡開卡禮總表
 - [[meta-muse-free-ai-agent-2026-09]] — 有人用Muse AI agent把這張退額表變成自動提醒系統(依卡片清單算截止日+漸進式提醒+用掉消音)，是這張靜態表格的潛在自動化參考做法
 - [[us-credit-card-high-welcome-bonus-top10-2026-10]] — CSR/Amex 白金/Strata Elite 等頂卡 2026-10 開卡禮與退額全清單
+- [[us-credit-card-year-end-checklist-2026-11]] — 老狐狸 2026 年底檢查清單：退額 12/31 歸零、曆年刷卡門檻、年底辦卡多拿一份退額
