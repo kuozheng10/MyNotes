@@ -102,3 +102,4 @@ Hilton 鑽 → 配 Radisson 白金 → 配 Thon+ → 配 Scandic Lv5 → 直配 
 - [[travel-credit-card-strategy]] — 信用卡旅遊回饋選擇
 - [[marriott-jal-status-match-2026-07]] — 萬豪 x 日航 2026-07 會籍互換（酒店↔航空跨業互配，FOP 門檻試算）
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — 靠信用卡直接拿會籍：Hilton Surpass(金卡) vs Marriott Bonvoy Brilliant(白金菁英)
+- [[ana-ihg-partnership-status-match-2027]] — 全日空 × IHG 2027 合作：免費 ANA 會員送 5 晚、哩程積分互轉

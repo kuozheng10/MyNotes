@@ -45,3 +45,4 @@ category: 知識庫
 - [[hotel-membership-matching-guide-2026-05]] — 飯店會籍匹配
 - [[chase-ihg-cards-revamp-2026-10]] — IHG 聯名卡
 - [[marriott-bonvoy-dynamic-pricing-category-2026-09]] — 萬豪動態定價
+- [[ana-ihg-partnership-status-match-2027]] — ANA × IHG 2027：送 5 晚房晚算 Milestone，台灣洲際越來越多更好用
