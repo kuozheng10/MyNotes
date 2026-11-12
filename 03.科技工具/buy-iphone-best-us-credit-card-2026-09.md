@@ -63,3 +63,4 @@ tags: [信用卡, 美國信用卡, iphone, 延長保固, 回饋率, amex, hilton
 - [[amex-hilton-surpass-vs-bonvoy-brilliant-2026-09]] — Hilton Surpass 完整規格對比大聰明
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡清單，含Amex Hilton Aspire完整攻略
 - [[citi-thankyou-eva-air-2026-07]] — 派哥現在進行中的美卡計畫（長榮哩程路線），Citi Strata Premier回饋率可對照
+- [[iphone-yearly-upgrade-cost-2026-11]] — iPhone 每年換 vs 3 年換成本試算（手機王行情）
