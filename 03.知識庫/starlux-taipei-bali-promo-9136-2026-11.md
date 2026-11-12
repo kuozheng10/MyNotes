@@ -36,3 +36,4 @@ category: 知識庫
 - [[tripcom-region-switch-visa-discount]] — Trip.com 切語系／跳區拿低價
 - [[starlux-thailand-reverse-business-promo-2026-09]] — 星宇另一檔促銷（泰國反向商務）
 - [[miyakojima-hotel-torifito-resort-2026-10]] — 星宇直飛宮古島，另一個海島選項
+- [[bali-ayana-resort-jimbaran-2026-11]] — 峇里島住哪：阿雅娜度假村（住 RIMBA 最划算，4 館共用設施）
