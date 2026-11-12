@@ -42,6 +42,40 @@ category: 知識庫
 - 派哥、太太如果還沒有 ANA 帳號，**現在就先免費註冊**，2027/1 開放時第一時間去綁，台灣名額有限
 - 2 月中哩程互轉上線後，IHG 點數多一個出口（換 ANA 哩程開星空聯盟），等比例公布再評估划不划算
 
+## 2026-11-12 補：Dr.玩咔——ANA 各級送幾晚＋Chase IHG 卡房晚可以疊加
+
+> 來源：[FB Dr.玩咔](https://www.facebook.com/share/p/1CaXMtVfoE/?mibextid=wwXIfr)
+
+**ANA 會籍 → IHG 房晚（2027 起）**
+
+| ANA 等級 | 送 IHG 房晚 |
+|---|---|
+| Diamond + More | 68 |
+| Diamond | 38 |
+| Platinum | 20 |
+| Bronze | 10 |
+| 一般會員 | 5 |
+
+- **ANA SFC 沒有獨立等級**，沒有其他 ANA 上級會籍的話，預期只算一般會員 5 晚
+- 日本以外的**一般會員**有名額限制；上級會員有沒有限制官方沒講
+
+**重大修正：Chase IHG 卡的房晚可以疊加**（Chase 已向媒體確認，之前說不能疊）
+
+| 組合 | 房晚 | 結果 |
+|---|---|---|
+| Premier Select 20 + Premier 15 + ANA 一般 5 | **40** | 不用住就到 40 晚 Milestone → 選年度行政酒廊 |
+| Premier Select 20 + Premier 15 + Business 15 + ANA Platinum 20 | 70 | 70 晚 Milestone |
+| Premier Select 20 + Premier 15 + ANA Diamond 38 | 73 | 70 晚 Milestone |
+
+- 40 晚選的**年度行政酒廊資格有效到隔年 12/31**，等於快兩年
+- 一切以 2027 實際入帳＋IHG 官方規則為準
+
+**對派哥（2026-11-12 評估）**
+- 派哥沒有 Chase IHG 卡；IHG 鑽石 2026/12/31 到期、今年住 9 晚 → 2027 年會掉級
+- 辦 Premier Select（$350）+ Premier（$150）+ ANA 免費 = 40 晚 → 不用住就有**白金＋行政酒廊**，但到不了鑽石（70 晚要 ANA 白金以上，得真的飛 ANA）
+- 卡關：派哥是 ITIN、美國信用紀錄只有大聰明 1 年、Citi Strata 才因年資不足被拒 → Chase 也可能拒；兩張都佔 5/24（目前 1/24）
+- 高額開卡禮 **2026/11/18 截止**（見 [[chase-ihg-cards-revamp-2026-10]]）
+
 ## 相關筆記
 - [[hotel-membership-matching-guide-2026-05]] — 飯店會籍匹配總整理
 - [[marriott-jal-status-match-2026-07]] — 萬豪 × 日航，同樣是酒店⇄日系航空互配
