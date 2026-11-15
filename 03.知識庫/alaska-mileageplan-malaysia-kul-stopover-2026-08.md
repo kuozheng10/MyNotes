@@ -80,3 +80,4 @@ source: 派哥貼文（阿拉斯加哩程開短程中停 Vol. 3）
 ## 相關筆記
 
 - [[alaska-mileageplan-starlux-redemption]] — 系列 Vol.1：Alaska 哩程兌星宇航空攻略，同樣用 1,500 哩內超低費率 + 免費 stopover 邏輯，這篇是同一套玩法套用在馬航 + 吉隆坡樞紐
+- [[alaska-atmos-buy-miles-promo-2026-12]] — 2026-11 阿拉斯加買點特賣加碼最高 90%（到 12/10），100% 加碼約 1.88¢/點，40,000 點換星宇台北-東京來回商務＋單程經濟

@@ -290,3 +290,4 @@ source: https://www.scottt.org/alaska-airlines-starlux-airlines/
 - [[china-airlines-award-chart-change-2026-09]] — 華航九州三航點+新幹線的open-jaw玩法，跟本篇Alaska免費stopover思路類似
 - [[outer-station-multi-segment-ticket-strategy-2026-09]] — 外站四段票/反向票/Parking/無限循環，同一原則的系統化教學版
 - [[kumamoto-travel-guide-william-amy-2026-10]] — 熊本總攻略（威廉艾米）：星宇台中直飛熊本、OMO5、阿蘇/天草行程
+- [[alaska-atmos-buy-miles-promo-2026-12]] — 2026-11 阿拉斯加買點特賣加碼最高 90%（到 12/10），100% 加碼約 1.88¢/點，40,000 點換星宇台北-東京來回商務＋單程經濟
