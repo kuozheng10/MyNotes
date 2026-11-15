@@ -54,3 +54,4 @@ category: 知識庫
 - [[okinawa-onna-blisstia-suites-resort-2026-10]] — 沖繩本島恩納新飯店
 - [[okinawa-kokusai-dori-hotel-hinode-resort-2026-09]] — 那霸國際通飯店合集
 - [[alaska-mileageplan-starlux-redemption]] — 星宇飛宮古島（下地島）＋Alaska 兌換
+- [[miyakojima-travel-guide-first-timer-2026-11]] — 宮古島自由行攻略：兩個機場、交通、住哪區、5天4夜
