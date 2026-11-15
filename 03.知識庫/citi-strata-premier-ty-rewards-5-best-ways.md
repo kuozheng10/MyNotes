@@ -66,3 +66,4 @@ TripPlus 部落格 Randy 文章：Citi Strata Premier 卡最佳 ThankYou Rewards
 ## 連結筆記
 
 - [[tripplus-快訊260401-信用卡哩程新聞]] — 信用卡哩程相關新聞
+- [[choice-hotel-geometiq-osaka-umeda-2026-11]] — 實例：TY 轉 Choice 換大阪梅田新飯店三人家庭房一晚 20,000 點（約 1 萬 TY）
