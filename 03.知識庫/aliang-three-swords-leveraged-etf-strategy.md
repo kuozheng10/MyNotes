@@ -154,3 +154,4 @@ YouTube「阿良的正二人生」頻道的三刀流資產配置策略，師承�
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置主文；2026-11-09 補了陳重銘股災買00685L的正2資金配置試算
 - [[taiwan-stock-20pct-drawdown-backtest-1967-2026]] — 清流君回測：台股跌破前高20%後買進，抱10年96.3%正報酬；但不等於該空手等股災
 - [[00631l-crash-pledge-add-strategy-2026-11]] — 同樣是股災加碼，但資金來源用股票質押（以短支短），反彈後還款
+- [[smart-rebalance-2pct-base-definition-2026-11]] — 士官長：聰明再平衡下跌年補倉 2% 的分母（退休/質押用初始資產），年度判斷跟 EP157 看跌幅不同

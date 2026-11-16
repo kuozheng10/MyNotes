@@ -52,3 +52,4 @@ category: 知識庫
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置；陳重銘股災買 00685L 試算
 - [[00631l-not-suitable-long-term-prospectus]] — 00631L 公開說明書寫不適合長期持有（反方）
 - [[00631l-crash-pledge-add-strategy-2026-11]] — 社團分享：正二崩盤跌30%時股票質押加碼、反彈後還款（未回測，對照本篇最差情況看）
+- [[smart-rebalance-2pct-base-definition-2026-11]] — 聰明再平衡規則細節：補倉 2% 用哪個資產算、上漲/下跌年怎麼判斷
