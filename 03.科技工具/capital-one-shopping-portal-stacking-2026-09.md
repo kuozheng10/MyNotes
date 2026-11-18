@@ -96,3 +96,5 @@ category: 科技工具
 - [[us-credit-card-2026-06]] — 美卡開卡禮總表，含Capital One系列
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍對應指南
 - [[taiwan-new-international-hotels-2025-2028]] — 台灣新開 IHG 洲際飯店（付現訂房可配 C1 Shopping 加碼）
+
+- [[rakuten-alliant-checking-250-bonus-2026-11]] — Rakuten 開 Alliant 支票帳戶 $250／25K Amex 點（ITIN 可開，卡 $500 薪轉）

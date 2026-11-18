@@ -67,3 +67,5 @@ author: 旅程任意門（FB）
 - [[boa-credit-card-basic-rules-2026-09]] — BoA 申卡規則（信用分數、額度）
 - [[us-credit-card-2026-06]] — 美卡總整理
 - [[bofa-atmos-rewards-summit-card-2026-08]] — Atmos 卡（貼文提到群友辦下來）
+
+- [[rakuten-alliant-checking-250-bonus-2026-11]] — Rakuten 開 Alliant 支票帳戶 $250／25K Amex 點（ITIN 可開，卡 $500 薪轉）
