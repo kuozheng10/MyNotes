@@ -58,3 +58,4 @@ category: 知識庫
 - [[taiwan-stock-20pct-drawdown-backtest-1967-2026]] — 清流君：大跌時照原訂規則再平衡，不要猜底
 - [[00631l-crash-pledge-add-strategy-2026-11]] — 質押加碼（有質押 → 2% 要用初始資產算）
 - [[caven-three-year-reserve-global-etf-retirement-2026-09]] — 退休預留現金
+- [[us-civil-servant-qqq-ytd-flat-index-dca-mindset-2026-11]] — 美國公務員：大跌先穩情緒，指數照買不加槓桿

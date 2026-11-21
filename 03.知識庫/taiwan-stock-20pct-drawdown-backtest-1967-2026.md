@@ -55,3 +55,5 @@ category: 知識庫
 - [[smart-rebalance-2pct-base-definition-2026-11]] — 聰明再平衡規則細節：補倉 2% 用哪個資產算、上漲/下跌年怎麼判斷
 
 - [[4pct-rule-taiwan-stock-287-months-backtest-2026-11]] — 4% 法則台股回測：退休碰高點最危險
+
+- [[us-civil-servant-qqq-ytd-flat-index-dca-mindset-2026-11]] — 美國公務員：QQQ 跌回年初，指數定期定額照買、不開槓桿
