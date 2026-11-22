@@ -91,7 +91,7 @@ category: 知識庫
 - 00631L 跟去年同期比仍 +52%，照年度判斷今年是「上漲年」，聰明再平衡本來就不補倉
 
 ## 相關筆記
-- [[aliang-three-swords-leveraged-etf-strategy]] — 三刀流／433 配置；EP157 股災加碼 SOP（看跌幅分批，跟本篇年度再平衡對照）
+- [[aliang-three-swords-leveraged-etf-strategy]] — 三刀流／433 配置；EP157 股災加碼 SOP（看跌幅分批，跟本篇年度再平衡對照）；2026-11-22 阿良主張「正二佔比超過 35~40% 就賣」隨時再平衡，跟本篇一年一次相反
 - [[taiwan-leverage-etf-73-allocation-strategy]] — 七三配置
 - [[taiwan-stock-20pct-drawdown-backtest-1967-2026]] — 清流君：大跌時照原訂規則再平衡，不要猜底
 - [[00631l-crash-pledge-add-strategy-2026-11]] — 質押加碼（有質押 → 2% 要用初始資產算）
