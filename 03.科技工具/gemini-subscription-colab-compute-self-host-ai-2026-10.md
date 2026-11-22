@@ -47,3 +47,4 @@ category: AI工具
 - [[apple-mlx-local-agent-2026-06]] — Mac 本機跑模型
 - [[local-agent-mcp-strategy-2026-08]] — 本機 agent 策略
 - [[local-rag-pageindex-2026-06]] — 本機 RAG
+- [[google-ai-pro-black-friday-annual-3250-2026-11]] — Google AI Pro 黑五年繳 NT$3,250（舊用戶到 11/26，先切月繳再切年繳）
