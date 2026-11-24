@@ -81,3 +81,4 @@ category: 知識庫
 - [[marriott-jal-status-match-2026-07]] — 萬豪 × 日航，同樣是酒店⇄日系航空互配
 - [[chase-ihg-cards-revamp-2026-10]] — IHG 聯名卡改版
 - [[taiwan-new-international-hotels-2025-2028]] — 台灣新開洲際系統飯店，鑽石卡在國內越來越好用
+- [[ihg-diamond-elite-guide-2026-11]] — IHG 鑽石怎麼拿＋Milestone 完整表（派哥 12/31 到期）

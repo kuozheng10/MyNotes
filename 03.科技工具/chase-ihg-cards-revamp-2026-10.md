@@ -160,3 +160,4 @@ category: 信用卡哩程
 - [[us-credit-card-2026-06]] — 美卡開卡禮彙整，含 Chase 5/24
 - [[hotel-membership-matching-guide-2026-05]] — 酒店會籍對應指南
 - [[us-credit-card-credits-checklist-2026-09]] — 美卡退額總表
+- [[ihg-diamond-elite-guide-2026-11]] — IHG 鑽石攻略：確認鑽石要 70 晚（不是 50 晚）、福利、Milestone 表
