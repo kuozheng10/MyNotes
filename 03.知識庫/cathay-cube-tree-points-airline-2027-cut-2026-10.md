@@ -62,3 +62,4 @@ category: 知識庫
 - [[taiwan-mileage-credit-card-combo-2026-08]] — 台灣哩程卡組合
 - [[alaska-mileageplan-starlux-redemption]] — EY 兌星宇（原本靠 CUBE 小樹點累積）
 - [[mileage-award-value-per-mile-2026-10]] — 每哩價值估算
+- [[rove-miles-flexible-points-platform-2026-11]] — Rove Miles 也能 1:1 轉 Asia Miles（訂房／網購累積）

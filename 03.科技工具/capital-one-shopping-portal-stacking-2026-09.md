@@ -98,3 +98,4 @@ category: 科技工具
 - [[taiwan-new-international-hotels-2025-2028]] — 台灣新開 IHG 洲際飯店（付現訂房可配 C1 Shopping 加碼）
 
 - [[rakuten-alliant-checking-250-bonus-2026-11]] — Rakuten 開 Alliant 支票帳戶 $250／25K Amex 點（ITIN 可開，卡 $500 薪轉）
+- [[rove-miles-flexible-points-platform-2026-11]] — Rove Miles 完整介紹：訂房 10~30x、會籍、22 家轉點夥伴（沒有長榮）
