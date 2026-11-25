@@ -67,3 +67,4 @@ related: china-airlines-award-chart-change-2026-09
 ## 相關筆記
 
 - [[china-airlines-award-chart-change-2026-09]] — 同一次9/16改制的正面視角：亮點降價航線、開票策略、不同點進出玩法（跟本篇對照參考）
+- [[china-airlines-award-chart-change-2026-09]] — 2026-11-25 補：天合夥伴票 12/28 再改表，北美商務 16 萬→21 萬、南美→30 萬、取消中停、改票 $100
