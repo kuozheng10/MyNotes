@@ -64,3 +64,5 @@ tags: [信用卡, 美國信用卡, iphone, 延長保固, 回饋率, amex, hilton
 - [[randy-us-credit-card-long-term-keepers-2026-08]] — Randy長期持有美卡清單，含Amex Hilton Aspire完整攻略
 - [[citi-thankyou-eva-air-2026-07]] — 派哥現在進行中的美卡計畫（長榮哩程路線），Citi Strata Premier回饋率可對照
 - [[iphone-yearly-upgrade-cost-2026-11]] — iPhone 每年換 vs 3 年換成本試算（手機王行情）
+
+- [[amex-business-gold-card-2026-11]] — Amex Business Gold 完整資料（六選二 4x、開卡禮、抵免）
